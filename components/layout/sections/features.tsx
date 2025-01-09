@@ -26,7 +26,16 @@ const features = [
       "Enjoy the convenience of using your Visa card to make purchases and transactions with your digital wallet.",
     // href: "/",
     cta: "Learn more",
-    background: <img alt="Visa Card Integration" className="absolute -right-20 -top-20 opacity-60" />,
+    background:
+      <video
+        src="/visa.mp4"
+        preload="none" 
+        poster="/visa-poster.jpg"
+        autoPlay={true}
+        loop
+        muted
+        className="w-full h-full absolute -z-10 object-cover"
+      />,
     className: "col-span-3 lg:col-span-2",
   },
   {
@@ -139,7 +148,7 @@ export const FeaturesSection = () => {
       </div> */}
       <BentoGrid >
         {features.map((feature) => (
-            <BentoCard key={feature.name} {...feature} />
+          <BentoCard key={feature.name} {...feature} />
         ))}
       </BentoGrid>
     </section>
