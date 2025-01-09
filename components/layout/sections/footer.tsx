@@ -19,7 +19,7 @@ export const FooterSection = () => {
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Company</h3>
             <div>
-              <Link href="https://github.com/yourwallettr" className="opacity-60 hover:opacity-100">
+              <Link href="https://github.com/yourwallett" className="opacity-60 hover:opacity-100">
                 Github
               </Link>
             </div>

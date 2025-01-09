@@ -24,7 +24,7 @@ export const HeroSection = () => {
               <span> #1 LATEST WALLET SOLUTION </span>
             </Badge>
           </motion.div> */}
-         
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -75,7 +75,9 @@ export const HeroSection = () => {
               Download
               <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-y-1 transition-transform" />
             </Button> */}
-            <ShinyButton className="bg-white text-[#8B1DB8]  group/arrow">
+            <ShinyButton onClick={() => {
+              window.location.href = "https://t.me/yourwallettr";
+            }} className="bg-white text-[#8B1DB8]  group/arrow">
               <span className="text-primary flex items-center group/arrow font-bold">
                 Download
                 <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />

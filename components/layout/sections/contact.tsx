@@ -77,7 +77,7 @@ export const ContactSection = () => {
               <div>London</div>
             </div>
 
-            <div>
+            {false && <div>
               <div className="flex gap-2 mb-1">
                 <Phone />
                 <div className="font-bold">Call us</div>
@@ -85,7 +85,7 @@ export const ContactSection = () => {
 
               <div>+088 (006) 992-99-10</div>
             </div>
-
+            }
             <div>
               <div className="flex gap-2 mb-1">
                 <Mail />
