@@ -1,0 +1,337 @@
+{
+    "navigation": {
+        "wallet": "Wallet",
+        "settings": "Settings",
+        "swap": "Swap",
+        "support": "Support",
+        "about": "About Us",
+        "contact": "Contact Us",
+        "terms": "Terms of Service",
+        "privacy": "Privacy Policy"
+    },
+    "theme": {
+        "dark": "Dark",
+        "light": "Light"
+    },
+    "language": {
+        "title": "Language"
+    },
+    "download": {
+        "button": "Download",
+        "your_wallet": "Download Your Wallet",
+        "mobile_app": "Mobile App",
+        "title": "Download Your Wallet",
+        "subtitle": "Your Wallet is available as a mobile app",
+        "ios": {
+            "title": "Download for iOS",
+            "description": "Download the mobile wallet app from the App Store"
+        },
+        "android": {
+            "title": "Download for Android",
+            "description": "Download the mobile wallet app from Google Play"
+        },
+        "apk": {
+            "title": "Download APK for Android",
+            "description": "Download the mobile wallet app using Android APK"
+        }
+    },
+    "home": {
+        "hero": {
+            "title": "Real crypto ownership. Powerful Web3 experiences",
+            "description": "Unlock the power of your crypto assets and explore the Web3 world with Your Wallet.",
+            "download_mobile": "Download Mobile App",
+            "stats": {
+                "trusted": "Trusted by 140 million people",
+                "founded": "Founded in 2017",
+                "audited": "Independently Audited",
+                "certified": "ISO Certified",
+                "ratings": "High ratings"
+            }
+        },
+        "chains": {
+            "title": "One Platform, Millions of Assets",
+            "description": "As the leading multi-chain platform that puts you in control, we support millions of assets across 100+ blockchains. From Bitcoin, Ethereum, and Solana to Cosmos, Optimism, and beyond.",
+            "chain": "Chain",
+            "buy": "Buy",
+            "sell": "Sell",
+            "swap": "Swap",
+            "earn": "Earn",
+            "dapps": "DApps"
+        },
+        "simple": {
+            "title": "Simple. Seamless.",
+            "description": "Enjoy a seamless mobile app and desktop experience with powerful, easy-to-use tools that will support your Web3 journey from start to finish.",
+            "deposit": {
+                "title": "Easily deposit crypto from exchanges",
+                "description": "Take control of your crypto. Deposit directly from exchanges like Binance and Coinbase to your wallet, skipping complex steps.",
+                "cta": "Get started by opening your account."
+            }
+        },
+        "security": {
+            "title": "Stay private and secure",
+            "description": "Rest easy knowing our privacy and security measures keep your data and digital assets in control and secure.",
+            "ownership": {
+                "title": "True ownership of your crypto assets",
+                "description": "We secure your wallet but don't control or have access to your private keys or recovery phrases - only you can.",
+                "cta": "Get Started."
+            },
+            "features": {
+                "encryption": {
+                    "title": "Security added with encryption",
+                    "description": "Use our Cloud Encrypted Backup for an extra layer of wallet security."
+                },
+                "tracking": {
+                    "title": "Zero personal tracking",
+                    "description": "We don't track any personal information, including your IP address or balance."
+                },
+                "alerts": {
+                    "title": "Proactive alerts for risky transactions",
+                    "description": "Stay safe with alerts for risky address and dApp connections."
+                }
+            },
+            "learn_more": "Learn more about privacy and security"
+        },
+        "web3": {
+            "title": "Your one-stop, Web3 wallet",
+            "description": "Buy, sell and swap crypto, earn rewards, manage NFTs and explore DApps all in one place.",
+            "cta": "Download Mobile App"
+        },
+        "your": {
+            "title": "Building Trust",
+            "description": "We know working together as a community is better for everyone. Our platform enables blockchain developers to natively build their dApps and wallets and connect with millions of users without worrying about low-level implementation details.",
+            "cta": "Download Mobile App"
+        },
+        "footer": {
+            "stay_connected": "Stay Connected:",
+            "download": {
+                "title": "Download Your Wallet",
+                "description": "The most trusted & secure crypto wallet.",
+                "ios": "Download for iOS",
+                "android": "Download APK"
+            },
+            "wallet": "Wallet",
+            "mobile_app": "Mobile App"
+        }
+    },
+    "metadata": {
+        "title": "Your Wallet | Digital Wallet & Visa Card Integration",
+        "description": "Easily convert your digital assets to fiat currency and make global transactions with the Your Wallet app. Secure, fast, and convenient.",
+        "og": {
+            "description": "Manage your digital funds effortlessly with the Your Wallet app. Convert to fiat currency, make purchases, and enjoy global access with our Visa card.",
+            "alt": "Your Wallet - Digital Wallet and Visa Card Integration"
+        },
+        "twitter": {
+            "description": "Seamlessly manage your digital funds and convert them to fiat currency with Your Wallet. Make transactions anywhere, anytime."
+        }
+    },
+    "privacy": {
+        "title": "Privacy Policy",
+        "lastUpdated": "Last Updated: January 25, 2025",
+        "overview": {
+            "title": "Overview",
+            "content": "Your privacy and the protection of your personal data is important to us. The following sections provide details about how we process your personal information. We don't share your information with third parties except to deliver our Services and products, comply with the law, improve our services, protect our rights, or effectuate a business transfer. We're just developers trying to deliver an incredible product."
+        },
+        "acceptance": {
+            "title": "How do you accept this policy",
+            "content": "By using our application, including downloading our mobile applications or visiting our website, you agree to the use, disclosure, and procedures outlined in this Privacy Policy."
+        },
+        "collection": {
+            "title": "What personal information do we collect",
+            "content": "We minimize the amount of Personal Information we collect. Your contact information, such as phone number or email address (depending on how you contact us), may be collected when you communicate with us for support, report issues, or interact through social media. When using our Services, we process PUBLIC wallet addresses you generate."
+        },
+        "sharing": {
+            "title": "Information sharing with third parties",
+            "content": "We do not sell your personal information. We may share data with service providers who help operate our business. These providers only access information needed for their functions and must follow our data protection requirements. In case of business transfers or legal requirements, some information might be transferred while maintaining privacy commitments."
+        },
+        "usage": {
+            "title": "How we use your information",
+            "content": "We use collected information to enhance our services. This includes: responding to support requests, fixing technical issues, providing updates about our services, and improving user experience. We may use aggregated, non-personal data for analysis and service improvement."
+        },
+        "rights": {
+            "title": "Your privacy rights",
+            "content": "You have the right to: access your personal data, request corrections, object to processing, request data deletion, and restrict processing. Some data might be retained for legal compliance. Blockchain transactions cannot be deleted due to technical limitations."
+        },
+        "retention": {
+            "title": "Data retention",
+            "content": "Even if you delete your wallet or uninstall our application, we may retain some information for maintenance or legal compliance. Contact us with any questions about data retention."
+        },
+        "security": {
+            "title": "Data security",
+            "content": "We protect your information using industry-standard security measures. While we implement strong safeguards, no system is completely secure. We use encryption and follow best practices for data protection."
+        },
+        "children": {
+            "title": "Children's privacy",
+            "content": "Our services are not intended for children. Users must be at least 18 years old. We don't knowingly collect information from children under 13. Contact us if you believe a child has provided us information."
+        },
+        "updates": {
+            "title": "Policy updates",
+            "content": "We may update this policy to reflect changes in our practices or legal requirements. We'll notify you of significant changes. Continued use of our services after updates means you accept the changes."
+        },
+        "contact": {
+            "title": "Contact us",
+            "content": "We're here to help with your privacy questions or concerns.",
+            "email": "Email: support@yourwallet.tr"
+        }
+    },
+    "terms": {
+        "title": "Terms of Service",
+        "lastUpdated": "Last Updated: January 25, 2025",
+        "general": {
+            "title": "1. General Terms",
+            "content": "These terms of service constitute a legally binding agreement governing your use of the Your Wallet application (\"Application\"). By using the Application, you agree to these terms."
+        },
+        "service": {
+            "title": "2. Service Usage",
+            "content": "Your Wallet is a platform providing cryptocurrency wallet and exchange services. Users are obligated to use these services in compliance with legal regulations."
+        },
+        "responsibilities": {
+            "title": "3. User Responsibilities",
+            "content": "Users are responsible for their account security. The security of private keys and passwords is the responsibility of the user."
+        },
+        "privacy": {
+            "title": "4. Privacy",
+            "content": "The processing and protection of user data is carried out within the framework of our privacy policy."
+        }
+    },
+    "support": {
+        "title": "Frequently Asked Questions",
+        "description": "Find answers to all your questions about Your Wallet here. If you can't find the answer you're looking for, don't hesitate to contact our support team.",
+        "faq": [
+            {
+                "question": "What is Your Wallet and why should it be preferred?",
+                "answer": "Your Wallet is a secure digital wallet that enables you to transact on the Solana blockchain. Thanks to Solana's high speed and low transaction fees, you can transfer your crypto assets quickly and economically. It stands out with its user-friendly interface and advanced security features. It's an ideal solution for both beginners and experienced users."
+            },
+            {
+                "question": "What transactions can I make on the Solana network?",
+                "answer": "Through Your Wallet, you can perform basic crypto transactions on the Solana network: you can transfer SOL, perform SPL token transactions, and securely store your assets. You can easily view and manage all assets in your wallet."
+            },
+            {
+                "question": "What are the security features?",
+                "answer": "Your Wallet offers security features optimized for the Solana network. Your private keys are encrypted locally and Solana's secure signing protocols are used. Two-factor authentication (2FA), biometric verification, and automatic logout features are available. Program audits and security tests are conducted regularly. We have Solana network-specific security alerts and suspicious transaction detection system."
+            },
+            {
+                "question": "How are transaction fees determined?",
+                "answer": "Transaction fees on the Solana network are very low. A standard transfer transaction costs approximately 0.000005 SOL (less than a penny). As Your Wallet, we fully reflect this advantage of Solana to our users. Minimum service fees are charged for transactions made through the platform, and all costs are transparently shown before the transaction."
+            },
+            {
+                "question": "How can I get started?",
+                "answer": "To start using Your Wallet, first download the app and create an account. Securely back up your seed phrase to create your Solana wallet. You can use our supported payment methods to buy SOL or transfer from another wallet. Our getting started guide and 24/7 support team will help you."
+            },
+            {
+                "question": "What should I do in case of asset loss?",
+                "answer": "If you lose access to your Solana wallet, you can recover all your assets with your seed phrase. If you notice a suspicious transaction, you can instantly freeze your account and contact our support team. Token lists and program IDs are continuously updated to provide protection against possible fraud."
+            },
+            {
+                "question": "What are the portfolio viewing features?",
+                "answer": "Your Wallet's portfolio viewing tools allow you to monitor your Solana assets from one place. You can view the real-time value and transaction history of all assets in your wallet. You can track important transaction confirmations with customizable notifications."
+            },
+            {
+                "question": "What currencies are supported?",
+                "answer": "Your Wallet currently supports Solana (SOL) and SPL tokens on Solana. More token support will be added in the near future. The list of supported tokens is regularly updated."
+            }
+        ],
+        "contact": {
+            "title": "Have Another Question?",
+            "description": "If you couldn't find the answer to your question in the FAQ section above, don't hesitate to contact us. We're happy to help you.",
+            "button": "Contact Us"
+        }
+    },
+    "swap": {
+        "title": "Fast and Secure Token Swaps",
+        "description": "Swap tokens instantly with the best rates. Manage your crypto assets with secure and fast transactions.",
+        "process": {
+            "title": "Easy Swap Steps",
+            "steps": {
+                "step1": "1. Connect your wallet",
+                "step2": "2. Select tokens to swap",
+                "step3": "3. Check amount and rates",
+                "step4": "4. Confirm and complete your swap"
+            },
+            "cta": "Get The App"
+        },
+        "form": {
+            "from": "Swap From",
+            "to": "Swap To",
+            "select_token": "Select Token",
+            "swap_button": "Swap Now"
+        },
+        "features": {
+            "best_rates": {
+                "title": "Best Rates",
+                "description": "At Your Wallet, we continuously scan multiple liquidity pools to offer you the best swap rates. Our advanced algorithms ensure maximum value in every transaction. Get the most advantageous rates with real-time price updates and automatic route optimization."
+            },
+            "low_fees": {
+                "title": "Minimum Fees",
+                "description": "We offer the lowest transaction fees in the market. Our smart routing system minimizes transaction costs to provide you with maximum savings. Execute all your transactions at minimal cost with our gas fee optimization technology."
+            },
+            "secure": {
+                "title": "Secure Transactions",
+                "description": "We provide a swap experience protected by the latest security protocols and smart contract audits. Every transaction is transparently recorded and traceable on the blockchain. Your assets are always secure with multi-signature wallets and advanced security measures."
+            }
+        }
+    },
+    "about": {
+        "hero": {
+            "title": "Real crypto ownership. Powerful Web3 experiences",
+            "description": "Unlock the power of your crypto assets and explore the Web3 world with Your Wallet.",
+            "explore": "Explore Your Wallet World"
+        },
+        "vision": {
+            "title": "Our Vision",
+            "description": "To make the cryptocurrency world accessible to everyone and provide our users with the most secure, user-friendly digital asset management experience."
+        },
+        "mission": {
+            "title": "Our Mission",
+            "description": "To enable our users to manage their digital assets securely through innovative technologies and security solutions, and contribute to the development of the cryptocurrency ecosystem."
+        },
+        "principles": {
+            "title": "Principles That Define Us",
+            "description": "Our core values that guide us in every step reflect our commitment to providing the best service to our customers.",
+            "humanCentric": {
+                "title": "Human-Centric",
+                "description": "We understand each user's unique needs and develop innovative solutions for their success."
+            },
+            "trustResponsibility": {
+                "title": "Trust & Responsibility",
+                "description": "We stand behind every promise we make and successfully complete every task we undertake."
+            },
+            "collaboration": {
+                "title": "Collaboration",
+                "description": "We're stronger together. We work with our stakeholders towards common goals to grow our ecosystem."
+            },
+            "continuousImprovement": {
+                "title": "Continuous Improvement",
+                "description": "We work to be better than yesterday and embrace an approach open to innovation."
+            },
+            "transparency": {
+                "title": "Transparency",
+                "description": "We embrace open communication and demonstrate an honest and reliable approach in every step."
+            },
+            "solutionOriented": {
+                "title": "Solution-Oriented",
+                "description": "We turn challenges into opportunities and continue to progress by producing fast and effective solutions."
+            }
+        },
+        "team": {
+            "title": "Meet Our Team",
+            "description": "Our passionate and talented team turning our vision into reality.",
+            "member1": {
+                "name": "Ryan Samuel",
+                "role": "Founder & CEO"
+            },
+            "member2": {
+                "name": "Sarah Johnson",
+                "role": "Chief Technology Officer"
+            },
+            "member3": {
+                "name": "Michael Chen",
+                "role": "Product Manager"
+            }
+        },
+        "contact": {
+            "title": "Get in Touch",
+            "description": "We're here for your questions or suggestions.",
+            "cta": "Go to Support Page"
+        }
+    }
+}

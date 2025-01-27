@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="250" cy="250" r="240" fill="#F3F4F6" />
+    
+    <!-- Wallet Icon -->
+    <g transform="translate(100, 100)">
+        <!-- Wallet Body -->
+        <path d="M50 50 h200 v200 h-200 Z" fill="#8B1DB8" />
+        <path d="M250 150 h50 v100 h-50 Z" fill="#477DE9" />
+        
+        <!-- Coins -->
+        <circle cx="100" cy="150" r="30" fill="#FFD700" />
+        <circle cx="170" cy="150" r="30" fill="#C0C0C0" />
+        <circle cx="240" cy="150" r="30" fill="#CD7F32" />
+        
+        <!-- Blockchain Connection Lines -->
+        <path d="M100 200 L170 220 L240 200" stroke="#8B1DB8" strokeWidth="4" fill="none" />
+        <path d="M100 210 L170 230 L240 210" stroke="#477DE9" strokeWidth="4" fill="none" />
+    </g>
+    
+    <!-- Decorative Elements -->
+    <circle cx="80" cy="80" r="20" fill="#8B1DB8" opacity="0.5" />
+    <circle cx="420" cy="420" r="20" fill="#477DE9" opacity="0.5" />
+    <circle cx="420" cy="80" r="20" fill="#8B1DB8" opacity="0.5" />
+    <circle cx="80" cy="420" r="20" fill="#477DE9" opacity="0.5" />
+</svg> 

@@ -1,0 +1,389 @@
+{
+    "navigation": {
+        "wallet": "Cüzdan",
+        "settings": "Ayarlar",
+        "swap": "Takaslar",
+        "support": "Destek",
+        "about": "Hakkımızda",
+        "contact": "Bize Ulaşın",
+        "terms": "Hizmet Koşulları",
+        "privacy": "Gizlilik Politikası"
+    },
+    "theme": {
+        "dark": "Koyu",
+        "light": "Aydınlık"
+    },
+    "language": {
+        "title": "Dil"
+    },
+    "download": {
+        "button": "İndir",
+        "your_wallet": "Your Wallet'ı İndirin",
+        "mobile_app": "Mobil Uygulama",
+        "title": "Your Wallet - İndir",
+        "subtitle": "Your Wallet, mobil uygulama olarak mevcuttur",
+        "ios": {
+            "title": "iOS için indirin",
+            "description": "App Store'dan mobil cüzdan uygulamasını indirin"
+        },
+        "android": {
+            "title": "Android için indirin",
+            "description": "Google Play'den mobil cüzdan uygulamasını indirin"
+        },
+        "apk": {
+            "title": "Android için APK indirin",
+            "description": "Android APK kullanarak mobil cüzdan uygulamasını indirin"
+        }
+    },
+    "home": {
+        "hero": {
+            "title": "Gerçek anlamda kripto sahipliği. Güçlü Web3 deneyimleri",
+            "description": "Your Wallet ile kripto para varlıklarınızın gücünü ortaya çıkarın ve Web3 dünyasını keşfedin.",
+            "download_mobile": "Mobil Uygulamayı İndirin",
+            "stats": {
+                "trusted": "140 milyon kişinin güvendiği çözüm",
+                "founded": "2017'de kuruldu",
+                "audited": "Bağımsız Olarak Denetlenmiştir",
+                "certified": "ISO Sertifikalı",
+                "ratings": "Yüksek değerlendirmeler"
+            }
+        },
+        "chains": {
+            "title": "Tek Platform, Milyonlarca Varlık",
+            "description": "Kontrolü size bırakan ve önde gelen çok zincirli bir platform olarak, 100'ü aşkın blockchain'de milyonlarca varlığı destekliyoruz. Bitcoin, Ethereum ve Solana'dan Cosmos, Optimism ve daha birçoğuna kadar.",
+            "chain": "Zincir",
+            "buy": "Alış",
+            "sell": "Satış",
+            "swap": "Takas",
+            "earn": "Earn",
+            "dapps": "DApp'ler"
+        },
+        "simple": {
+            "title": "Basit. Sorunsuz.",
+            "description": "Web3 yolculuğunuzu baştan sona destekleyecek olan kullanımı kolay, güçlü araçlarla sorunsuz bir mobil uygulama ve masaüstü deneyiminden faydalanın.",
+            "deposit": {
+                "title": "Borsalardan kripto paraları kolayca yatırın",
+                "description": "Kriptonuzun kontrolünü elinize alın. Karmaşık adımlardan kaçınarak Binance ve Coinbase gibi borsalardan cüzdanınıza doğrudan para yatırın.",
+                "cta": "Hesabınızı açarak başlayın."
+            }
+        },
+        "security": {
+            "title": "Gizli ve güvende kalın",
+            "description": "Gizlilik ve güvenlik önlemlerimizin, verilerinizi ve dijital varlıklarınızı kontrol altında ve güvende tuttuğunu bilerek içiniz rahat olsun.",
+            "ownership": {
+                "title": "Kripto varlıklarınızın gerçek mülkiyeti",
+                "description": "Cüzdanınızı güvence altına tutuyoruz, ancak özel anahtarlarınızı veya hatırlatma cümlelerinizi kontrol etmiyoruz veya bunlara erişimimiz yok; bunu yalnızca siz yapabilirsiniz.",
+                "cta": "Başlayın."
+            },
+            "features": {
+                "encryption": {
+                    "title": "Şifrelemeyle güvenlik eklendi",
+                    "description": "Daha yüksek bir cüzdan güvenliği için Bulutta Şifrelenmiş Yedeklememizi kullanın."
+                },
+                "tracking": {
+                    "title": "Sıfır kişisel takip",
+                    "description": "IP adresiniz veya bakiyeniz de dahil olmak üzere hiçbir kişisel bilgiyi izlemiyoruz."
+                },
+                "alerts": {
+                    "title": "Riskli işlemler için proaktif bildirimler",
+                    "description": "Riskli adres ve dApp bağlantılarına yönelik bildirimlerle güvende kalın."
+                }
+            },
+            "learn_more": "Gizlilik ve güvenlik hakkında daha fazla bilgi edinin"
+        },
+        "web3": {
+            "title": "Tek durağınız, Web3 cüzdanı",
+            "description": "Tek bir yerden; kripto alın, satın ve takas edin, ödüller kazanın, NFT'leri yönetin ve DApp'leri keşfedin.",
+            "cta": "Mobil Uygulamayı İndirin"
+        },
+        "your": {
+            "title": "Güven Oluşturma",
+            "description": "Topluluk olarak hep birlikte çalışmanın herkes için daha iyi olduğunu biliyoruz. Platformumuz, blockchain geliştiricilerinin düşük seviyeli uygulama ayrıntıları hakkında endişelenmelerine gerek kalmadan dApp'lerini ve cüzdanlarını yerel olarak oluşturmalarına ve milyonlarca kullanıcıyla bağlantı kurmalarına olanak tanır.",
+            "cta": "Mobil Uygulamayı İndirin"
+        },
+        "footer": {
+            "stay_connected": "Bağlantıda Kalın:",
+            "download": {
+                "title": "Your Wallet'ı İndirin",
+                "description": "En güvenli ve güvenilir kripto cüzdanı.",
+                "ios": "IOS için indir",
+                "android": "APK indir"
+            },
+            "wallet": "Cüzdan",
+            "mobile_app": "Mobil Uygulama"
+        }
+    },
+    "metadata": {
+        "title": "Your Wallet | Dijital Cüzdan & Visa Kart Entegrasyonu",
+        "description": "Your Wallet uygulaması ile dijital varlıklarınızı kolayca fiat paraya dönüştürün ve global işlemler yapın. Güvenli, hızlı ve kullanışlı.",
+        "og": {
+            "description": "Your Wallet uygulaması ile dijital fonlarınızı zahmetsizce yönetin. Fiat paraya dönüştürün, alışveriş yapın ve Visa kartımızla global erişimin keyfini çıkarın.",
+            "alt": "Your Wallet - Dijital Cüzdan ve Visa Kart Entegrasyonu"
+        },
+        "twitter": {
+            "description": "Your Wallet ile dijital fonlarınızı yönetin ve fiat paraya dönüştürün. Her yerde, her zaman işlem yapın."
+        },
+        "about": {
+            "title": "Your Wallet - Hakkımızda",
+            "description": "Your Wallet ekibi ve vizyonumuz hakkında bilgi edinin."
+        },
+        "download": {
+            "title": "Your Wallet - İndir",
+            "description": "Your Wallet mobil uygulamasını indirin ve kripto para dünyasına güvenli bir şekilde adım atın."
+        },
+        "privacy": {
+            "title": "Your Wallet - Gizlilik Politikası",
+            "description": "Your Wallet gizlilik politikası - Verilerinizin nasıl korunduğunu ve kullanıldığını öğrenin."
+        },
+        "support": {
+            "title": "Your Wallet - Destek",
+            "description": "Your Wallet destek merkezi - Sorularınızı yanıtlayalım ve size yardımcı olalım."
+        },
+        "swap": {
+            "title": "Your Wallet - Takas",
+            "description": "Your Wallet ile kripto paralarınızı güvenli ve hızlı bir şekilde takas edin."
+        },
+        "terms": {
+            "title": "Your Wallet - Kullanım Koşulları",
+            "description": "Your Wallet kullanım koşulları - Hizmetlerimizi kullanırken uymanız gereken kurallar ve şartlar."
+        }
+    },
+    "privacy": {
+        "title": "Gizlilik Politikası",
+        "lastUpdated": "Son Güncelleme: 25 Ocak 2025",
+        "overview": {
+            "title": "Genel Bakış",
+            "content": "Gizliliğiniz ve kişisel verilerinizin korunması bizim için önemlidir. Aşağıdaki bölümler, kişisel bilgilerinizi nasıl işlediğimiz hakkında detaylı bilgi sunmaktadır. Bilgilerinizi üçüncü taraflarla sadece hizmetlerimizi sunmak, yasal yükümlülükleri yerine getirmek, hizmetlerimizi iyileştirmek, haklarımızı korumak veya iş transferi gerçekleştirmek için paylaşırız. Biz sadece size mükemmel bir ürün sunmaya çalışan geliştiricileriz."
+        },
+        "acceptance": {
+            "title": "Bu politikayı nasıl kabul edersiniz",
+            "content": "Uygulamamızı kullanarak, mobil uygulamalarımızı indirerek veya web sitemizi ziyaret ederek, bu Gizlilik Politikasında belirtilen kullanım, açıklama ve prosedürleri kabul etmiş olursunuz."
+        },
+        "collection": {
+            "title": "Hangi kişisel bilgileri topluyoruz",
+            "content": "Topladığımız Kişisel Bilgileri minimum düzeyde tutuyoruz. İletişim bilgileriniz, telefon numaranız veya e-posta adresiniz (nasıl iletişim kurduğunuza bağlı olarak), destek için iletişime geçtiğinizde, sorunları bildirdiğinizde veya sosyal medya üzerinden etkileşimde bulunduğunuzda toplanabilir. Hizmetlerimizi kullanırken, oluşturduğunuz AÇIK cüzdan adreslerini işleriz."
+        },
+        "sharing": {
+            "title": "Üçüncü taraflarla bilgi paylaşımı",
+            "content": "Kişisel bilgilerinizi satmıyoruz. İşimizi yürütmemize yardımcı olan servis sağlayıcılarla veri paylaşabiliriz. Bu sağlayıcılar sadece işlevleri için gerekli bilgilere erişebilir ve veri koruma gereksinimlerimize uymak zorundadır. İş transferleri veya yasal gereklilikler durumunda, gizlilik taahhütlerimizi koruyarak bazı bilgiler aktarılabilir."
+        },
+        "usage": {
+            "title": "Bilgilerinizi nasıl kullanıyoruz",
+            "content": "Toplanan bilgileri hizmetlerimizi geliştirmek için kullanırız. Bu kullanım şunları içerir: destek taleplerine yanıt verme, teknik sorunları çözme, hizmetlerimiz hakkında güncellemeler sağlama ve kullanıcı deneyimini iyileştirme. Analiz ve hizmet iyileştirmesi için toplu, kişisel olmayan verileri kullanabiliriz."
+        },
+        "rights": {
+            "title": "Gizlilik haklarınız",
+            "content": "Şu haklara sahipsiniz: kişisel verilerinize erişim, düzeltme talep etme, işlemeye itiraz etme, veri silme talep etme ve işlemeyi kısıtlama. Bazı veriler yasal uyumluluk için saklanabilir. Blok zinciri işlemleri teknik sınırlamalar nedeniyle silinemez."
+        },
+        "retention": {
+            "title": "Veri saklama",
+            "content": "Cüzdanınızı silseniz veya uygulamamızı kaldırsanız bile, bakım veya yasal uyumluluk için bazı bilgileri saklayabiliriz. Veri saklama ile ilgili sorularınız için bizimle iletişime geçin."
+        },
+        "security": {
+            "title": "Veri güvenliği",
+            "content": "Bilgilerinizi endüstri standardı güvenlik önlemleriyle koruyoruz. Güçlü koruma önlemleri uygulamamıza rağmen, hiçbir sistem tamamen güvenli değildir. Şifreleme kullanıyor ve veri koruma için en iyi uygulamaları takip ediyoruz."
+        },
+        "children": {
+            "title": "Çocukların gizliliği",
+            "content": "Hizmetlerimiz çocuklar için tasarlanmamıştır. Kullanıcılar en az 18 yaşında olmalıdır. 13 yaşın altındaki çocuklardan bilerek bilgi toplamıyoruz. Bir çocuğun bize bilgi verdiğini düşünüyorsanız bizimle iletişime geçin."
+        },
+        "updates": {
+            "title": "Politika güncellemeleri",
+            "content": "Bu politikayı uygulamalarımızdaki veya yasal gerekliliklerdeki değişiklikleri yansıtmak için güncelleyebiliriz. Önemli değişiklikler hakkında sizi bilgilendireceğiz. Güncellemelerden sonra hizmetlerimizi kullanmaya devam etmeniz, değişiklikleri kabul ettiğiniz anlamına gelir."
+        },
+        "contact": {
+            "title": "Bize ulaşın",
+            "content": "Gizlilik sorularınız veya endişeleriniz için size yardımcı olmaktan memnuniyet duyarız.",
+            "email": "E-posta: support@yourwallet.tr"
+        }
+    },
+    "terms": {
+        "title": "Kullanım Koşulları",
+        "lastUpdated": "Son Güncelleme: 25 Ocak 2025",
+        "general": {
+            "title": "1. Genel Hükümler",
+            "content": "Bu kullanım koşulları, Your Wallet uygulamasını (\"Uygulama\") kullanımınızı düzenleyen yasal bir sözleşmedir. Uygulamayı kullanarak bu koşulları kabul etmiş sayılırsınız. Your Wallet, bu koşulları herhangi bir zamanda değiştirme hakkını saklı tutar. Değişiklikler, web sitemizde veya uygulamamızda yayınlandığı anda yürürlüğe girer."
+        },
+        "eligibility": {
+            "title": "2. Uygunluk",
+            "content": "Hizmetlerimizi kullanabilmek için en az 18 yaşında olmanız gerekmektedir. Uygulamayı kullanarak, yasal olarak bağlayıcı sözleşmeler yapma yetkiniz olduğunu onaylamış olursunuz. Bazı bölgelerde hizmetlerimiz kısıtlı olabilir veya kullanılamayabilir."
+        },
+        "account": {
+            "title": "3. Hesap Oluşturma ve Güvenlik",
+            "content": "Uygulamamızı kullanmak için bir hesap oluşturmanız gerekebilir. Hesap bilgilerinizin doğru ve güncel olmasından siz sorumlusunuz. Hesabınızın güvenliğini sağlamak ve yetkisiz erişimleri önlemek sizin sorumluluğunuzdadır. Şüpheli bir aktivite fark ettiğinizde derhal bizimle iletişime geçmelisiniz."
+        },
+        "wallet": {
+            "title": "4. Cüzdan Hizmetleri",
+            "content": "Your Wallet, kripto para varlıklarınızı güvenli bir şekilde saklamanıza ve yönetmenize olanak sağlar. Özel anahtarlarınızın ve kurtarma ifadelerinizin güvenliğinden siz sorumlusunuz. Bu bilgilerin kaybedilmesi durumunda varlıklarınıza erişiminizi kaybedebilirsiniz ve biz bu kayıptan sorumlu tutulamayız."
+        },
+        "transactions": {
+            "title": "5. İşlemler ve Ücretler",
+            "content": "Kripto para işlemleriniz blok zinciri ağında gerçekleştirilir ve geri alınamaz. İşlem ücretleri ağ koşullarına göre değişiklik gösterebilir. Yanlış adrese yapılan transferlerden veya hatalı işlemlerden Your Wallet sorumlu tutulamaz."
+        },
+        "prohibited": {
+            "title": "6. Yasaklı Kullanımlar",
+            "content": "Uygulamayı yasa dışı faaliyetler için kullanmak, kara para aklama, terörizmin finansmanı veya dolandırıcılık gibi aktivitelerde bulunmak kesinlikle yasaktır. Bu tür faaliyetlerin tespit edilmesi durumunda hesabınız askıya alınacak ve gerekli yasal işlemler başlatılacaktır."
+        },
+        "intellectual": {
+            "title": "7. Fikri Mülkiyet Hakları",
+            "content": "Uygulama ve içeriğindeki tüm fikri mülkiyet hakları Your Wallet'a aittir. Kullanıcılar, uygulamayı kişisel kullanım dışında çoğaltamaz, değiştiremez veya dağıtamaz."
+        },
+        "liability": {
+            "title": "8. Sorumluluk Sınırlaması",
+            "content": "Your Wallet, doğrudan veya dolaylı kayıplardan, kar kaybından, veri kaybından veya kripto para değerlerindeki dalgalanmalardan sorumlu tutulamaz. Hizmetlerimizi 'olduğu gibi' sunuyoruz ve herhangi bir garanti vermiyoruz."
+        },
+        "termination": {
+            "title": "9. Hesap Sonlandırma",
+            "content": "Your Wallet, herhangi bir zamanda ve herhangi bir nedenle hesabınızı askıya alma veya sonlandırma hakkını saklı tutar. Siz de istediğiniz zaman hesabınızı kapatabilirsiniz."
+        },
+        "law": {
+            "title": "10. Uygulanacak Hukuk",
+            "content": "Bu sözleşme Türkiye Cumhuriyeti kanunlarına tabidir. Herhangi bir anlaşmazlık durumunda Türkiye Cumhuriyeti mahkemeleri yetkilidir."
+        },
+        "contact": {
+            "title": "11. İletişim",
+            "content": "Herhangi bir soru veya endişeniz için support@yourwallet.tr adresinden bizimle iletişime geçebilirsiniz. Acil durumlar için 7/24 destek hattımız mevcuttur."
+        }
+    },
+    "support": {
+        "title": "Sıkça Sorulan Sorular",
+        "description": "Your Wallet hakkında merak ettiğiniz tüm soruların cevaplarını burada bulabilirsiniz. Eğer aradığınız cevabı bulamazsanız, destek ekibimizle iletişime geçmekten çekinmeyin.",
+        "faq": [
+            {
+                "question": "Your Wallet nedir ve neden tercih edilmelidir?",
+                "answer": "Your Wallet, Solana blockchain'inde işlem yapmanızı sağlayan güvenli bir dijital cüzdandır. Solana'nın yüksek hızı ve düşük işlem ücretleri sayesinde, kripto varlıklarınızı hızlı ve ekonomik şekilde transfer edebilirsiniz. Kullanıcı dostu arayüzü ve gelişmiş güvenlik özellikleriyle öne çıkar. Hem yeni başlayanlar hem de deneyimli kullanıcılar için ideal bir çözümdür."
+            },
+            {
+                "question": "Solana ağında hangi işlemleri yapabilirim?",
+                "answer": "Your Wallet üzerinden Solana ağında temel kripto işlemlerini gerçekleştirebilirsiniz: SOL transferi yapabilir, SPL token işlemleri gerçekleştirebilir ve varlıklarınızı güvenle saklayabilirsiniz. Cüzdanınızdaki tüm varlıkları kolayca görüntüleyebilir ve yönetebilirsiniz."
+            },
+            {
+                "question": "Güvenlik özellikleri nelerdir?",
+                "answer": "Your Wallet, Solana ağı için optimize edilmiş güvenlik özellikleri sunar. Özel anahtarlarınız yerel olarak şifrelenir ve Solana'nın güvenli imzalama protokolleri kullanılır. İki faktörlü kimlik doğrulama (2FA), biyometrik doğrulama ve otomatik oturum kapatma özellikleri mevcuttur. Program denetimleri ve güvenlik testleri düzenli olarak yapılır. Solana ağına özel güvenlik uyarıları ve şüpheli işlem tespiti sistemimiz bulunmaktadır."
+            },
+            {
+                "question": "İşlem ücretleri nasıl belirlenir?",
+                "answer": "Solana ağında işlem ücretleri oldukça düşüktür. Standart bir transfer işlemi yaklaşık 0.000005 SOL (bir kuruştan az) maliyetindedir. Your Wallet olarak, Solana'nın bu avantajını kullanıcılarımıza tam olarak yansıtıyoruz. Platform üzerinden yapılan işlemlerde minimum servis ücreti alınır ve işlem öncesi tüm maliyetler şeffaf şekilde gösterilir."
+            },
+            {
+                "question": "Nasıl başlayabilirim?",
+                "answer": "Your Wallet'ı kullanmaya başlamak için öncelikle uygulamayı indirin ve hesap oluşturun. Solana cüzdanınızı oluşturmak için seed phrase'inizi güvenli bir şekilde yedekleyin. SOL satın almak için desteklediğimiz ödeme yöntemlerini kullanabilir veya başka bir cüzdandan transfer yapabilirsiniz. Başlangıç kılavuzumuz ve 7/24 destek ekibimiz size yardımcı olacaktır."
+            },
+            {
+                "question": "Varlık kaybı durumunda ne yapmalıyım?",
+                "answer": "Solana cüzdanınıza erişimi kaybetmeniz durumunda, seed phrase'iniz ile tüm varlıklarınızı kurtarabilirsiniz. Şüpheli bir işlem fark ederseniz, hesabınızı anında dondurabilir ve destek ekibimizle iletişime geçebilirsiniz. Token listeleri ve program ID'leri sürekli güncellenerek olası dolandırıcılıklara karşı koruma sağlanır."
+            },
+            {
+                "question": "Portföy görüntüleme özellikleri nelerdir?",
+                "answer": "Your Wallet'ın portföy görüntüleme araçları, Solana varlıklarınızı tek bir yerden izlemenizi sağlar. Cüzdanınızdaki tüm varlıkların gerçek zamanlı değeri ve işlem geçmişi görüntülenebilir. Özelleştirilebilir bildirimler ile önemli işlem onaylarını takip edebilirsiniz."
+            },
+            {
+                "question": "Desteklenen para birimleri nelerdir?",
+                "answer": "Your Wallet şu an için Solana (SOL) ve Solana üzerindeki SPL token'larını desteklemektedir. Yakın gelecekte daha fazla token desteği eklenecektir. Desteklenen token listesi düzenli olarak güncellenmektedir."
+            }
+        ],
+        "contact": {
+            "title": "Başka Bir Sorunuz mu Var?",
+            "description": "Eğer yukarıdaki SSS bölümünde sorunuzun cevabını bulamadıysanız, bizimle iletişime geçmekten çekinmeyin. Size yardımcı olmaktan mutluluk duyarız.",
+            "button": "Bize Ulaşın"
+        }
+    },
+    "swap": {
+        "title": "Hızlı ve Güvenli Token Takası",
+        "description": "En iyi oranlarla anında token takası yapın. Kripto varlıklarınızı güvenli ve hızlı işlemlerle yönetin.",
+        "process": {
+            "title": "Kolay Takas Adımları",
+            "steps": {
+                "step1": "1. Cüzdanınızı bağlayın",
+                "step2": "2. Takas edilecek tokenleri belirleyin",
+                "step3": "3. Miktarı ve oranları kontrol edin",
+                "step4": "4. İşlemi onaylayın ve takasınızı tamamlayın"
+            },
+            "cta": "Uygulamayı İndir"
+        },
+        "form": {
+            "from": "Takas Et",
+            "to": "Al",
+            "select_token": "Token Seç",
+            "swap_button": "Takas Et"
+        },
+        "features": {
+            "best_rates": {
+                "title": "En İyi Oranlar",
+                "description": "Your Wallet olarak, en iyi takas oranlarını sunmak için birden fazla likidite havuzunu sürekli olarak tarıyoruz. Gelişmiş algoritmalarımız sayesinde, her işlemde maksimum değer elde etmenizi sağlıyoruz. Anlık fiyat güncellemeleri ve otomatik rota optimizasyonu ile her zaman en avantajlı oranları yakalayın."
+            },
+            "low_fees": {
+                "title": "Minimum Ücretler",
+                "description": "Piyasadaki en düşük işlem ücretlerini sunuyoruz. Akıllı rotalama sistemimiz, işlem maliyetlerini minimize ederek size maksimum tasarruf sağlar. Gas ücretlerini optimize eden teknolojimiz sayesinde, tüm işlemlerinizi minimum maliyetle gerçekleştirin."
+            },
+            "secure": {
+                "title": "Güvenli İşlemler",
+                "description": "En son güvenlik protokolleri ve akıllı kontrat denetimleriyle korunan bir takas deneyimi sunuyoruz. Her işlem, blok zincirinde şeffaf bir şekilde kaydedilir ve takip edilebilir. Çoklu imza cüzdanları ve gelişmiş güvenlik önlemleriyle varlıklarınız her zaman güvende."
+            }
+        }
+    },
+    "about": {
+        "hero": {
+            "title": "Gerçek anlamda kripto sahipliği. Güçlü Web3 deneyimleri",
+            "description": "Your Wallet ile kripto para varlıklarınızın gücünü ortaya çıkarın ve Web3 dünyasını keşfedin.",
+            "explore": "Your Wallet Dünyasını Keşfet"
+        },
+        "vision": {
+            "title": "Vizyonumuz",
+            "description": "Kripto para dünyasını herkes için erişilebilir kılmak ve kullanıcılarımıza en güvenli, en kullanıcı dostu dijital varlık yönetim deneyimini sunmak."
+        },
+        "mission": {
+            "title": "Misyonumuz",
+            "description": "Yenilikçi teknolojiler ve güvenlik çözümleriyle, kullanıcılarımızın dijital varlıklarını güvenle yönetmelerini sağlamak ve kripto para ekosisteminin gelişimine katkıda bulunmak."
+        },
+        "principles": {
+            "title": "Bizi Biz Yapan İlkeler",
+            "description": "Bizi biz yapan ve her adımımızda rehberlik eden temel değerlerimiz, müşterilerimize en iyi hizmeti sunma konusundaki kararlılığımızı yansıtır.",
+            "humanCentric": {
+                "title": "İnsan Odaklı",
+                "description": "Her bir kullanıcımızın benzersiz ihtiyaçlarını anlıyor, onların başarısı için yenilikçi çözümler geliştiriyoruz."
+            },
+            "trustResponsibility": {
+                "title": "Güven ve Sorumluluk",
+                "description": "Verdiğimiz her sözün arkasında durur, üstlendiğimiz her görevi başarıyla tamamlarız."
+            },
+            "collaboration": {
+                "title": "İş Birliği",
+                "description": "Birlikte daha güçlüyüz. Ekosistemimizi büyütmek için paydaşlarımızla ortak hedefler doğrultusunda çalışırız."
+            },
+            "continuousImprovement": {
+                "title": "Sürekli Gelişim",
+                "description": "Her gün bir öncekinden daha iyi olmak için çalışır, yeniliklere açık bir yaklaşım benimseriz."
+            },
+            "transparency": {
+                "title": "Şeffaflık",
+                "description": "Açık iletişimi benimser, her adımımızda dürüst ve güvenilir bir yaklaşım sergileriz."
+            },
+            "solutionOriented": {
+                "title": "Çözüm Odaklı",
+                "description": "Zorlukları fırsata çevirir, hızlı ve etkili çözümler üreterek ilerlemeye devam ederiz."
+            }
+        },
+        "team": {
+            "title": "Ekibimizle Tanışın",
+            "description": "Vizyonumuzu gerçeğe dönüştüren tutkulu ve yetenekli ekibimiz.",
+            "member1": {
+                "name": "Ryan Samuel",
+                "role": "Kurucu & CEO"
+            },
+            "member2": {
+                "name": "Sarah Johnson",
+                "role": "Teknoloji Direktörü"
+            },
+            "member3": {
+                "name": "Michael Chen",
+                "role": "Ürün Müdürü"
+            }
+        },
+        "contact": {
+            "title": "Bizimle İletişime Geçin",
+            "description": "Sorularınız veya önerileriniz için her zaman buradayız.",
+            "cta": "Destek Sayfasına Git"
+        }
+    }
+}

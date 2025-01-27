@@ -1,56 +1,85 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
-import { Navbar } from "@/components/layout/navbar";
-import { ThemeProvider } from "@/components/layout/theme-provider";
-const inter = Inter({ subsets: ["latin"] });
-export const metadata = {
-  title: "Your Wallet | Digital Wallet & Visa Card Integration",
-  description: "Easily convert your digital assets to fiat currency and make global transactions with the Your Wallet app. Secure, fast, and convenient.",
-  openGraph: {
-    type: "website",
-    url: "https://yourwallet.tr",
-    title: "Your Wallet | Digital Wallet & Visa Card Integration",
-    description: "Manage your digital funds effortlessly with the Your Wallet app. Convert to fiat currency, make purchases, and enjoy global access with our Visa card.",
-    images: [
-      {
-        url: "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Your Wallet - Digital Wallet and Visa Card Integration",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "https://yourwallet.tr",
-    title: "Your Wallet | Digital Wallet & Visa Card Integration",
-    description: "Seamlessly manage your digital funds and convert them to fiat currency with Your Wallet. Make transactions anywhere, anytime.",
-    images: [
-      "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
-    ],
-  },
+import { ThemeProvider } from "@/components/theme-provider";
+import Header from "@/components/ui/header";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
+import Footer from "@/components/ui/footer";
+
+const inter = Inter({
+  subsets: ["latin"],
+});
+
+type Messages = {
+  metadata: {
+    title: string;
+    description: string;
+    og: {
+      description: string;
+      alt: string;
+    };
+    twitter: {
+      description: string;
+    };
+  };
 };
 
-export default function RootLayout({
+export async function generateMetadata(): Promise<Metadata> {
+  const messages = (await getMessages()) as Messages;
+
+  return {
+    title: messages.metadata.title,
+    description: messages.metadata.description,
+    openGraph: {
+      type: "website",
+      url: "https://yourwallet.tr",
+      title: messages.metadata.title,
+      description: messages.metadata.og.description,
+      images: [
+        {
+          url: "https://yourwallet.tr/preview.png",
+          width: 1200,
+          height: 630,
+          alt: messages.metadata.og.alt,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "https://yourwallet.tr",
+      title: messages.metadata.title,
+      description: messages.metadata.twitter.description,
+      images: [
+        "https://yourwallet.tr/preview.png",
+      ],
+    },
+  };
+}
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="pt-br" suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-background", inter.className)}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Navbar />
+  const locale = await getLocale();
 
-          {children}
-        </ThemeProvider>
+  const messages = await getMessages();
+  return (
+    <html lang={locale} suppressHydrationWarning>
+      <body className={`${inter.className} antialiased transition-all ease-in-out delay-75 duration-75`}>
+        <NextIntlClientProvider messages={messages}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header />
+            {children}
+            <Footer />
+          </ThemeProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
