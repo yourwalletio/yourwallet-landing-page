@@ -194,7 +194,7 @@
         "contact": {
             "title": "Bize ulaşın",
             "content": "Gizlilik sorularınız veya endişeleriniz için size yardımcı olmaktan memnuniyet duyarız.",
-            "email": "E-posta: support@yourwallet.tr"
+            "email": "E-posta: hello@yourwallet.tr"
         }
     },
     "terms": {
@@ -242,7 +242,7 @@
         },
         "contact": {
             "title": "11. İletişim",
-            "content": "Herhangi bir soru veya endişeniz için support@yourwallet.tr adresinden bizimle iletişime geçebilirsiniz. Acil durumlar için 7/24 destek hattımız mevcuttur."
+            "content": "Herhangi bir soru veya endişeniz için hello@yourwallet.tr adresinden bizimle iletişime geçebilirsiniz. Acil durumlar için 7/24 destek hattımız mevcuttur."
         }
     },
     "support": {

@@ -122,6 +122,30 @@
         },
         "twitter": {
             "description": "Seamlessly manage your digital funds and convert them to fiat currency with Your Wallet. Make transactions anywhere, anytime."
+        },
+        "about": {
+            "title": "Your Wallet - About Us",
+            "description": "Learn about Your Wallet team and our vision."
+        },
+        "download": {
+            "title": "Your Wallet - Download",
+            "description": "Download Your Wallet mobile app and step into the crypto world securely."
+        },
+        "privacy": {
+            "title": "Your Wallet - Privacy Policy",
+            "description": "Your Wallet privacy policy - Learn how your data is protected and used."
+        },
+        "support": {
+            "title": "Your Wallet - Support",
+            "description": "Your Wallet support center - Let us answer your questions and help you."
+        },
+        "swap": {
+            "title": "Your Wallet - Swap",
+            "description": "Swap your cryptocurrencies securely and quickly with Your Wallet."
+        },
+        "terms": {
+            "title": "Your Wallet - Terms of Service",
+            "description": "Your Wallet terms of service - Rules and conditions you need to follow when using our services."
         }
     },
     "privacy": {
@@ -170,7 +194,7 @@
         "contact": {
             "title": "Contact us",
             "content": "We're here to help with your privacy questions or concerns.",
-            "email": "Email: support@yourwallet.tr"
+            "email": "Email: hello@yourwallet.tr"
         }
     },
     "terms": {
@@ -191,6 +215,46 @@
         "privacy": {
             "title": "4. Privacy",
             "content": "The processing and protection of user data is carried out within the framework of our privacy policy."
+        },
+        "eligibility": {
+            "title": "2. Eligibility",
+            "content": "You must be at least 18 years old to use our services. By using the application, you confirm that you have the legal capacity to enter into binding contracts. Our services may be restricted or unavailable in certain regions."
+        },
+        "account": {
+            "title": "3. Account Creation and Security",
+            "content": "You may need to create an account to use our application. You are responsible for keeping your account information accurate and up to date. It is your responsibility to ensure the security of your account and prevent unauthorized access. You should contact us immediately if you notice any suspicious activity."
+        },
+        "wallet": {
+            "title": "4. Wallet Services",
+            "content": "Your Wallet allows you to securely store and manage your crypto assets. You are responsible for the security of your private keys and recovery phrases. Loss of this information may result in loss of access to your assets, and we cannot be held responsible for such loss."
+        },
+        "transactions": {
+            "title": "5. Transactions and Fees",
+            "content": "Your cryptocurrency transactions are executed on the blockchain network and are irreversible. Transaction fees may vary depending on network conditions. Your Wallet cannot be held responsible for transfers to incorrect addresses or erroneous transactions."
+        },
+        "prohibited": {
+            "title": "6. Prohibited Uses",
+            "content": "It is strictly forbidden to use the application for illegal activities, money laundering, terrorism financing, or fraud. If such activities are detected, your account will be suspended and necessary legal actions will be initiated."
+        },
+        "intellectual": {
+            "title": "7. Intellectual Property Rights",
+            "content": "All intellectual property rights in the Application and its content belong to Your Wallet. Users may not reproduce, modify, or distribute the application except for personal use."
+        },
+        "liability": {
+            "title": "8. Limitation of Liability",
+            "content": "Your Wallet cannot be held responsible for direct or indirect losses, loss of profit, loss of data, or fluctuations in cryptocurrency values. We provide our services 'as is' and make no warranties."
+        },
+        "termination": {
+            "title": "9. Account Termination",
+            "content": "Your Wallet reserves the right to suspend or terminate your account at any time for any reason. You may also close your account at any time."
+        },
+        "law": {
+            "title": "10. Applicable Law",
+            "content": "This agreement is subject to the laws of the Republic of Turkey. In case of any dispute, the courts of the Republic of Turkey have jurisdiction."
+        },
+        "contact": {
+            "title": "11. Contact",
+            "content": "For any questions or concerns, you can contact us at hello@yourwallet.tr. Our 24/7 support line is available for emergencies."
         }
     },
     "support": {

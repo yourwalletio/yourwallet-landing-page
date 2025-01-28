@@ -50,7 +50,7 @@ export default function Page() {
           <p className="transition text-black font-inter dark:text-white text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem]">
             {t("contact.description")}
           </p>
-          <Link href="mailto:support@yourwallet.tr" className="text-red hover:before:bg-redborder-red-500 relative w-fit rounded-full px-8 py-[1.125rem] md:py-3 md:px-10 flex overflow-hidden border border-black bg-white text-black shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black dark:before:bg-[#477DE9] before:transition-all before:duration-500 hover:text-white hover:shadow-black hover:before:left-0 hover:before:w-full">
+          <Link href="mailto:hello@yourwallet.tr" className="text-red hover:before:bg-redborder-red-500 relative w-fit rounded-full px-8 py-[1.125rem] md:py-3 md:px-10 flex overflow-hidden border border-black bg-white text-black shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black dark:before:bg-[#477DE9] before:transition-all before:duration-500 hover:text-white hover:shadow-black hover:before:left-0 hover:before:w-full">
             <span className="relative z-10">{t("contact.button")}</span>
           </Link>
         </div>
