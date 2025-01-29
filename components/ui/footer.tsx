@@ -1,5 +1,5 @@
 import React from 'react'
-import { AndroidIcon, AppleIcon, EmailIcon, LinkedinIcon, RedditIcon, TelegramIcon, XIcon, YourWalletIcon } from './icons'
+import { AndroidIcon, AppleIcon, EmailIcon, GithubIcon, InstagramIcon, LinkedinIcon, RedditIcon, TelegramIcon, XIcon, YourWalletIcon } from './icons'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl';
 import { navigationLinks } from '@/constants/navigation';
@@ -14,35 +14,35 @@ export default function Footer() {
                 </h5>
                 <div className="mt-5 flex items-center gap-3 justify-center flex-wrap lg:flex-nowrap">
                     <Link
-                        href={"/"}
+                        href={"https://x.com/yourwallettr"}
                         rel="noopener noreferrer"
                         target="_blank"
                         className="transition flex items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white">
                         <XIcon />
                     </Link>
                     <Link
-                        href={"/"}
+                        href={"https://github.com/yourwallett"}
                         rel="noopener noreferrer"
                         target="_blank"
                         className="transition flex items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white">
-                        <RedditIcon />
+                        <GithubIcon />
                     </Link>
                     <Link
-                        href={"/"}
+                        href={"https://t.me/yourwallettr"}
                         rel="noopener noreferrer"
                         target="_blank"
                         className="transition flex items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white">
                         <TelegramIcon />
                     </Link>
                     <Link
-                        href={"/"}
+                        href={"https://www.instagram.com/yourwallettr"}
                         rel="noopener noreferrer"
                         target="_blank"
                         className="transition flex items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white">
-                        <LinkedinIcon />
+                        <InstagramIcon />
                     </Link>
                     <Link
-                        href={"/"}
+                        href={"mailto:hello@yourwallet.tr"}
                         rel="noopener noreferrer"
                         target="_blank"
                         className="transition flex items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white">
