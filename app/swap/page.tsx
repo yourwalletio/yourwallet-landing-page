@@ -1,20 +1,8 @@
 import React from 'react'
 import { useTranslations } from 'next-intl'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { ArrowDownIcon } from 'lucide-react'
 import Iphone15Pro from '@/components/ui/iphone-15-pro'
 import Link from 'next/link'
 
-export const metadata = {
-  title: 'Your Wallet - Takas',
-  description: 'Your Wallet ile kripto paralarınızı güvenli ve hızlı bir şekilde takas edin.',
-  openGraph: {
-    title: 'Your Wallet - Takas',
-    description: 'Your Wallet ile kripto paralarınızı güvenli ve hızlı bir şekilde takas edin.',
-    url: 'https://yourwallet.tr/swap',
-  },
-}
 
 export default function Page() {
   const t = useTranslations('swap')

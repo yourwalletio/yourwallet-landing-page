@@ -57,7 +57,7 @@ export default function Footer() {
                     </strong>
                     <nav className="mt-4 grid gap-2">
                         <Link
-                            href={"/"}
+                            href={"/download"}
                             className="transition items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white flex"
                         >
                             {t("home.footer.mobile_app")}
@@ -124,15 +124,15 @@ export default function Footer() {
                 </p>
                 <div className="flex flex-wrap gap-3 md:max-w-none ">
                     <Link
-                        href={"/"}
-                        className="px-5 py-2.5 h-9 transition relative z-10 overflow-hidden flex items-center justify-center gap-3 rounded-full text-center font-medium leading-[.9375rem] bg-transparent border dark:text-[#477DE9] dark:border-[#477DE9] text-[#8B1DB8] border-[#8B1DB8] | dark:hover:bg-[#477DE9] dark:hover:text-white hover:text-black hover:bg-[#8B1DB8] w-full !text-[13px] lg:w-fit"
+                        href={"/download"}
+                        className="px-5 py-2.5 h-9 transition relative z-10 overflow-hidden flex items-center justify-center gap-3 rounded-full text-center font-medium leading-[.9375rem] bg-transparent border dark:text-[#477DE9] dark:border-[#477DE9] text-[#8B1DB8] border-[#8B1DB8] | dark:hover:bg-[#477DE9] dark:hover:text-white hover:text-white hover:bg-[#8B1DB8] w-full !text-[13px] lg:w-fit"
                     >
                         {t("home.footer.download.ios")}
                         <AppleIcon />
                     </Link>
                     <Link
-                        href={"/"}
-                        className="px-5 py-2.5 h-9 transition relative z-10 overflow-hidden flex items-center justify-center gap-3 rounded-full text-center font-medium leading-[.9375rem] bg-transparent border dark:text-[#477DE9] dark:border-[#477DE9] text-[#8B1DB8] border-[#8B1DB8] | dark:hover:bg-[#477DE9] dark:hover:text-white hover:text-black hover:bg-[#8B1DB8] w-full !text-[13px] lg:w-fit"
+                        href={"/download"}
+                        className="px-5 py-2.5 h-9 transition relative z-10 overflow-hidden flex items-center justify-center gap-3 rounded-full text-center font-medium leading-[.9375rem] bg-transparent border dark:text-[#477DE9] dark:border-[#477DE9] text-[#8B1DB8] border-[#8B1DB8] | dark:hover:bg-[#477DE9] dark:hover:text-white hover:text-white hover:bg-[#8B1DB8] w-full !text-[13px] lg:w-fit"
                     >
                         {t("home.footer.download.android")}
                         <AndroidIcon />

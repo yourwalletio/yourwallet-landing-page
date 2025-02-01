@@ -23,9 +23,9 @@ const blockchainData = [
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('metadata')
-  
+
   return {
-    title: t('title'),
+    title: "Your Wallet",
     description: t('description'),
     openGraph: {
       title: t('title'),
@@ -70,7 +70,7 @@ export default function Home() {
               </Link>
             </Button>
             <div className="hidden gap-5 md:flex">
-              <button className="transition  flex h-[60px] cursor-pointer items-center gap-3 rounded-full border border-[#8B1DB8] px-6 text-left text-[#8B1DB8] hover:bg-[#8B1DB8] hover:!text-white dark:border-[#477DE9] dark:text-[#477DE9] dark:hover:bg-[#477DE9] dark:hover:!text-black">
+              <Link href={"/download"} className="transition  flex h-[60px] cursor-pointer items-center gap-3 rounded-full border border-[#8B1DB8] px-6 text-left text-[#8B1DB8] hover:bg-[#8B1DB8] hover:!text-white dark:border-[#477DE9] dark:text-[#477DE9] dark:hover:bg-[#477DE9] dark:hover:!text-black">
                 <svg width={24} height={38} viewBox="0 0 24 38" fill="none">
                   <rect x="1.11502" y="1.42361" width="21.855" height="35.5365" rx="3.76845" style={{ stroke: 'currentcolor' }} strokeWidth="1.50738" />
                   <rect x="7.69141" y="32.7539" width="8.49887" height="1.59374" style={{ fill: 'currentcolor' }} />
@@ -84,7 +84,7 @@ export default function Home() {
                     {t('download.mobile_app')}
                   </span>
                 </div>
-              </button>
+              </Link>
             </div>
           </div>
           <div className="relative flex items-center justify-center">
@@ -208,7 +208,7 @@ export default function Home() {
                 <h3 className="transition text-black font-bold dark:text-white text-[1.625rem] leading-[2rem] md:text-[1.875rem] md:leading-[2.0625rem] max-w-[18ch]">{t("home.simple.deposit.title")}</h3>
                 <p className="transition text-black font-inter dark:text-white text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] my-5 max-w-[40ch]">{t("home.simple.deposit.description")}</p>
                 <Button asChild variant={"outline"} className="px-8 py-[1.75rem] md:py-5 md:px-10  border-[#8B1DB8] dark:border-[#477DE9] dark:hover:text-white text-[#8B1DB8] dark:text-[#477DE9] hover:bg-[#8B1DB8] dark:hover:bg-[#477DE9] hover:text-white  rounded-full text-[15px] ">
-                  <Link href={"/"}>
+                  <Link href={"/swap"}>
                     {t("home.simple.deposit.cta")}
                   </Link>
                 </Button>
@@ -236,7 +236,7 @@ export default function Home() {
                 <h3 className="transition text-black font-bold dark:text-white text-[1.625rem] leading-[2rem] md:text-[1.875rem] md:leading-[2.0625rem] max-w-[18ch]">{t("home.security.ownership.title")}</h3>
                 <p className="transition text-black font-inter dark:text-white text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] my-5 max-w-[40ch]">{t("home.security.ownership.description")}</p>
                 <Button asChild variant={"default"} className="px-8 py-[1.75rem] md:py-5 md:px-10 bg-[#8B1DB8] dark:bg-[#477DE9] hover:bg-[#477DE9] dark:hover:bg-[#8B1DB8] text-white rounded-full text-[15px] ">
-                  <Link href={"/"}>
+                  <Link href={"/download"}>
                     {t("home.security.ownership.cta")}
                   </Link>
                 </Button>
@@ -274,9 +274,11 @@ export default function Home() {
               </li>
             </ul>
 
-            <button className="text-red hover:before:bg-redborder-red-500 relative w-fit rounded-full  px-8 py-[1.125rem] md:py-3 md:px-10 mx-auto mt-10 flex  overflow-hidden border border-black bg-white text-black shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:shadow-black hover:before:left-0 hover:before:w-full">
-              <span className="relative z-10">{t("home.security.learn_more")}</span>
-            </button>
+            <Link href={"/support"}>
+              <button className="text-red hover:before:bg-redborder-red-500 relative w-fit rounded-full  px-8 py-[1.125rem] md:py-3 md:px-10 mx-auto mt-10 flex  overflow-hidden border border-black bg-white text-black shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:shadow-black hover:before:left-0 hover:before:w-full">
+                <span className="relative z-10">{t("home.security.learn_more")}</span>
+              </button>
+            </Link>
 
           </div>
         </section>
@@ -289,9 +291,11 @@ export default function Home() {
             <p className="transition text-black font-inter dark:text-white text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem]">
               {t("home.web3.description")}
             </p>
-            <button className="text-red hover:before:bg-redborder-red-500 relative w-fit rounded-full  px-8 py-[1.125rem] md:py-3 md:px-10   flex  overflow-hidden border border-black bg-white text-black shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black dark:before:bg-[#477DE9] before:transition-all before:duration-500 hover:text-white   hover:shadow-black hover:before:left-0 hover:before:w-full">
-              <span className="relative z-10">{t("home.web3.cta")}</span>
-            </button>
+            <Link href={"/download"}>
+              <button className="text-red hover:before:bg-redborder-red-500 relative w-fit rounded-full  px-8 py-[1.125rem] md:py-3 md:px-10   flex  overflow-hidden border border-black bg-white text-black shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black dark:before:bg-[#477DE9] before:transition-all before:duration-500 hover:text-white   hover:shadow-black hover:before:left-0 hover:before:w-full">
+                <span className="relative z-10">{t("home.web3.cta")}</span>
+              </button>
+            </Link>
           </div>
           <div className="transition hidden overflow-hidden rounded-[20px] border border-blue-500 bg-[#171717] [transition-property:border-color] dark:border-white md:flex md:justify-center md:rounded-[30px]">
             <video
@@ -314,9 +318,11 @@ export default function Home() {
             <p className="transition font-inter text-white text-[1.125rem] leading-[1.625rem] md:text-[1.125rem] md:leading-[1.625rem] mt-6 max-w-[35ch]">
               {t("home.your.description")}
             </p>
-            <button className="text-red hover:before:bg-redborder-red-500 relative w-fit rounded-full  px-8 py-[1.125rem] md:py-3 md:px-10   flex  overflow-hidden border border-black hover:border-white bg-white text-black shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black dark:before:bg-[#8B1DB8] before:transition-all before:duration-500 hover:text-white   hover:shadow-black hover:before:left-0 hover:before:w-full mt-6">
-              <span className="relative z-10">{t("home.your.cta")}</span>
-            </button>
+            <Link href={"/download"}>
+              <button className="text-red hover:before:bg-redborder-red-500 relative w-fit rounded-full  px-8 py-[1.125rem] md:py-3 md:px-10   flex  overflow-hidden border border-black hover:border-white bg-white text-black shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black dark:before:bg-[#8B1DB8] before:transition-all before:duration-500 hover:text-white   hover:shadow-black hover:before:left-0 hover:before:w-full mt-6">
+                <span className="relative z-10">{t("home.your.cta")}</span>
+              </button>
+            </Link>
           </div>
           <span className="mx-auto md:mx-[unset]">
             <img alt="Blue Shield" loading="lazy" width={137} height={189} decoding="async" data-nimg={1} className="h-auto w-[200px] md:w-[220px]" style={{ color: 'transparent' }} src="/trust-graphic.svg" />
@@ -325,7 +331,7 @@ export default function Home() {
         </section>
 
       </main>
-      
+
     </>
   );
 }
