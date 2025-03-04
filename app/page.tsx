@@ -207,7 +207,7 @@ export default function Home() {
               <div>
                 <h3 className="transition text-black font-bold dark:text-white text-[1.625rem] leading-[2rem] md:text-[1.875rem] md:leading-[2.0625rem] max-w-[18ch]">{t("home.simple.deposit.title")}</h3>
                 <p className="transition text-black font-inter dark:text-white text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] my-5 max-w-[40ch]">{t("home.simple.deposit.description")}</p>
-                <Button asChild variant={"outline"} className="px-8 py-[1.75rem] md:py-5 md:px-10  border-[#8B1DB8] dark:border-[#477DE9] dark:hover:text-white text-[#8B1DB8] dark:text-[#477DE9] hover:bg-[#8B1DB8] dark:hover:bg-[#477DE9] hover:text-white  rounded-full text-[15px] ">
+                <Button asChild variant={"outline"} className="px-8 py-[1.75rem] md:py-5 md:px-10  border-[#8B1DB8] dark:border-[#477DE9] dark:hover:text-white text-[#8B1DB8] dark:text-[#477DE9] hover:bg-[#8B1DB8] dark:hover:bg-[#477DE9] hover:text-white  rounded-full text-sm md:text-[15px] ">
                   <Link href={"/swap"}>
                     {t("home.simple.deposit.cta")}
                   </Link>

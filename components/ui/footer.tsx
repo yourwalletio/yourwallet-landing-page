@@ -3,6 +3,7 @@ import { AndroidIcon, AppleIcon, EmailIcon, GithubIcon, InstagramIcon, LinkedinI
 import Link from 'next/link'
 import { useTranslations } from 'next-intl';
 import { navigationLinks } from '@/constants/navigation';
+import { Github, Instagram, Mail, Send, Twitter } from 'lucide-react';
 
 export default function Footer() {
     const t = useTranslations();
@@ -18,35 +19,35 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         target="_blank"
                         className="transition flex items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white">
-                        <XIcon />
+                        <Twitter color='#8B1DB8'/>
                     </Link>
                     <Link
                         href={"https://github.com/yourwallett"}
                         rel="noopener noreferrer"
                         target="_blank"
                         className="transition flex items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white">
-                        <GithubIcon />
+                        <Github color='#8B1DB8' />
                     </Link>
                     <Link
                         href={"https://t.me/yourwallettr"}
                         rel="noopener noreferrer"
                         target="_blank"
                         className="transition flex items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white">
-                        <TelegramIcon />
+                        <Send color='#8B1DB8' />
                     </Link>
                     <Link
                         href={"https://www.instagram.com/yourwallettr"}
                         rel="noopener noreferrer"
                         target="_blank"
                         className="transition flex items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white">
-                        <InstagramIcon />
+                        <Instagram color='#8B1DB8' />
                     </Link>
                     <Link
                         href={"mailto:hello@yourwallet.tr"}
                         rel="noopener noreferrer"
                         target="_blank"
                         className="transition flex items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white">
-                        <EmailIcon />
+                        <Mail color='#8B1DB8' />
                     </Link>
                 </div>
             </div>
