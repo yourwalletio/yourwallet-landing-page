@@ -1,9 +1,9 @@
 import React from 'react'
-import { AndroidIcon, AppleIcon, EmailIcon, GithubIcon, InstagramIcon, LinkedinIcon, RedditIcon, TelegramIcon, XIcon, YourWalletIcon } from './icons'
+import { AndroidIcon, AppleIcon, YourWalletIcon } from './icons'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl';
 import { navigationLinks } from '@/constants/navigation';
-import { Github, Instagram, Mail, Send, Twitter } from 'lucide-react';
+import { Github, Instagram, Mail, Send, Twitter, X } from 'lucide-react';
 
 export default function Footer() {
     const t = useTranslations();
@@ -19,35 +19,35 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         target="_blank"
                         className="transition flex items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white">
-                        <Twitter color='#8B1DB8'/>
+                        <img src="/icons/twitter.svg" alt="Twitter" className='w-6 h-6' />
                     </Link>
                     <Link
                         href={"https://github.com/yourwallett"}
                         rel="noopener noreferrer"
                         target="_blank"
                         className="transition flex items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white">
-                        <Github color='#8B1DB8' />
+                        <img src="/icons/github.svg" alt="Github" className='w-6 h-6' />
                     </Link>
                     <Link
                         href={"https://t.me/yourwallettr"}
                         rel="noopener noreferrer"
                         target="_blank"
                         className="transition flex items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white">
-                        <Send color='#8B1DB8' />
+                        <img src="/icons/telegram.svg" alt="Telegram" className='w-6 h-6' />
                     </Link>
                     <Link
                         href={"https://www.instagram.com/yourwallettr"}
                         rel="noopener noreferrer"
                         target="_blank"
                         className="transition flex items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white">
-                        <Instagram color='#8B1DB8' />
+                        <img src="/icons/instagram.svg" alt="Instagram" className='w-6 h-6 ' />
                     </Link>
                     <Link
                         href={"mailto:hello@yourwallet.tr"}
                         rel="noopener noreferrer"
                         target="_blank"
                         className="transition flex items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white">
-                        <Mail color='#8B1DB8' />
+                        <img src="/icons/mail.svg" alt="Mail" className='w-6 h-6 ' />
                     </Link>
                 </div>
             </div>
@@ -144,5 +144,15 @@ export default function Footer() {
                 <YourWalletIcon className="md:mr-24 h-auto w-[180px]" />
             </div>
         </footer>
+    )
+}
+
+
+
+const XIcon = ({ size = 24, color = '#8B1DB8' }: { size?: number, color?: string }) => {
+    return (
+        <svg height={size} width={size} className='mx-0 px-0' xmlns="http://www.w3.org/2000/svg" clipRule="evenodd" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit={2} viewBox="0 0 560 400">
+            <path d="m178.57 127.15 111.7-127.15h-26.46l-97.03 110.38-77.44-110.38h-89.34l117.13 166.93-117.13 133.32h26.46l102.4-116.59 81.8 116.59h89.34m-263.99-280.71h40.65l187.13 262.13h-40.66" fillRule="nonzero" fill={color} transform="matrix(.9 0 0 .9 145 64.8875)" />
+        </svg>
     )
 }

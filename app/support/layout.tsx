@@ -11,6 +11,13 @@ export async function generateMetadata(): Promise<Metadata> {
       title: t('title'),
       description: t('description'),
       url: 'https://yourwallet.tr/support',
+      images: [
+        {
+          url: 'https://yourwallet.tr/preview.png',
+          width: 1200,
+          height: 630,
+        },
+      ],
     },
   }
 }
