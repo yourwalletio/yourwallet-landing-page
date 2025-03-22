@@ -5,12 +5,85 @@ import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
+import { CardSpotlight } from "@/components/ui/card-spotlight";
 
 const blockchainData = [
   {
+    name: "Bitcoin (BTC)",
+    symbol: "BTC",
+    logo: "/network/btc.webp",
+    features: {
+      buy: true,
+      sell: true,
+      swap: true,
+      earn: false,
+      dapps: false
+    }
+  },
+  {
+    name: "Terra (LUNA)",
+    symbol: "LUNA",
+    logo: "/network/terra.webp",
+    features: {
+      buy: true,
+      sell: true,
+      swap: true,
+      earn: true,
+      dapps: true
+    }
+  },
+  {
+    name: "Binance Smart Chain (BSC)",
+    symbol: "BSC",
+    logo: "/network/bsc.webp",
+    features: {
+      buy: true,
+      sell: true,
+      swap: true,
+      earn: true,
+      dapps: true
+    }
+  },
+  {
+    name: "Sui (SUI)",
+    symbol: "SUI",
+    logo: "/network/sui.webp",
+    features: {
+      buy: true,
+      sell: true,
+      swap: true,
+      earn: true,
+      dapps: true
+    }
+  },
+  {
+    name: "Ethereum (ETH)",
+    symbol: "ETH",
+    logo: "/network/eth.webp",
+    features: {
+      buy: true,
+      sell: true,
+      swap: true,
+      earn: true,
+      dapps: true
+    }
+  },
+  {
+    name: "Avalanche (AVAX)",
+    symbol: "AVAX",
+    logo: "/network/avax.webp",
+    features: {
+      buy: true,
+      sell: true,
+      swap: true,
+      earn: true,
+      dapps: true
+    }
+  },
+  {
     name: "Solana (SOL)",
     symbol: "SOL",
-    logo: "/solana-logo.avif",
+    logo: "/network/sol.webp",
     features: {
       buy: true,
       sell: true,
@@ -151,7 +224,7 @@ export default function Home() {
                   {blockchainData.map((chain, index) => (
                     <li key={index} className="flex flex-col md:flex-row md:items-center">
                       <div className="flex items-center gap-5">
-                        <Image alt={chain.symbol} src={chain.logo} width={45} height={45} className="rounded-full" />
+                        <Image alt={chain.symbol} src={chain.logo} width={45} height={45} className="rounded-full h-10 w-10" />
                         <span className="transition font-inter dark:text-white text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] inline-block !text-black !opacity-100">
                           {chain.name}
                         </span>
@@ -244,8 +317,36 @@ export default function Home() {
               <img alt="Blue Shield" loading="lazy" width={284} height={249} decoding="async" data-nimg={1} className="mx-auto h-auto w-full max-w-[380px]" src="/collect-illustration.svg" style={{ color: 'transparent' }} />
 
             </div>
-            <ul className="mx-auto mt-6 flex max-w-[1200px] flex-wrap items-stretch justify-center gap-6">
-              <li className="transition rounded-[20px] p-5 [transition-property:background-color,border-color] lg:rounded-[30px] lg:p-8  border border-[#8B1DB8] dark:border-[#477DE9] bg-white dark:bg-[#1b1b1c] grid w-full min-w-[250px] flex-1 gap-10 md:max-w-[510px] lg:max-w-none">
+            <div className="mx-auto mt-6 flex max-w-[1200px] flex-wrap items-stretch justify-center gap-6">
+
+              <CardSpotlight className="h-auto w-80    rounded-3xl md:rounded-[30px]   flex-1  flex-col items-center justify-between  ">
+                <h4 className="transition font-bold text-white text-[1.375rem] leading-[1.875rem] md:text-[1.5625rem] md:leading-[1.6875rem]  relative z-20">
+                  {t("home.security.features.encryption.title")}
+                </h4>
+                <img src="/check-graphic.svg" alt="" className="m-auto h-[160px] w-auto md:h-[130px]  relative z-20 mt-10" />
+                <p className=" mt-10 transition font-inter text-start text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.625rem]  text-white  relative z-20">
+                  {t("home.security.features.encryption.description")}
+                </p>
+              </CardSpotlight>
+              <CardSpotlight className="h-auto w-80    rounded-3xl md:rounded-[30px]   flex-1  flex-col items-center justify-between  ">
+                <h4 className=" relative z-20 transition font-bold text-white text-[1.375rem] leading-[1.875rem] md:text-[1.5625rem] md:leading-[1.6875rem]">
+                  {t("home.security.features.tracking.title")}
+                </h4>
+                <img src="/stream-graphic.svg" alt="" className=" relative z-20 m-auto h-[160px] w-auto md:h-[130px] mt-10" />
+                <p className=" relative z-20 mt-10 transition font-inter text-start text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.625rem]  text-white ">
+                  {t("home.security.features.tracking.description")}
+                </p>
+              </CardSpotlight>
+              <CardSpotlight className="h-auto w-80    rounded-3xl md:rounded-[30px]   flex-1  flex-col items-center justify-between  ">
+                <h4 className=" relative z-20 transition font-bold text-white text-[1.375rem] leading-[1.875rem] md:text-[1.5625rem] md:leading-[1.6875rem]">
+                  {t("home.security.features.alerts.title")}
+                </h4>
+                <img src="/archive-graphic.svg" alt="" className=" relative z-20 m-auto h-[160px] w-auto md:h-[130px] mt-10" />
+                <p className=" relative z-20 mt-10 transition font-inter text-start text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.625rem]  text-white ">
+                  {t("home.security.features.alerts.description")}
+                </p>
+              </CardSpotlight>
+              {/* <li className="transition rounded-[20px] p-5 [transition-property:background-color,border-color] lg:rounded-[30px] lg:p-8  border border-[#8B1DB8] dark:border-[#477DE9] bg-white dark:bg-[#1b1b1c] grid w-full min-w-[250px] flex-1 gap-10 md:max-w-[510px] lg:max-w-none">
                 <h4 className="transition text-black font-bold dark:text-white text-[1.375rem] leading-[1.875rem] md:text-[1.5625rem] md:leading-[1.6875rem]">
                   {t("home.security.features.encryption.title")}
                 </h4>
@@ -253,8 +354,8 @@ export default function Home() {
                 <p className="transition font-inter text-start text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.625rem]  text-black dark:text-white ">
                   {t("home.security.features.encryption.description")}
                 </p>
-              </li>
-              <li className="transition rounded-[20px] p-5 [transition-property:background-color,border-color] lg:rounded-[30px] lg:p-8  border border-[#8B1DB8] dark:border-[#477DE9] bg-white dark:bg-[#1b1b1c] grid w-full min-w-[250px] flex-1 gap-10 md:max-w-[510px] lg:max-w-none">
+              </li> */}
+              {/* <li className="transition rounded-[20px] p-5 [transition-property:background-color,border-color] lg:rounded-[30px] lg:p-8  border border-[#8B1DB8] dark:border-[#477DE9] bg-white dark:bg-[#1b1b1c] grid w-full min-w-[250px] flex-1 gap-10 md:max-w-[510px] lg:max-w-none">
                 <h4 className="transition text-black font-bold dark:text-white text-[1.375rem] leading-[1.875rem] md:text-[1.5625rem] md:leading-[1.6875rem]">
                   {t("home.security.features.tracking.title")}
                 </h4>
@@ -271,8 +372,8 @@ export default function Home() {
                 <p className="transition font-inter text-start text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.625rem]  text-black dark:text-white ">
                   {t("home.security.features.alerts.description")}
                 </p>
-              </li>
-            </ul>
+              </li> */}
+            </div>
 
             <Link href={"/support"}>
               <button className="text-red hover:before:bg-redborder-red-500 relative w-fit rounded-full  px-8 py-[1.125rem] md:py-3 md:px-10 mx-auto mt-10 flex  overflow-hidden border border-black bg-white text-black shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:shadow-black hover:before:left-0 hover:before:w-full">

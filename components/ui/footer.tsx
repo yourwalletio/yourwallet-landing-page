@@ -26,7 +26,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         target="_blank"
                         className="transition flex items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white">
-                        <img src="/icons/github.svg" alt="Github" className='w-6 h-6' />
+                        <img src="/icons/github.svg" alt="Github" className='w-8 h-8' />
                     </Link>
                     <Link
                         href={"https://t.me/yourwallettr"}
@@ -47,7 +47,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         target="_blank"
                         className="transition flex items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white">
-                        <img src="/icons/mail.svg" alt="Mail" className='w-6 h-6 ' />
+                        <img src="/icons/mail.svg" alt="Mail" className='w-7 h-7 ' />
                     </Link>
                 </div>
             </div>
