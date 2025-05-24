@@ -111,6 +111,10 @@
             },
             "wallet": "Wallet",
             "mobile_app": "Mobile App"
+        },
+        "partnerships": {
+            "title": "Our Trusted Partners",
+            "description": "We work with leading institutions in the industry to shape your financial future."
         }
     },
     "metadata": {
@@ -396,6 +400,297 @@
             "title": "Get in Touch",
             "description": "We're here for your questions or suggestions.",
             "cta": "Go to Support Page"
+        }
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "description": "Find answers to all your questions about Your Wallet here. If you can't find the answer you're looking for, don't hesitate to contact our support team.",
+        "search_placeholder": "Search questions...",
+        "categories": {
+            "all": "All",
+            "general": "General",
+            "security": "Security",
+            "payment": "Payments",
+            "crypto": "Crypto"
+        },
+        "support_section": {
+            "live_support": {
+                "title": "Live Support",
+                "description": "Chat with our 24/7 technical support team",
+                "cta": "Get Support"
+            },
+            "user_guide": {
+                "title": "User Guide",
+                "description": "Check our detailed usage guide",
+                "cta": "Go to Guide"
+            }
+        },
+        "general": [
+            {
+                "question": "What is Your Wallet?",
+                "answer": "Your Wallet is a mobile wallet application that allows you to securely manage your crypto assets. With its user-friendly interface and advanced security features, you can easily control your digital assets."
+            },
+            {
+                "question": "How can I download Your Wallet?",
+                "answer": "You can download the Your Wallet app for free from the App Store or Google Play Store. After installation, you can create your wallet in a few simple steps."
+            },
+            {
+                "question": "Which languages does Your Wallet support?",
+                "answer": "Your Wallet currently supports Turkish, English, Spanish, French, German, Russian, Chinese, and Japanese. Language options are updated regularly."
+            },
+            {
+                "question": "Is there a fee to use the app?",
+                "answer": "Downloading and using Your Wallet is free. You only pay network (gas) fees when performing transactions on blockchain networks."
+            },
+            {
+                "question": "How can I get technical support?",
+                "answer": "You can reach our technical support team 24/7 via the in-app support section or at hello@yourwallet.com."
+            }
+        ],
+        "security": [
+            {
+                "question": "How secure is my wallet?",
+                "answer": "Your Wallet uses the latest security standards. Your private keys are encrypted and stored on your device. It also offers biometric authentication and PIN protection for additional security."
+            },
+            {
+                "question": "What should I do if I forget my password?",
+                "answer": "It is important to keep your recovery phrase (12 or 24 words) in a safe place when creating your wallet. These words allow you to regain access if you forget your password."
+            },
+            {
+                "question": "How do I enable two-factor authentication?",
+                "answer": "Go to Settings > Security > Two-Factor Authentication to enable 2FA. You can choose from SMS, email, or an authenticator app."
+            },
+            {
+                "question": "How can I move my wallet to another device?",
+                "answer": "After installing Your Wallet on your new device, use the 'Import Existing Wallet' option and enter your 12 or 24-word recovery phrase."
+            },
+            {
+                "question": "How do I report fraud attempts?",
+                "answer": "You can report suspicious activities or fraud attempts to hello@yourwallet.com or through the in-app security report section."
+            }
+        ],
+        "payment": [
+            {
+                "question": "How are transaction fees determined?",
+                "answer": "Transaction fees (gas fees) are dynamically calculated based on the network congestion. Your Wallet offers low, medium, and high priority fee options."
+            },
+            {
+                "question": "What payment methods are supported?",
+                "answer": "You can buy with credit/debit cards, bank transfers, and other cryptocurrencies. Supported payment methods may vary by country."
+            },
+            {
+                "question": "What are the daily transaction limits?",
+                "answer": "New accounts have a daily limit of 1000 USD. You can increase this limit by verifying your identity. For users who complete the KYC process, the limit can go up to 50,000 USD."
+            },
+            {
+                "question": "Can I cancel a pending transaction?",
+                "answer": "Transactions already sent to the blockchain cannot be canceled. However, you can cancel transactions that are not yet broadcast. Some networks may charge an additional fee for speeding up or canceling transactions."
+            },
+            {
+                "question": "How long does a withdrawal take?",
+                "answer": "Crypto withdrawals depend on blockchain confirmation times. Fiat withdrawals may take 1–5 business days depending on your bank and payment method."
+            }
+        ],
+        "crypto": [
+            {
+                "question": "Which cryptocurrencies are supported?",
+                "answer": "Your Wallet currently supports Bitcoin, Ethereum, BNB, and other popular cryptocurrencies. The list of supported coins is updated regularly."
+            },
+            {
+                "question": "How does staking work?",
+                "answer": "You can earn passive income by staking eligible cryptocurrencies. The staking period and return rate vary depending on the asset. Minimum staking amounts differ by token."
+            },
+            {
+                "question": "How can I manage my NFTs?",
+                "answer": "You can view, send, and receive your NFTs under the 'Collections' tab. Your Wallet supports NFTs in ERC-721 and ERC-1155 standards."
+            },
+            {
+                "question": "How do I perform a token swap?",
+                "answer": "With the Swap feature, you can convert different cryptocurrencies. Prices are fetched from multiple DEXs to provide the most favorable rate."
+            },
+            {
+                "question": "How do I connect to Web3 applications?",
+                "answer": "You can securely connect to Web3 apps through the DApp Browser. Your Wallet also supports connections via the WalletConnect protocol."
+            }
+        ]
+    },
+    "user_guide": {
+        "title": "User Guide",
+        "description": "Detailed guide to use Your Wallet app most efficiently",
+        "quick_links": {
+            "download": {
+                "title": "Download App",
+                "description": "Download Your Wallet from App Store or Google Play now",
+                "cta": "Go to Download"
+            },
+            "videos": {
+                "title": "Video Tutorials",
+                "description": "Watch our step-by-step video guides",
+                "cta": "Go to Videos"
+            }
+        },
+        "video_section": {
+            "title": "Video Tutorials",
+            "videos":  "Video 1: Getting Started Guide | Video 2: Advanced Features"
+        },
+        "guides": {
+            "getting_started": {
+                "title": "Getting Started",
+                "sections": {
+                    "account_creation": {
+                        "subtitle": "Account Creation",
+                        "content": "1. Download Your Wallet from App Store or Google Play\n2. Select 'Create New Wallet'\n3. Set a secure PIN code\n4. Securely note down your recovery phrase\n5. Verify your recovery phrase"
+                    },
+                    "security_settings": {
+                        "subtitle": "Security Settings",
+                        "content": "1. Enable biometric authentication\n2. Set up two-factor authentication\n3. Choose a secure PIN code"
+                    }
+                }
+            },
+            "basic_features": {
+                "title": "Basic Features",
+                "sections": {
+                    "view_assets": {
+                        "subtitle": "View Your Assets",
+                        "content": "On the home screen, you can view all your crypto assets and total portfolio value. Click on any asset for detailed information."
+                    },
+                    "send_crypto": {
+                        "subtitle": "Send Crypto",
+                        "content": "1. Click 'Send' on the home screen\n2. Select the crypto you want to send\n3. Enter recipient address or scan QR code\n4. Set amount and network fee\n5. Confirm the transaction"
+                    },
+                    "receive_crypto": {
+                        "subtitle": "Receive Crypto",
+                        "content": "1. Click 'Receive'\n2. Select desired cryptocurrency\n3. Share your wallet address or QR code"
+                    }
+                }
+            },
+            "advanced_features": {
+                "title": "Advanced Features",
+                "sections": {
+                    "token_swap": {
+                        "subtitle": "Token Swap",
+                        "content": "1. Go to 'Swap' tab\n2. Select tokens you want to exchange\n3. Set amount\n4. Choose best rate\n5. Confirm transaction"
+                    },
+                    "nft_management": {
+                        "subtitle": "NFT Management",
+                        "content": "You can view, send and receive your NFT collection from the 'NFT' tab."
+                    },
+                    "transaction_history": {
+                        "subtitle": "Transaction History",
+                        "content": "You can view and filter all your transaction history from the 'Transactions' tab."
+                    }
+                }
+            }
+        }
+    },
+    "security_tips": {
+        "title": "Security Tips",
+        "subtitle": "Essential information to keep your digital assets safe",
+        "card_titles": {
+            "checklist": "Security Checklist",
+            "faq": "Security FAQ"
+        },
+        "card_descriptions": {
+            "checklist": "Check your wallet security step by step",
+            "faq": "Review frequently asked security questions"
+        },
+        "tips": {
+            "recovery_phrase": {
+                "title": "Protect Your Recovery Phrase",
+                "description": "Your recovery phrase (seed phrase) is the key to your wallet. Never store it digitally, take photos of it, or share it with anyone. Keep it physically in a secure location.",
+                "tips": "Engrave it on a metal plate for safekeeping|Back it up in multiple secure locations|Ensure you've correctly noted the word order"
+            },
+            "strong_password": {
+                "title": "Use Strong Passwords",
+                "description": "Use strong combinations for your wallet PIN and app password. Avoid simple, predictable passwords.",
+                "tips": "Should be at least 4 or 6 characters long|Include numbers, uppercase/lowercase letters and special characters|Don't use predictable information like birth dates"
+            },
+            "device_security": {
+                "title": "Device Security",
+                "description": "Your device's overall security is critical for your wallet's safety. Always keep your device updated and secure.",
+                "tips": "Keep the operating system updated|Don't install untrusted applications|Use screen lock|Enable biometric authentication"
+            },
+            "privacy_settings": {
+                "title": "Privacy & Security Settings",
+                "description": "Actively use all security features offered by Your Wallet and review them regularly.",
+                "tips": "Enable two-factor authentication (2FA)|Use additional verification for large transactions|Set transaction limits|Avoid connecting to untrusted networks"
+            },
+            "fraud_prevention": {
+                "title": "Beware of Scams",
+                "description": "Crypto scams are common. Always be cautious about suspicious transactions and offers.",
+                "tips": "Never share your private keys with anyone|Don't click on unverified links|Stay away from suspicious token offers|Your Wallet team will never ask for your private information"
+            },
+            "backup_recovery": {
+                "title": "Backup & Recovery",
+                "description": "Back up regularly and test recovery procedures in advance. Be prepared for emergencies.",
+                "tips": "Regularly check your recovery phrase|Create an emergency access plan|Perform small test transfers before important transactions|Regularly review wallet backup procedures"
+            }
+        },
+        "security_notice": {
+            "title": "Important Security Notice",
+            "content": "Your Wallet team will never ask for your private keys, recovery phrase or PIN code. You can report suspicious situations to hello@yourwallet.com for your security."
+        },
+        "cta": {
+            "go_to": "Go to Checklist",
+            "go_to_faq": "Go to FAQ"
+        },
+        "sections": {
+            "basics": {
+                "title": "Basic Security",
+                "tips": [
+                    {
+                        "title": "Strong Password Usage",
+                        "description": "Create passwords with at least 12 characters containing mixed characters"
+                    },
+                    {
+                        "title": "Two-Factor Authentication",
+                        "description": "Enable 2FA to protect your account"
+                    },
+                    {
+                        "title": "Backup",
+                        "description": "Store your recovery phrase in a secure location"
+                    }
+                ]
+            },
+            "transactions": {
+                "title": "Transaction Security",
+                "tips": [
+                    {
+                        "title": "Address Verification",
+                        "description": "Double-check the address before sending"
+                    },
+                    {
+                        "title": "Test Transaction",
+                        "description": "Perform a small test before large transfers"
+                    },
+                    {
+                        "title": "Suspicious Links",
+                        "description": "Don't click on links from unknown sources"
+                    }
+                ]
+            },
+            "device": {
+                "title": "Device Security",
+                "tips": [
+                    {
+                        "title": "Updated Software",
+                        "description": "Keep your OS and app updated"
+                    },
+                    {
+                        "title": "Secure Network",
+                        "description": "Use trusted Wi-Fi networks"
+                    },
+                    {
+                        "title": "Device Lock",
+                        "description": "Use biometric lock or PIN"
+                    }
+                ]
+            }
+        },
+        "emergency": {
+            "title": "Emergencies",
+            "contact": "24/7 Security Support",
+            "report": "Report Suspicious Activity"
         }
     }
 }

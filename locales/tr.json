@@ -111,6 +111,10 @@
             },
             "wallet": "Cüzdan",
             "mobile_app": "Mobil Uygulama"
+        },
+        "partnerships": {
+            "title": "Güvenilir Ortaklarımız",
+            "description": "Finansal geleceğinizi şekillendirmek için sektörün önde gelen kurumlarıyla çalışıyoruz."
         }
     },
     "metadata": {
@@ -384,6 +388,299 @@
             "title": "Bizimle İletişime Geçin",
             "description": "Sorularınız veya önerileriniz için her zaman buradayız.",
             "cta": "Destek Sayfasına Git"
+        }
+    },
+    "faq": {
+        "title": "Sıkça Sorulan Sorular",
+        "description": "Your Wallet hakkında merak ettiğiniz tüm soruların cevaplarını burada bulabilirsiniz. Eğer aradığınız cevabı bulamazsanız, destek ekibimizle iletişime geçmekten çekinmeyin.",
+        "search_placeholder": "Soru ara...",
+        "categories": {
+            "all": "Tümü",
+            "general": "Genel",
+            "security": "Güvenlik",
+            "payment": "Ödemeler",
+            "crypto": "Kripto"
+        },
+        "support_section": {
+            "live_support": {
+                "title": "Canlı Destek",
+                "description": "7/24 teknik destek ekibimizle görüşün",
+                "cta": "Destek Al"
+            },
+            "user_guide": {
+                "title": "Kullanım Kılavuzu",
+                "description": "Detaylı kullanım rehberimizi inceleyin",
+                "cta": "Kılavuza Git"
+            }
+        },
+        "general": [
+            {
+                "question": "Your Wallet nedir?",
+                "answer": "Your Wallet, kripto varlıklarınızı güvenle yönetmenizi sağlayan bir mobil cüzdan uygulamasıdır. Kullanıcı dostu arayüzü ve gelişmiş güvenlik özellikleriyle kripto varlıklarınızı kolayca kontrol edebilirsiniz."
+            },
+            {
+                "question": "Your Wallet'ı nasıl indirebilirim?",
+                "answer": "Your Wallet uygulamasını App Store veya Google Play Store üzerinden ücretsiz olarak indirebilirsiniz. Uygulama kurulumu sonrası birkaç basit adımla cüzdanınızı oluşturabilirsiniz."
+            },
+            {
+                "question": "Your Wallet hangi dilleri destekliyor?",
+                "answer": "Your Wallet şu anda Türkçe, İngilizce, İspanyolca, Fransızca, Almanca, Rusça, Çince ve Japonca dillerini desteklemektedir. Dil seçenekleri düzenli olarak güncellenmektedir."
+            },
+            {
+                "question": "Uygulama ücreti var mı?",
+                "answer": "Your Wallet uygulamasını indirmek ve kullanmak ücretsizdir. Sadece blockchain ağlarında yapacağınız işlemler için ağ ücreti (gas fee) ödemeniz gerekir."
+            },
+            {
+                "question": "Teknik destek nasıl alabilirim?",
+                "answer": "Uygulama içi destek bölümünden veya hello@yourwallet.com adresinden 7/24 teknik destek ekibimize ulaşabilirsiniz."
+            }
+        ],
+        "security": [
+            {
+                "question": "Cüzdanım ne kadar güvenli?",
+                "answer": "Your Wallet, en son güvenlik standartlarını kullanır. Özel anahtarlarınız cihazınızda şifrelenmiş olarak saklanır, biyometrik kimlik doğrulama ve PIN koruması gibi ek güvenlik önlemleri sunar."
+            },
+            {
+                "question": "Şifremi unutursam ne yapmalıyım?",
+                "answer": "Cüzdanınızı oluştururken size verilen kurtarma ifadesini (12 veya 24 kelime) güvenli bir yerde saklamanız önemlidir. Bu kelimeler, şifrenizi unutmanız durumunda cüzdanınıza erişim sağlamanızı mümkün kılar."
+            },
+            {
+                "question": "İki faktörlü doğrulama nasıl etkinleştirilir?",
+                "answer": "Ayarlar > Güvenlik > İki Faktörlü Doğrulama yolunu izleyerek 2FA'yı etkinleştirebilirsiniz. SMS, e-posta veya authenticator uygulaması seçeneklerinden birini tercih edebilirsiniz."
+            },
+            {
+                "question": "Cüzdanımı başka bir cihaza nasıl taşıyabilirim?",
+                "answer": "Yeni cihazınıza Your Wallet'ı indirdikten sonra, 'Var Olan Cüzdanı İçe Aktar' seçeneğini kullanarak 12 veya 24 kelimelik kurtarma ifadenizi girebilirsiniz."
+            },
+            {
+                "question": "Dolandırıcılık girişimlerini nasıl bildiririm?",
+                "answer": "Şüpheli işlemleri veya dolandırıcılık girişimlerini hello@yourwallet.com adresine veya uygulama içi güvenlik bildirimi bölümünden raporlayabilirsiniz."
+            }
+        ],
+        "payment": [
+            {
+                "question": "İşlem ücretleri nasıl belirlenir?",
+                "answer": "İşlem ücretleri (gas fee) blockchain ağının yoğunluğuna göre dinamik olarak belirlenir. Your Wallet size düşük, orta ve yüksek öncelikli işlem seçenekleri sunar."
+            },
+            {
+                "question": "Desteklenen ödeme yöntemleri nelerdir?",
+                "answer": "Your Wallet'ta kredi/banka kartı, banka havalesi ve diğer kripto para birimleri ile alım yapabilirsiniz. Ödeme yöntemleri bulunduğunuz ülkeye göre değişiklik gösterebilir."
+            },
+            {
+                "question": "Bekleyen bir işlemi iptal edebilir miyim?",
+                "answer": "Blockchain'e gönderilmiş işlemler iptal edilemez, ancak henüz gönderilmemiş işlemleri iptal edebilirsiniz. Bazı ağlarda 'hızlandırma' veya 'iptal' işlemi için ek ücret ödeyebilirsiniz."
+            },
+            {
+                "question": "Para çekme işlemi ne kadar sürer?",
+                "answer": "Kripto para çekme işlemleri blockchain onay sürelerine bağlıdır. Fiat para çekme işlemleri ise banka ve ödeme yöntemine göre 1-5 iş günü sürebilir."
+            }
+        ],
+        "crypto": [
+            {
+                "question": "Hangi kripto para birimlerini destekliyor?",
+                "answer": "Your Wallet şu anda Bitcoin, Ethereum, BNB, Terra Classic ve diğer popüler kripto para birimlerini desteklemektedir. Desteklenen coin listesi düzenli olarak güncellenmektedir."
+            },
+            {
+                "question": "Stake etme nasıl çalışır?",
+                "answer": "Uygun kripto paralarınızı stake ederek pasif gelir elde edebilirsiniz. Stake etme süresi ve getiri oranı seçtiğiniz varlığa göre değişir. Minimum stake miktarları token bazında farklılık gösterir."
+            },
+            {
+                "question": "NFT'leri nasıl yönetebilirim?",
+                "answer": "NFT'lerinizi 'Koleksiyonlar' sekmesinden görüntüleyebilir, gönderebilir ve alabilirsiniz. Your Wallet, ERC-721 ve ERC-1155 standardındaki NFT'leri destekler."
+            },
+            {
+                "question": "Token swap nasıl yapılır?",
+                "answer": "Swap özelliği ile farklı kripto paraları birbirine dönüştürebilirsiniz. En iyi oranı bulmak için birden fazla DEX'ten fiyat alınır ve en avantajlı seçenek sunulur."
+            },
+            {
+                "question": "Web3 uygulamalarına nasıl bağlanırım?",
+                "answer": "DApp Browser üzerinden Web3 uygulamalarına güvenli bir şekilde bağlanabilirsiniz. WalletConnect protokolü ile harici DApp'lere de bağlantı sağlayabilirsiniz."
+            }
+        ]
+    },
+    "user_guide": {
+        "title": "Kullanım Kılavuzu",
+        "description": "Your Wallet uygulamasını en verimli şekilde kullanmanız için detaylı rehber",
+        "quick_links": {
+            "download": {
+                "title": "Uygulamayı İndir",
+                "description": "App Store veya Google Play'den Your Wallet'ı hemen indirin",
+                "cta": "İndirmeye Git"
+            },
+            "videos": {
+                "title": "Video Rehberler",
+                "description": "Adım adım video anlatımlarımızı izleyin",
+                "cta": "Videolara Git"
+            }
+        },
+        "video_section": {
+            "title": "Video Rehberler",
+            "videos": "Video 1: Başlangıç Rehberi | Video 2: İleri Seviye Özellikler"
+            
+        },
+        "guides": {
+            "getting_started": {
+                "title": "Başlangıç",
+                "sections": {
+                    "account_creation": {
+                        "subtitle": "Hesap Oluşturma",
+                        "content": "1. App Store veya Google Play'den Your Wallet'ı indirin\n2. 'Yeni Cüzdan Oluştur' seçeneğini seçin\n3. Güvenli bir PIN kodu belirleyin\n4. Kurtarma kelimelerinizi güvenli bir şekilde not edin\n5. Kurtarma kelimelerinizi doğrulayın"
+                    },
+                    "security_settings": {
+                        "subtitle": "Güvenlik Ayarları",
+                        "content": "1. Biyometrik kimlik doğrulamayı etkinleştirin\n2. İki faktörlü doğrulamayı ayarlayın\n3. Güvenli bir PIN kodu seçin"
+                    }
+                }
+            },
+            "basic_features": {
+                "title": "Temel Özellikler",
+                "sections": {
+                    "view_assets": {
+                        "subtitle": "Varlıklarınızı Görüntüleme",
+                        "content": "Ana ekranda tüm kripto varlıklarınızı ve toplam portföy değerinizi görüntüleyebilirsiniz. Detaylı bilgi için herhangi bir varlığa tıklayın."
+                    },
+                    "send_crypto": {
+                        "subtitle": "Kripto Para Gönderme",
+                        "content": "1. Ana ekrandan 'Gönder' butonuna tıklayın\n2. Göndermek istediğiniz kripto parayı seçin\n3. Alıcı adresini girin veya QR kodunu tarayın\n4. Miktar ve ağ ücretini belirleyin\n5. İşlemi onaylayın"
+                    },
+                    "receive_crypto": {
+                        "subtitle": "Kripto Para Alma",
+                        "content": "1. 'Al' butonuna tıklayın\n2. İstediğiniz kripto parayı seçin\n3. Cüzdan adresinizi veya QR kodunuzu paylaşın"
+                    }
+                }
+            },
+            "advanced_features": {
+                "title": "Gelişmiş Özellikler",
+                "sections": {
+                    "token_swap": {
+                        "subtitle": "Token Swap",
+                        "content": "1. 'Swap' sekmesine gidin\n2. Değiştirmek istediğiniz tokenleri seçin\n3. Miktarı belirleyin\n4. En iyi oranı seçin\n5. İşlemi onaylayın"
+                    },
+                    "nft_management": {
+                        "subtitle": "NFT Yönetimi",
+                        "content": "NFT koleksiyonunuzu 'NFT' sekmesinden görüntüleyebilir, gönderebilir ve alabilirsiniz."
+                    },
+                    "transaction_history": {
+                        "subtitle": "İşlem Geçmişi",
+                        "content": "Tüm işlem geçmişinizi 'İşlemler' sekmesinden görüntüleyebilir ve filtreleyebilirsiniz."
+                    }
+                }
+            }
+        }
+    },
+    "security_tips": {
+        "title": "Güvenlik İpuçları",
+        "subtitle": "Dijital varlıklarınızı güvende tutmak için önemli bilgiler",
+        "card_titles": {
+            "checklist": "Güvenlik Kontrol Listesi",
+            "faq": "Güvenlik SSS"
+        },
+        "card_descriptions": {
+            "checklist": "Cüzdanınızın güvenliğini adım adım kontrol edin",
+            "faq": "Sık sorulan güvenlik sorularını inceleyin"
+        },
+        "tips": {
+            "recovery_phrase": {
+                "title": "Kurtarma Kelimelerinizi Koruyun",
+                "description": "Kurtarma kelimeleriniz (seed phrase) cüzdanınıza erişimin anahtarıdır. Bu kelimeleri asla dijital ortamda saklamayın, fotoğrafını çekmeyin ve kimseyle paylaşmayın. Güvenli bir yerde fiziksel olarak saklayın.",
+                "tips": "Metal bir plakaya kazıyarak saklayın|Birden fazla güvenli lokasyonda yedekleyin|Kelimelerin sırasını doğru not aldığınızdan emin olun"
+            },
+            "strong_password": {
+                "title": "Güçlü Şifre Kullanın",
+                "description": "Cüzdan PIN kodunuz ve uygulama şifreniz için güçlü kombinasyonlar kullanın. Basit, tahmin edilebilir şifrelerden kaçının.",
+                "tips": "En az 4 veya 6 karakter uzunluğunda olmalı|Sayılar, büyük/küçük harfler ve özel karakterler içermeli|Doğum tarihi gibi tahmin edilebilir bilgiler kullanmayın"
+            },
+            "device_security": {
+                "title": "Cihaz Güvenliği",
+                "description": "Cihazınızın genel güvenliği, cüzdanınızın güvenliği için kritik öneme sahiptir. Cihazınızı her zaman güncel ve güvenli tutun.",
+                "tips": "İşletim sistemini güncel tutun|Güvenilir olmayan uygulamalar yüklemeyin|Ekran kilidi kullanın|Biyometrik kimlik doğrulamayı etkinleştirin"
+            },
+            "privacy_settings": {
+                "title": "Gizlilik ve Güvenlik Ayarları",
+                "description": "Your Wallet'ın sunduğu tüm güvenlik özelliklerini aktif olarak kullanın ve düzenli olarak gözden geçirin.",
+                "tips": "İki faktörlü doğrulamayı (2FA) etkinleştirin|Büyük işlemler için ek doğrulama kullanın|İşlem limitlerini ayarlayın|Güvenilmeyen ağlara bağlanmaktan kaçının"
+            },
+            "fraud_prevention": {
+                "title": "Dolandırıcılığa Karşı Dikkatli Olun",
+                "description": "Kripto para dolandırıcılığı yaygındır. Şüpheli işlemler ve tekliflere karşı her zaman dikkatli olun.",
+                "tips": "Asla kimseyle özel anahtarlarınızı paylaşmayın | Doğrulanmamış bağlantılara tıklamayın | Şüpheli token tekliflerinden uzak durun | Your Wallet ekibi asla özel bilgilerinizi istemez"
+            },
+            "backup_recovery": {
+                "title": "Yedekleme ve Kurtarma",
+                "description": "Düzenli yedekleme yapın ve kurtarma prosedürlerini önceden test edin. Acil durumlar için hazırlıklı olun.",
+                "tips": [
+                    "Kurtarma kelimelerinizi düzenli olarak kontrol edin",
+                    "Acil durum erişim planı oluşturun",
+                    "Önemli işlemler öncesi küçük test transferleri yapın",
+                    "Cüzdan yedekleme prosedürünü düzenli olarak gözden geçirin"
+                ]
+            }
+        },
+        "security_notice": {
+            "title": "Önemli Güvenlik Bildirimi",
+            "content": "Your Wallet ekibi hiçbir zaman sizden özel anahtarlarınızı, kurtarma kelimelerinizi veya PIN kodunuzu istemez. Güvenliğiniz için şüpheli durumları hello@yourwallet.com adresine bildirebilirsiniz."
+        },
+        "cta": {
+            "go_to": "Listeye Git",
+            "go_to_faq": "SSS'ye Git"
+        },
+        "sections": {
+            "basics": {
+                "title": "Temel Güvenlik",
+                "tips": [
+                    {
+                        "title": "Güçlü Şifre Kullanımı",
+                        "description": "En az 12 karakter uzunluğunda, karışık karakterler içeren şifreler oluşturun"
+                    },
+                    {
+                        "title": "İki Faktörlü Doğrulama",
+                        "description": "Hesabınızı korumak için 2FA'yı aktif edin"
+                    },
+                    {
+                        "title": "Yedekleme",
+                        "description": "Kurtarma ifadenizi güvenli bir yerde saklayın"
+                    }
+                ]
+            },
+            "transactions": {
+                "title": "İşlem Güvenliği",
+                "tips": [
+                    {
+                        "title": "Adres Doğrulama",
+                        "description": "Gönderim yapmadan önce adresi iki kez kontrol edin"
+                    },
+                    {
+                        "title": "Test İşlemi",
+                        "description": "Büyük transferlerden önce küçük miktarla test yapın"
+                    },
+                    {
+                        "title": "Şüpheli Bağlantılar",
+                        "description": "Bilinmeyen kaynaklardan gelen bağlantılara tıklamayın"
+                    }
+                ]
+            },
+            "device": {
+                "title": "Cihaz Güvenliği",
+                "tips": [
+                    {
+                        "title": "Güncel Yazılım",
+                        "description": "İşletim sisteminizi ve uygulamayı güncel tutun"
+                    },
+                    {
+                        "title": "Güvenli Ağ",
+                        "description": "Güvenilir Wi-Fi ağları kullanın"
+                    },
+                    {
+                        "title": "Cihaz Kilidi",
+                        "description": "Biyometrik kilit veya PIN kullanın"
+                    }
+                ]
+            }
+        },
+        "emergency": {
+            "title": "Acil Durumlar",
+            "contact": "7/24 Güvenlik Desteği",
+            "report": "Şüpheli İşlem Bildirimi"
         }
     }
 }

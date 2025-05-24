@@ -94,6 +94,25 @@ const blockchainData = [
   },
 ];
 
+const partnershipsData = [
+  {
+    name: "TheX Bank",
+    logo: "/partnerships/thex-bank-logo.png",
+    alt: "TheX Bank Logo",
+    width: 150,
+    height: 60,
+    link: "https://thexbank.io"
+  },
+  {
+    name: "The Octopus Labs",
+    logo: "/partnerships/theoctopuslabs-logo.png",
+    alt: "The Octopus Labs Logo",
+    width: 150,
+    height: 60,
+    link: "https://theoctopuslabs.com?utm_source=yourwallet&utm_medium=referral"
+  },
+];
+
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('metadata')
 
@@ -427,8 +446,33 @@ export default function Home() {
           </div>
           <span className="mx-auto md:mx-[unset]">
             <img alt="Blue Shield" loading="lazy" width={137} height={189} decoding="async" data-nimg={1} className="h-auto w-[200px] md:w-[220px]" style={{ color: 'transparent' }} src="/trust-graphic.svg" />
-
           </span>
+        </section>
+
+        {/* Partnerships Section */}
+        <section className="w-full max-w-[1200px] py-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              {t("home.partnerships.title")}
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+              {t("home.partnerships.description")}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-5 lg:grid-cols-4  items-center justify-items-center">
+            {partnershipsData.map((partner, index) => (
+              <Link href={partner.link} target="_blank" key={index} className="w-full max-w-[200px] p-4 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300">
+                <Image
+                  src={partner.logo}
+                  alt={partner.alt}
+                  width={partner.width}
+                  height={partner.height}
+                  className="object-contain rounded-lg"
+                />
+              </Link>
+            ))}
+          </div>
         </section>
 
       </main>
