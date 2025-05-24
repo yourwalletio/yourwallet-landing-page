@@ -76,6 +76,24 @@ export default function Footer() {
                         >
                             {t(`navigation.${navigationLinks[2].title_key}`)}
                         </Link>
+                        <Link
+                            href={navigationLinks[4].path}
+                            className="transition items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white flex"
+                        >
+                            {t(`navigation.${navigationLinks[4].title_key}`)}
+                        </Link>
+                        <Link
+                            href={navigationLinks[5].path}
+                            className="transition items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white flex"
+                        >
+                            {t(`navigation.${navigationLinks[5].title_key}`)}
+                        </Link>
+                        <Link
+                            href={navigationLinks[6].path}
+                            className="transition items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white flex"
+                        >
+                            {t(`navigation.${navigationLinks[6].title_key}`)}
+                        </Link>
                     </nav>
                 </li>
                 <li className="w-fit max-w-[110px] lg:max-w-none">

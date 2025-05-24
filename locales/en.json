@@ -7,7 +7,10 @@
         "about": "About Us",
         "contact": "Contact Us",
         "terms": "Terms of Service",
-        "privacy": "Privacy Policy"
+        "privacy": "Privacy Policy",
+        "faq":"SSS",
+        "security_tips":"Security Tips",
+        "user_guide":"User Guide"
     },
     "theme": {
         "dark": "Dark",

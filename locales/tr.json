@@ -7,7 +7,10 @@
         "about": "Hakkımızda",
         "contact": "Bize Ulaşın",
         "terms": "Hizmet Koşulları",
-        "privacy": "Gizlilik Politikası"
+        "privacy": "Gizlilik Politikası",
+        "faq":"SSS",
+        "security_tips":"Güvenlik İpuçları",
+        "user_guide":"Kullanım Kılavuzu"
     },
     "theme": {
         "dark": "Koyu",
