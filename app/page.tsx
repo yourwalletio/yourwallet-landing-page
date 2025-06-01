@@ -462,7 +462,7 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-5 lg:grid-cols-4  items-center justify-items-center">
             {partnershipsData.map((partner, index) => (
-              <Link href={partner.link} target="_blank" key={index} className="w-full max-w-[200px] p-4 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300">
+              <Link href={partner.link} target="_blank" key={index} className="w-full max-w-[200px] p-4 flex items-center justify-center">
                 <Image
                   src={partner.logo}
                   alt={partner.alt}
