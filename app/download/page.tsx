@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 
 export default function Page() {
   const t = useTranslations('download')
@@ -26,13 +27,14 @@ export default function Page() {
               </p>
             </div></li>
           <li className="default-transition rounded-[20px] border border-tintBlue bg-[linear-gradient(323deg,#F4F4F7,rgba(244,244,247,0.00)100%)] p-7 dark:border-tintBlack dark:bg-[linear-gradient(324deg,rgba(219,220,229,0.20)0%,rgba(219,220,229,0.00)100%)] lg:rounded-[30px] lg:p-10 flex-1 lg:min-h-[310px]">
-            <div className="grid w-full gap-4 lg:gap-7" >
+            <Link href="https://play.google.com/store/apps/details?id=com.yourwallet.wallet" className="grid w-full gap-4 lg:gap-7" target="_blank">
               <img alt="App Store" fetchPriority="high" width={86} height={77} decoding="async" data-nimg={1} className="h-[65px] w-[58px] lg:h-[65px] lg:w-[58px]" src="/google-play.webp" style={{ color: 'transparent' }} />
               <h3 className="default-transition text-black font-bold dark:text-white text-xl lg:text-3xl tracking-tight">
                 {t('android.title')}</h3>
               <p className="default-transition text-gray-700 dark:text-white lg:text-lg ">
                 {t('android.description')}</p>
-            </div></li>
+            </Link>
+          </li>
 
           <li className="default-transition rounded-[20px] border border-tintBlue bg-[linear-gradient(323deg,#F4F4F7,rgba(244,244,247,0.00)100%)] p-7 dark:border-tintBlack dark:bg-[linear-gradient(324deg,rgba(219,220,229,0.20)0%,rgba(219,220,229,0.00)100%)] lg:rounded-[30px] lg:p-10 flex-1 lg:min-h-[310px]">
             <div className="grid w-full gap-4 lg:gap-7" >
