@@ -111,14 +111,6 @@ const partnershipsData = [
     height: 60,
     link: "https://theoctopuslabs.com?utm_source=yourwallet&utm_medium=referral"
   },
-  {
-    name: "Faster Capital",
-    logo: "/partnerships/fastercapital-logo.png",
-    alt: "Faster Capital Logo",
-    width: 150,
-    height: 60,
-    link: "https://fastercapital.com"
-  },
 ];
 
 export async function generateMetadata(): Promise<Metadata> {
