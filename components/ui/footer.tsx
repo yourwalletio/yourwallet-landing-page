@@ -143,14 +143,16 @@ export default function Footer() {
                 </p>
                 <div className="flex flex-wrap gap-3 md:max-w-none ">
                     <Link
-                        href={"/download"}
+                        href={"https://apps.apple.com/gb/app/your-wallet-crypto-wallet/id6743835484"}
+                        target='_blank'
                         className="px-5 py-2.5 h-9 transition relative z-10 overflow-hidden flex items-center justify-center gap-3 rounded-full text-center font-medium leading-[.9375rem] bg-transparent border dark:text-[#477DE9] dark:border-[#477DE9] text-[#8B1DB8] border-[#8B1DB8] | dark:hover:bg-[#477DE9] dark:hover:text-white hover:text-white hover:bg-[#8B1DB8] w-full !text-[13px] lg:w-fit"
                     >
                         {t("home.footer.download.ios")}
                         <AppleIcon />
                     </Link>
                     <Link
-                        href={"/download"}
+                        href={"https://play.google.com/store/apps/details?id=com.yourwallet.wallet"}
+                        target='_blank'
                         className="px-5 py-2.5 h-9 transition relative z-10 overflow-hidden flex items-center justify-center gap-3 rounded-full text-center font-medium leading-[.9375rem] bg-transparent border dark:text-[#477DE9] dark:border-[#477DE9] text-[#8B1DB8] border-[#8B1DB8] | dark:hover:bg-[#477DE9] dark:hover:text-white hover:text-white hover:bg-[#8B1DB8] w-full !text-[13px] lg:w-fit"
                     >
                         {t("home.footer.download.android")}
@@ -160,6 +162,7 @@ export default function Footer() {
             </div>
             <div className="mx-auto mt-8 self-center lg:col-start-1 lg:row-start-1 lg:row-end-4 lg:mt-0 text-[#7421F7] dark:text-[#477DE9]">
                 <YourWalletIcon className="md:mr-24 h-auto w-[180px]" />
+
             </div>
         </footer>
     )
