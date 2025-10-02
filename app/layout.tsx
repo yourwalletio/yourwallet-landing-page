@@ -38,7 +38,7 @@ export async function generateMetadata(): Promise<Metadata> {
       description: messages.metadata.og.description,
       images: [
         {
-          url: "https://yourwallet.tr/preview.png",
+          url: "https://yourwallet.tr/og-preview.png",
           width: 1200,
           height: 630,
           alt: messages.metadata.og.alt,
@@ -51,7 +51,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: messages.metadata.title,
       description: messages.metadata.twitter.description,
       images: [
-        "https://yourwallet.tr/preview.png",
+        "https://yourwallet.tr/og-preview.png",
       ],
     },
   };

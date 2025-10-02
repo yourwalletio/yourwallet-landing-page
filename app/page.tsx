@@ -96,12 +96,12 @@ const blockchainData = [
 
 const partnershipsData = [
   {
-    name: "TheX Bank",
-    logo: "/partnerships/thex-bank-logo.png",
-    alt: "TheX Bank Logo",
+    name: "Hashlock",
+    logo: "/partnerships/hashlock_logo.svg",
+    alt: "Hashlock Logo",
     width: 150,
     height: 60,
-    link: "https://thexbank.io"
+    link: "https://hashlock.com/audits/your-wallet"
   },
   {
     name: "The Octopus Labs",
@@ -125,7 +125,7 @@ export async function generateMetadata(): Promise<Metadata> {
       url: 'https://yourwallet.tr',
       images: [
         {
-          url: 'https://yourwallet.tr/preview.png',
+          url: 'https://yourwallet.tr/og-preview.png',
           width: 1200,
           height: 630,
           alt: t('og.alt'),
@@ -137,7 +137,7 @@ export async function generateMetadata(): Promise<Metadata> {
       site: 'https://yourwallet.tr',
       title: t('title'),
       description: t('twitter.description'),
-      images: ['https://yourwallet.tr/preview.png'],
+      images: ['https://yourwallet.tr/og-preview.png'],
     },
   }
 }
@@ -222,7 +222,7 @@ export default function Home() {
             </p>
 
             {/* <span className="relative block">
-            <input type="text" placeholder="Bir zincir arayın..." className="transition h-[60px] w-full rounded-full bg-white px-16 text-[1.125rem] leading-[1.625rem] text-black " />
+            <input type="text" placeholder={t("home.chains.search_placeholder")} className="transition h-[60px] w-full rounded-full bg-white px-16 text-[1.125rem] leading-[1.625rem] text-black " />
             <Search size={24} className="absolute left-8 top-2/4 -translate-y-2/4" color="black" />
           </span> */}
             <div className="mx-auto mt-5 w-full max-w-[1000px] rounded-[20px] bg-white px-6 py-10 md:rounded-[30px] md:py-12">
@@ -257,23 +257,23 @@ export default function Home() {
                       </div>
                       <div className="ml-[65px] grid gap-3 md:hidden">
                         <div className="flex items-center justify-between">
-                          <span className="transition font-inter dark:text-white text-[1rem] leading-[1.125rem] !text-black">Alış</span>
+                          <span className="transition font-inter dark:text-white text-[1rem] leading-[1.125rem] !text-black">{t("home.chains.buy")}</span>
                           {chain.features.buy ? <CircleCheck className="h-5 w-5 text-[#8B1DB8] dark:text-[#477DE9]" /> : <CircleX className="h-5 w-5 text-black" />}
                         </div>
                         <div className="flex items-center justify-between">
-                          <span className="transition font-inter dark:text-white text-[1rem] leading-[1.125rem] !text-black">Satış</span>
+                          <span className="transition font-inter dark:text-white text-[1rem] leading-[1.125rem] !text-black">{t("home.chains.sell")}</span>
                           {chain.features.sell ? <CircleCheck className="h-5 w-5 text-[#8B1DB8] dark:text-[#477DE9]" /> : <CircleX className="h-5 w-5 text-black" />}
                         </div>
                         <div className="flex items-center justify-between">
-                          <span className="transition font-inter dark:text-white text-[1rem] leading-[1.125rem] !text-black">Takas</span>
+                          <span className="transition font-inter dark:text-white text-[1rem] leading-[1.125rem] !text-black">{t("home.chains.swap")}</span>
                           {chain.features.swap ? <CircleCheck className="h-5 w-5 text-[#8B1DB8] dark:text-[#477DE9]" /> : <CircleX className="h-5 w-5 text-black" />}
                         </div>
                         <div className="flex items-center justify-between">
-                          <span className="transition font-inter dark:text-white text-[1rem] leading-[1.125rem] !text-black">Earn</span>
+                          <span className="transition font-inter dark:text-white text-[1rem] leading-[1.125rem] !text-black">{t("home.chains.earn")}</span>
                           {chain.features.earn ? <CircleCheck className="h-5 w-5 text-[#8B1DB8] dark:text-[#477DE9]" /> : <CircleX className="h-5 w-5 text-black" />}
                         </div>
                         <div className="flex items-center justify-between">
-                          <span className="transition font-inter dark:text-white text-[1rem] leading-[1.125rem] !text-black">DApp'ler</span>
+                          <span className="transition font-inter dark:text-white text-[1rem] leading-[1.125rem] !text-black">{t("home.chains.dapps")}</span>
                           {chain.features.dapps ? <CircleCheck className="h-5 w-5 text-[#8B1DB8] dark:text-[#477DE9]" /> : <CircleX className="h-5 w-5 text-black" />}
                         </div>
                       </div>
