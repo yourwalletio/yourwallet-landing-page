@@ -97,17 +97,17 @@ const blockchainData = [
 const partnershipsData = [
   {
     name: "Hashlock",
-    logo: "/partnerships/hashlock_logo.svg",
+    logo: "/partnerships/hashlock_greenandwhite_blackbackground.png",
     alt: "Hashlock Logo",
     width: 150,
-    height: 60,
+    height: 100,
     link: "https://hashlock.com/audits/your-wallet"
   },
   {
     name: "The Octopus Labs",
     logo: "/partnerships/theoctopuslabs-logo.png",
     alt: "The Octopus Labs Logo",
-    width: 150,
+    width: 80,
     height: 60,
     link: "https://theoctopuslabs.com?utm_source=yourwallet&utm_medium=referral"
   },
