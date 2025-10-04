@@ -29,16 +29,16 @@ export default function LanguageToggle() {
     }
 
     return (
-        
+
         <Popover>
-            <PopoverTrigger  className="px-5 py-2.5 h-9 transition relative z-10 overflow-hidden flex items-center justify-center gap-3 rounded-full text-center font-medium bg-transparent border border-[#8B1DB8] dark:border-[#477DE9] text-[#8B1DB8] dark:text-[#477DE9] ml-2.5">
-                    <Globe className="h-[1.2rem] w-[1.2rem]" />
-                    <span>{t('language.title')}</span>
+            <PopoverTrigger className="p-2 flex  transition relative z-10 overflow-hidden items-center justify-center gap-3 rounded-full text-center font-medium bg-transparent border border-[#8B1DB8] dark:border-[#477DE9] text-[#8B1DB8] dark:text-[#477DE9] ml-2.5">
+                <Globe className="h-[1.2rem] w-[1.2rem]" />
+                {/* <span>{t('language.title')}</span> */}
                 {/* <Button >
                 </Button> */}
             </PopoverTrigger>
             <PopoverContent className="w-40 flex-col flex gap-2">
-                <Button 
+                <Button
                     variant={"outline"}
                     onClick={() => handleLocaleChange("en")}
                     className="flex justify-between items-center"
@@ -48,7 +48,7 @@ export default function LanguageToggle() {
                         <Check className="ml-2 h-4 w-4 text-[#8B1DB8] dark:text-[#477DE9]" />
                     )}
                 </Button>
-                <Button 
+                <Button
                     variant={"outline"}
                     onClick={() => handleLocaleChange("tr")}
                     className="flex justify-between items-center"

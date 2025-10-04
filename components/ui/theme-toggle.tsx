@@ -5,7 +5,7 @@ import { useTheme } from "next-themes"
 export function ModeToggle() {
     const { setTheme, theme } = useTheme()
     return (
-        <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="px-6 py-[0.625rem] text-black dark:text-white">
+        <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="block   text-black dark:text-white  ">
             {theme === "dark" ?
                 <svg xmlns="http://www.w3.org/2000/svg" width={19.2} height={19.2} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /></svg>
 
