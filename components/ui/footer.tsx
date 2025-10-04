@@ -163,6 +163,30 @@ export default function Footer() {
             <div className="mx-auto mt-8 self-center lg:col-start-1 lg:row-start-1 lg:row-end-4 lg:mt-0 text-[#7421F7] dark:text-[#477DE9]">
                 <YourWalletIcon className="md:mr-24 h-auto w-[180px]" />
 
+                {/* Şirket Bilgileri */}
+                <div className="mt-6 text-center lg:text-left">
+                    <div className="text-xs text-gray-600 dark:text-gray-400 space-y-1">
+                        <div className="font-medium">
+                            {/* Şirket Bilgileri */}
+                            <div className="mt-6 text-center lg:text-left">
+                                <div className="text-xs text-gray-600 dark:text-gray-400 space-y-1 text-wrap text-ellipsis max-w-fit ">
+                                    <p className="font-medium">Registered Virtual Asset Service Provider <br /> in the United Kingdom, <br />company registration number 15064816. </p>
+                                   
+                                    <p>
+                                        <span className="font-medium">Email: </span>
+                                        <Link
+                                            href="mailto:hello@yourwallet.tr"
+                                            className="hover:underline text-[#7421F7] dark:text-[#477DE9]"
+                                        >
+                                            hello@yourwallet.tr
+                                        </Link>
+                                    </p>
+                                </div>
+                            </div> 
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
         </footer>
     )

@@ -6,6 +6,9 @@ import Link from "next/link";
 import { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 import { CardSpotlight } from "@/components/ui/card-spotlight";
+import { AuroraBackground } from "@/components/ui/aurora-background";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import { CardContainer, CardBody, CardItem } from "@/components/ui/card-3d";
 
 const blockchainData = [
   {
@@ -148,20 +151,22 @@ export default function Home() {
   return (
     <>
       <main className="md:px-10 px-5 mx-auto mb-6 mt-12 grid justify-items-center gap-y-10 md:mb-20 md:gap-y-20 lg:mt-28">
-        <section className="grid w-full max-w-[1200px]  gap-6 md:grid-cols-2 md:gap-8 md:gap-y-14">
-          <div className="flex-col justify-center md:flex">
-            <h1 className="transition text-black font-bold dark:text-white text-4xl md:leading-[3.75rem] leading-[2.8125rem]   md:text-[3.25rem] ">
-              {t("home.hero.title")}
-            </h1>
-            <p className="default-transition text-lightBlack font-inter dark:text-white text-[1.125rem] leading-[1.625rem] md:text-[1.125rem] md:leading-[1.625rem] my-4 md:my-6 md:max-w-[40ch]">
-              {t("home.hero.description")}
-            </p>
-            <Button asChild className="md:hidden flex">
-              <Link href={"/"}>
-                {t("home.hero.download_mobile")}
-              </Link>
-            </Button>
-            <div className="hidden gap-5 md:flex">
+        <div className="flex items-center justify-center h-[80vh]">
+          <section className="grid w-full max-w-[1200px] gap-6 md:grid-cols-2 md:gap-8 md:gap-y-14 relative z-10">
+            <div className="flex-col justify-center md:flex h-full">
+              <TextGenerateEffect 
+                words={t("home.hero.title")}
+                className="text-black font-extrabold dark:text-white text-4xl   md:text-5xl fo  "
+              />
+              <p className="default-transition text-lightBlack font-inter dark:text-white text-[1.125rem] leading-[1.625rem] md:text-[1.125rem] md:leading-[1.625rem] my-4 md:my-6 md:max-w-[40ch]">
+                {t("home.hero.description")}
+              </p>
+              <Button asChild className="md:hidden flex">
+                <Link href={"/"}>
+                  {t("home.hero.download_mobile")}
+                </Link>
+              </Button>
+              <div className="hidden gap-5 md:flex">
               <Link href={"/download"} className="transition  flex h-[60px] cursor-pointer items-center gap-3 rounded-full border border-[#8B1DB8] px-6 text-left text-[#8B1DB8] hover:bg-[#8B1DB8] hover:!text-white dark:border-[#477DE9] dark:text-[#477DE9] dark:hover:bg-[#477DE9] dark:hover:!text-black">
                 <svg width={24} height={38} viewBox="0 0 24 38" fill="none">
                   <rect x="1.11502" y="1.42361" width="21.855" height="35.5365" rx="3.76845" style={{ stroke: 'currentcolor' }} strokeWidth="1.50738" />
@@ -177,38 +182,39 @@ export default function Home() {
                   </span>
                 </div>
               </Link>
-            </div>
-          </div>
-          <div className="relative flex items-center justify-center">
-            <div className="absolute -top-14 blur-2xl w-[400px] h-[400px] rounded-full bg-[#8B1DB8]  dark:bg-[#477DE9]  opacity-35 -z-10" />
-            <img src="/hero-section.png" width={892} height={841} alt="Your Wallet Mobile App" className=" mt-5 h-auto w-full max-w-[668px] self-center md:-mt-5" />
-          </div>
-
-          {false && <div className="flex flex-wrap items-center justify-center gap-12 text-center md:col-start-1 md:col-end-3 lg:flex-nowrap lg:items-start lg:gap-24 [&>h4>span]:text-[#8B1DB8] [&>h4>span]:dark:text-[#477DE9]">
-            <h4 className="transition text-black font-bold dark:text-white text-xl md:text-2xl">
-              <span>{t("home.hero.stats.trusted")}</span>
-            </h4>
-            <h4 className="transition text-black font-bold dark:text-white text-xl md:text-2xl">
-              <span>{t("home.hero.stats.founded")}</span>
-            </h4>
-            <h4 className="transition text-black font-bold dark:text-white text-xl md:text-2xl">
-              <span>{t("home.hero.stats.audited")}</span>
-            </h4>
-            <h4 className="transition text-black font-bold dark:text-white text-xl md:text-2xl">
-              <span>{t("home.hero.stats.certified")}</span>
-            </h4>
-            <h4 className="transition text-black font-bold dark:text-white text-xl md:text-2xl">
-              <span>{t("home.hero.stats.ratings")}</span>
-              <div className="flex gap-2 items-center justify-center">
-                <Star className="text-[#8B1DB8] dark:text-[#477DE9]" />
-                <Star className="text-[#8B1DB8] dark:text-[#477DE9]" />
-                <Star className="text-[#8B1DB8] dark:text-[#477DE9]" />
-                <Star className="text-[#8B1DB8] dark:text-[#477DE9]" />
-                <Star className="text-[#8B1DB8] dark:text-[#477DE9]" />
               </div>
-            </h4>
-          </div>}
-        </section>
+            </div>
+            <div className="relative flex items-center justify-center">
+              <div className="absolute -top-14 blur-2xl w-[400px] h-[400px] rounded-full bg-[#8B1DB8] dark:bg-[#477DE9] opacity-35 -z-10" />
+              <img src="/group-40.png"   alt="Your Wallet Mobile App" className="mt-5 h-auto w-full max-w-[440px] self-center md:-mt-5" />
+            </div>
+          </section>
+        </div>
+
+        {false && <div className="flex flex-wrap items-center justify-center gap-12 text-center md:col-start-1 md:col-end-3 lg:flex-nowrap lg:items-start lg:gap-24 [&>h4>span]:text-[#8B1DB8] [&>h4>span]:dark:text-[#477DE9]">
+          <h4 className="transition text-black font-bold dark:text-white text-xl md:text-2xl">
+            <span>{t("home.hero.stats.trusted")}</span>
+          </h4>
+          <h4 className="transition text-black font-bold dark:text-white text-xl md:text-2xl">
+            <span>{t("home.hero.stats.founded")}</span>
+          </h4>
+          <h4 className="transition text-black font-bold dark:text-white text-xl md:text-2xl">
+            <span>{t("home.hero.stats.audited")}</span>
+          </h4>
+          <h4 className="transition text-black font-bold dark:text-white text-xl md:text-2xl">
+            <span>{t("home.hero.stats.certified")}</span>
+          </h4>
+          <h4 className="transition text-black font-bold dark:text-white text-xl md:text-2xl">
+            <span>{t("home.hero.stats.ratings")}</span>
+            <div className="flex gap-2 items-center justify-center">
+              <Star className="text-[#8B1DB8] dark:text-[#477DE9]" />
+              <Star className="text-[#8B1DB8] dark:text-[#477DE9]" />
+              <Star className="text-[#8B1DB8] dark:text-[#477DE9]" />
+              <Star className="text-[#8B1DB8] dark:text-[#477DE9]" />
+              <Star className="text-[#8B1DB8] dark:text-[#477DE9]" />
+            </div>
+          </h4>
+        </div>}
 
         <section className="md:w-full w-screen -mx-5 md:max-w-[1200px]  bg-gradient-to-t from-green-300 to-green-600 px-5 !py-10 !pb-20 !pt-32 rounded-[10px] md:rounded-[20px] md:!px-10 md:!py-20 md:!pt-32 md:!pb-16 z-20">
           <div className="mx-auto w-full max-w-[1000px]">
@@ -238,7 +244,7 @@ export default function Home() {
                   <p className="transition  font-inter dark:text-white text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] !text-black">{t("home.chains.dapps")}</p>
                 </div>
               </div>
-              <div className="h-auto overflow-hidden  ">
+              <div className="h-auto overflow-hidden">
                 <ul className="transition grid h-full min-h-[1px] max-w-[850px] gap-6">
                   {blockchainData.map((chain, index) => (
                     <li key={index} className="flex flex-col md:flex-row md:items-center">
@@ -306,7 +312,7 @@ export default function Home() {
                 </Button>
               </div>
 
-              <img alt="Blue Shield" loading="lazy" width={712} height={518} decoding="async" data-nimg={1} className="h-auto w-full rounded-[20px] bg-[#D9D9D9] dark:bg-black   md:w-[50%]   lg:max-w-[400px]    lg:!bg-[transparent] " src="/phone-grapic.svg" style={{ color: 'transparent' }} />
+              <img alt="Blue Shield" loading="lazy" width={712} height={518} decoding="async" data-nimg={1} className="h-auto w-full rounded-[20px] bg-[#D9D9D9] dark:bg-black   md:w-[50%]   lg:max-w-[400px]    lg:!bg-[transparent] " src="/group-39.png" style={{ color: 'transparent' }} />
 
 
             </div>
