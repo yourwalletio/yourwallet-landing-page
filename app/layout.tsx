@@ -8,7 +8,8 @@ import { getLocale, getMessages } from "next-intl/server";
 import Footer from "@/components/ui/footer";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { navigationLinks } from "@/constants/navigation";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google';
+import IntroWrapper from "@/components/intro-wrapper";
 const inter = Inter({
   subsets: ["latin"],
 });
@@ -75,13 +76,19 @@ export default async function RootLayout({
             attribute="class"
             disableTransitionOnChange
           >
-            {/* <Header /> */}
-            <FloatingNav navItems={navigationLinks.map(link => ({
-              name: link.title_key,
-              link: link.path
-            }))} />
-            {children}
-            <Footer />
+            <IntroWrapper>
+              <div key="main-layout">
+                {/* <Header /> */}
+                <FloatingNav key="floating-nav" navItems={navigationLinks.map(link => ({
+                  name: link.title_key,
+                  link: link.path
+                }))} />
+                <div key="page-content">
+                  {children}
+                </div>
+                <Footer key="footer" />
+              </div>
+            </IntroWrapper>
             
           </ThemeProvider>
         </NextIntlClientProvider>
