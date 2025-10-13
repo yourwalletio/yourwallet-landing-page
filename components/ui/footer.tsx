@@ -187,6 +187,19 @@ export default function Footer() {
                         
                     </div>
                 </div>
+                
+                {/* Status Badge */}
+                <div className="mt-6 text-center lg:text-left">
+                    <iframe 
+                        src="https://status.yourwallet.io/badge?theme=dark" 
+                        width="250" 
+                        height="30" 
+                        frameBorder="0" 
+                        scrolling="no" 
+                        style={{ colorScheme: 'normal' }}
+                        title="Service Status"
+                    />
+                </div>
             </div>
         </footer>
     )
