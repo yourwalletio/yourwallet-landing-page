@@ -83,7 +83,7 @@ export default async function RootLayout({
                   name: link.title_key,
                   link: link.path
                 }))} />
-                <div key="page-content">
+                <div key="page-content" className="pt-20">
                   {children}
                 </div>
                 <Footer key="footer" />
