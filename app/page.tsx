@@ -95,6 +95,18 @@ const blockchainData = [
       dapps: true
     }
   },
+  {
+    name: "Ripple",
+    symbol: "XRP",
+    logo: "/network/ripple.png",
+    features: {
+      buy: true,
+      sell: true,
+      swap: true,
+      earn: true,
+      dapps: true
+    }
+  },
 ];
 
 const partnershipsData = [
