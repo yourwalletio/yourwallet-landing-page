@@ -119,6 +119,34 @@
         "partnerships": {
             "title": "Ortaklarımız",
             "description": "Finansal geleceğinizi şekillendirmek için sektörün önde gelen kurumlarıyla çalışıyoruz."
+        },
+        "stake": {
+            "title": "Solana Ağında Stake Yapın",
+            "description": "Solana ağındaki kripto varlıklarınızı stake ederek pasif gelir elde edin. Güvenli ve kolay stake deneyimi için stake.yourwallet.io'yu ziyaret edin.",
+            "features": {
+                "multiple_pools": {
+                    "title": "Multiple Pools",
+                    "description": "Flexible & locked options with variable APR."
+                },
+                "advanced_module": {
+                    "title": "Advanced Module",
+                    "description": "Secure, intuitive staking by Your Wallet."
+                },
+                "flexible_access": {
+                    "title": "Flexible Access",
+                    "description": "Manage liquidity freely."
+                },
+                "powered_by_solana": {
+                    "title": "Powered by Solana",
+                    "description": "Fast, low-cost, and secure network."
+                },
+                "high_returns": {
+                    "title": "High Returns",
+                    "description": "Maximize your earnings with competitive APY rates."
+                }
+            },
+            "cta": "Stake Yapmaya Başla",
+            "link_text": "Stake Your Wallet'ı Ziyaret Edin"
         }
     },
     "metadata": {
