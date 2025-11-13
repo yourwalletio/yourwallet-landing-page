@@ -170,7 +170,7 @@ export default function Footer() {
                             {/* Şirket Bilgileri */}
                             <div className="mt-6 text-center lg:text-left">
                                 <div className="text-xs text-gray-600 dark:text-gray-400 space-y-1 text-wrap text-ellipsis max-w-fit ">
-                                    <p className="font-medium">Registered Virtual Asset Service Provider <br /> in the United Kingdom, <br />company registration number 15064816. </p>
+                                    <p className="font-medium">Your Wallet is a technology company and does not provide financial services. <br /> in the United Kingdom, <br />company registration number 15064816. </p>
                                    
                                     <p>
                                         <span className="font-medium">Email: </span>
