@@ -119,6 +119,34 @@
         "partnerships": {
             "title": "Partnerships",
             "description": "We work with leading institutions in the industry to shape your financial future."
+        },
+        "stake": {
+            "title": "Stake on Solana Network",
+            "description": "Earn passive income by staking your crypto assets on the Solana network. Visit stake.yourwallet.io for a secure and easy staking experience.",
+            "features": {
+                "multiple_pools": {
+                    "title": "Multiple Pools",
+                    "description": "Flexible & locked options with variable APR."
+                },
+                "advanced_module": {
+                    "title": "Advanced Module",
+                    "description": "Secure, intuitive staking by Your Wallet."
+                },
+                "flexible_access": {
+                    "title": "Flexible Access",
+                    "description": "Manage liquidity freely."
+                },
+                "powered_by_solana": {
+                    "title": "Powered by Solana",
+                    "description": "Fast, low-cost, and secure network."
+                },
+                "high_returns": {
+                    "title": "High Returns",
+                    "description": "Maximize your earnings with competitive APY rates."
+                }
+            },
+            "cta": "Start Staking",
+            "link_text": "Visit Stake Your Wallet"
         }
     },
     "metadata": {

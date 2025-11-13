@@ -421,6 +421,126 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Stake Section */}
+        <section className="md:w-full w-screen -mx-5 md:max-w-[1200px] rounded-[20px] bg-gradient-to-t from-[#9945FF] to-[#14F195] px-5 !py-10 !pb-20 !pt-32 md:rounded-[30px] md:!px-10 md:!py-20 md:!pt-32 md:!pb-16 -mt-32 md:-mt-32">
+          <div className="mx-auto w-full max-w-[1000px]">
+            <h2 className="default-transition text-white font-bold text-[2.375rem] leading-[3.25rem] md:text-[3.25rem] md:leading-[3.25rem] text-center">
+              {t("home.stake.title")}
+            </h2>
+            <p className="transition font-inter text-white text-[1.125rem] leading-[1.125rem] md:text-[1.125rem] md:leading-[1.625rem] mx-auto mb-10 mt-4 max-w-[70ch] text-center md:mt-6 max:mb-14">
+              {t("home.stake.description")}
+            </p>
+
+            <div className="mx-auto mt-6 max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch justify-items-center">
+              {/* Üst 2 kart */}
+              <CardSpotlight className="h-auto w-full rounded-3xl md:rounded-[30px] flex-col items-center justify-between">
+                <h4 className="transition font-bold text-white text-[1.375rem] leading-[1.875rem] md:text-[1.5625rem] md:leading-[1.6875rem] relative z-20 text-center">
+                  {t("home.stake.features.multiple_pools.title")}
+                </h4>
+                <div className="relative z-20 mt-10 flex items-center justify-center">
+                  <div className="relative">
+                    <div className="absolute -inset-4 blur-2xl bg-white/20 rounded-full"></div>
+                    <div className="w-[120px] h-[120px] rounded-full bg-white/10 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center">
+                      <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <p className="mt-10 transition font-inter text-center text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.625rem] text-white relative z-20">
+                  {t("home.stake.features.multiple_pools.description")}
+                </p>
+              </CardSpotlight>
+
+              <CardSpotlight className="h-auto w-full rounded-3xl md:rounded-[30px] flex-col items-center justify-between">
+                <h4 className="relative z-20 transition font-bold text-white text-[1.375rem] leading-[1.875rem] md:text-[1.5625rem] md:leading-[1.6875rem] text-center">
+                  {t("home.stake.features.advanced_module.title")}
+                </h4>
+                <div className="relative z-20 mt-10 flex items-center justify-center">
+                  <div className="relative">
+                    <div className="absolute -inset-4 blur-2xl bg-white/20 rounded-full"></div>
+                    <div className="w-[120px] h-[120px] rounded-full bg-white/10 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center">
+                      <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <p className="relative z-20 mt-10 transition font-inter text-center text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.625rem] text-white">
+                  {t("home.stake.features.advanced_module.description")}
+                </p>
+              </CardSpotlight>
+
+                {/* Ortada 1 kart - tam ortada, 2 satır kaplayacak */}
+                <CardSpotlight className="h-auto w-full rounded-3xl md:rounded-[30px] flex-col items-center justify-between md:col-span-2">
+                <h4 className="relative z-20 transition font-bold text-white text-[1.375rem] leading-[1.875rem] md:text-[1.5625rem] md:leading-[1.6875rem] text-center">
+                  {t("home.stake.features.high_returns.title")}
+                </h4>
+                <div className="relative z-20 mt-10 flex items-center justify-center">
+                  <div className="relative">
+                    <div className="absolute -inset-4 blur-2xl bg-white/20 rounded-full"></div>
+                    <div className="w-[120px] h-[120px] rounded-full bg-white/10 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center">
+                      <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <p className="relative z-20 mt-10 transition font-inter text-center text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.625rem] text-white">
+                  {t("home.stake.features.high_returns.description")}
+                </p>
+              </CardSpotlight>
+
+              {/* Alt 2 kart */}
+              <CardSpotlight className="h-auto w-full rounded-3xl md:rounded-[30px] flex-col items-center justify-between ">
+                <h4 className="relative z-20 transition font-bold text-white text-[1.375rem] leading-[1.875rem] md:text-[1.5625rem] md:leading-[1.6875rem] text-center">
+                  {t("home.stake.features.flexible_access.title")}
+                </h4>
+                <div className="relative z-20 mt-10 flex items-center justify-center">
+                  <div className="relative">
+                    <div className="absolute -inset-4 blur-2xl bg-white/20 rounded-full"></div>
+                    <div className="w-[120px] h-[120px] rounded-full bg-white/10 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center">
+                      <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <p className="relative z-20 mt-10 transition font-inter text-center text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.625rem] text-white">
+                  {t("home.stake.features.flexible_access.description")}
+                </p>
+              </CardSpotlight>
+
+              <CardSpotlight className="h-auto w-full rounded-3xl md:rounded-[30px] flex-col items-center justify-center ">
+                <h4 className="relative z-20 transition font-bold text-white text-[1.375rem] leading-[1.875rem] md:text-[1.5625rem] md:leading-[1.6875rem] text-center">
+                  {t("home.stake.features.powered_by_solana.title")}
+                </h4>
+                <div className="relative z-20 mt-10 flex items-center justify-center">
+                  <div className="relative">
+                    <div className="absolute -inset-4 blur-2xl bg-white/20 rounded-full"></div>
+                    <Image 
+                      src="/network/sol.webp" 
+                      alt="Solana" 
+                      width={120} 
+                      height={120} 
+                      className="relative rounded-full"
+                    />
+                  </div>
+                </div>
+                <p className="relative z-20 mt-10 transition font-inter text-center text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.625rem] text-white">
+                  {t("home.stake.features.powered_by_solana.description")}
+                </p>
+              </CardSpotlight>
+            </div>
+
+            <Link href="https://stake.yourwallet.io" target="_blank" rel="noopener noreferrer">
+              <button className="text-white hover:before:bg-white relative w-fit rounded-full px-8 py-[1.125rem] md:py-3 md:px-10 mx-auto mt-10 flex overflow-hidden border border-white bg-transparent shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-white before:transition-all before:duration-500 hover:text-[#9945FF] hover:shadow-white hover:before:left-0 hover:before:w-full">
+                <span className="relative z-10 font-medium">{t("home.stake.cta")}</span>
+              </button>
+            </Link>
+          </div>
+        </section>
+
         <section className="grid w-full max-w-[1200px] gap-6 md:min-h-[450px] md:grid-cols-2">
           <div className="transition rounded-[20px] p-5 [transition-property:background-color,border-color] lg:rounded-[30px] lg:p-8 border border-blue-500 bg-white dark:border-white dark:bg-black flex flex-col gap-5 md:justify-center md:gap-7">
             <h3 className="transition text-black font-bold dark:text-white text-[1.625rem] leading-[2rem] md:text-[1.875rem] md:leading-[2.0625rem] max-w-[18ch]">
