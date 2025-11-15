@@ -10,7 +10,8 @@
         "privacy": "Privacy Policy",
         "faq":"SSS",
         "security_tips":"Security Tips",
-        "user_guide":"User Guide"
+        "user_guide":"User Guide",
+        "stake": "Stake"
     },
     "theme": {
         "dark": "Dark",
