@@ -10,7 +10,8 @@
         "privacy": "Gizlilik Politikası",
         "faq":"SSS",
         "security_tips":"Güvenlik İpuçları",
-        "user_guide":"Kullanım Kılavuzu"
+        "user_guide":"Kullanım Kılavuzu",
+        "stake": "Stake Yapın"
     },
     "theme": {
         "dark": "Koyu",

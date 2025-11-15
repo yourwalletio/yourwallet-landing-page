@@ -24,6 +24,7 @@ export const FloatingNav = ({
     name: string;
     link: string;
     icon?: React.JSX.Element;
+    target?: string;
   }[];
   className?: string;
 }) => {
@@ -73,18 +74,22 @@ export const FloatingNav = ({
           <Link href={"/"} className='flex items-center md:mr-10  md:text-sm lg:text-base text-2xl text-[#7421F7] dark:text-[#477DE9] '>
             <img src={theme !== "dark" ? "/logo-primary.webp" : "/logo-secondary.webp"} alt="Your Wallet" className={"w-[90px]"} />
           </Link>
-          <div className="flex items-center justify-center gap-2">
+          <div className="flex items-center justify-center gap-4">
 
             {navItems.map((navItem: any, idx: number) => (
               <Link
                 key={`link=${idx}`}
                 href={navItem.link}
+                {...navItem.target && { target: navItem.target }}
                 className={cn(
-                  "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+                  "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 group"
                 )}
               >
                 <span className="block sm:hidden">{navItem.icon}</span>
-                <span className="hidden sm:block text-sm">{t(`navigation.${navItem.name}`)}</span>
+                <span className="hidden sm:block text-sm relative">
+                  {t(`navigation.${navItem.name}`)}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#8B1DB8] to-[#477DE9] dark:from-[#477DE9] dark:to-[#8B1DB8] transition-all duration-300 group-hover:w-full"></span>
+                </span>
               </Link>
             ))}
           </div>
@@ -175,6 +180,7 @@ export const FloatingNav = ({
                     >
                       <Link
                         href={navItem.link}
+                        {...navItem.target && { target: navItem.target }}
                         onClick={() => setIsMenuOpen(false)}
                         className="flex items-center justify-between py-4 px-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors group"
                       >

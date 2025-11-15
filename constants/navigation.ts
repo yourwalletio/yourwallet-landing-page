@@ -1,6 +1,7 @@
 export interface ILinks {
     title_key: string;
     path: string;
+    target?: string;
 }
 
 export const navigationLinks: ILinks[] = [
@@ -31,6 +32,11 @@ export const navigationLinks: ILinks[] = [
     {
         title_key: "security_tips",
         path: "/security-tips",
+    },
+    {
+        title_key: "stake",
+        path: "https://stake.yourwallet.io",
+        target: "_blank",
     },
     
 ] 
