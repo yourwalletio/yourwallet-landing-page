@@ -465,7 +465,7 @@
             },
             {
                 "question": "Teknik destek nasıl alabilirim?",
-                "answer": "Uygulama içi destek bölümünden veya hello@yourwallet.com adresinden 7/24 teknik destek ekibimize ulaşabilirsiniz."
+                "answer": "Uygulama içi destek bölümünden veya hello@yourwallet.tr adresinden 7/24 teknik destek ekibimize ulaşabilirsiniz."
             }
         ],
         "security": [
@@ -487,7 +487,7 @@
             },
             {
                 "question": "Dolandırıcılık girişimlerini nasıl bildiririm?",
-                "answer": "Şüpheli işlemleri veya dolandırıcılık girişimlerini hello@yourwallet.com adresine veya uygulama içi güvenlik bildirimi bölümünden raporlayabilirsiniz."
+                "answer": "Şüpheli işlemleri veya dolandırıcılık girişimlerini hello@yourwallet.tr adresine veya uygulama içi güvenlik bildirimi bölümünden raporlayabilirsiniz."
             }
         ],
         "payment": [
@@ -516,10 +516,6 @@
             {
                 "question": "Stake etme nasıl çalışır?",
                 "answer": "Uygun kripto paralarınızı stake ederek pasif gelir elde edebilirsiniz. Stake etme süresi ve getiri oranı seçtiğiniz varlığa göre değişir. Minimum stake miktarları token bazında farklılık gösterir."
-            },
-            {
-                "question": "NFT'leri nasıl yönetebilirim?",
-                "answer": "NFT'lerinizi 'Koleksiyonlar' sekmesinden görüntüleyebilir, gönderebilir ve alabilirsiniz. Your Wallet, ERC-721 ve ERC-1155 standardındaki NFT'leri destekler."
             },
             {
                 "question": "Token swap nasıl yapılır?",
@@ -651,7 +647,7 @@
         },
         "security_notice": {
             "title": "Önemli Güvenlik Bildirimi",
-            "content": "Your Wallet ekibi hiçbir zaman sizden özel anahtarlarınızı, kurtarma kelimelerinizi veya PIN kodunuzu istemez. Güvenliğiniz için şüpheli durumları hello@yourwallet.com adresine bildirebilirsiniz."
+            "content": "Your Wallet ekibi hiçbir zaman sizden özel anahtarlarınızı, kurtarma kelimelerinizi veya PIN kodunuzu istemez. Güvenliğiniz için şüpheli durumları hello@yourwallet.tr adresine bildirebilirsiniz."
         },
         "cta": {
             "go_to": "Listeye Git",
