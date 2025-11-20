@@ -477,7 +477,7 @@
             },
             {
                 "question": "How can I get technical support?",
-                "answer": "You can reach our technical support team 24/7 via the in-app support section or at hello@yourwallet.com."
+                "answer": "You can reach our technical support team 24/7 via the in-app support section or at hello@yourwallet.tr."
             }
         ],
         "security": [
@@ -499,7 +499,7 @@
             },
             {
                 "question": "How do I report fraud attempts?",
-                "answer": "You can report suspicious activities or fraud attempts to hello@yourwallet.com or through the in-app security report section."
+                "answer": "You can report suspicious activities or fraud attempts to hello@yourwallet.tr or through the in-app security report section."
             }
         ],
         "payment": [
@@ -532,10 +532,6 @@
             {
                 "question": "How does staking work?",
                 "answer": "You can earn passive income by staking eligible cryptocurrencies. The staking period and return rate vary depending on the asset. Minimum staking amounts differ by token."
-            },
-            {
-                "question": "How can I manage my NFTs?",
-                "answer": "You can view, send, and receive your NFTs under the 'Collections' tab. Your Wallet supports NFTs in ERC-721 and ERC-1155 standards."
             },
             {
                 "question": "How do I perform a token swap?",
@@ -661,7 +657,7 @@
         },
         "security_notice": {
             "title": "Important Security Notice",
-            "content": "Your Wallet team will never ask for your private keys, recovery phrase or PIN code. You can report suspicious situations to hello@yourwallet.com for your security."
+            "content": "Your Wallet team will never ask for your private keys, recovery phrase or PIN code. You can report suspicious situations to hello@yourwallet.tr for your security."
         },
         "cta": {
             "go_to": "Go to Checklist",

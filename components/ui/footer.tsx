@@ -22,7 +22,7 @@ export default function Footer() {
                         <img src="/icons/twitter.svg" alt="Twitter" className='w-6 h-6' />
                     </Link>
                     <Link
-                        href={"https://github.com/yourwallett"}
+                        href={"https://github.com/yourwalletio"}
                         rel="noopener noreferrer"
                         target="_blank"
                         className="transition flex items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white">
@@ -170,7 +170,7 @@ export default function Footer() {
                             {/* Şirket Bilgileri */}
                             <div className="mt-6 text-center lg:text-left">
                                 <div className="text-xs text-gray-600 dark:text-gray-400 space-y-1 text-wrap text-ellipsis max-w-fit ">
-                                    <p className="font-medium">Your Wallet is a technology company and does not provide financial services. <br /> in the United Kingdom, <br />company registration number 15064816. </p>
+                                    <p className="font-medium">Your Wallet is a technology company and does not provide financial services. <br /> in the United Kingdom, <br />Company Registration number 15064816. </p>
                                    
                                     <p>
                                         <span className="font-medium">Email: </span>
