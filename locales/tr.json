@@ -148,6 +148,16 @@
             },
             "cta": "Stake Yapmaya Başla",
             "link_text": "Stake Your Wallet'ı Ziyaret Edin"
+        },
+        "token_economics": {
+            "title": "YWT Token Ekonomisi",
+            "description": "100 milyon toplam arz, Swap-to-Earn mekanizması ve buyback programı ile desteklenen sağlam token ekonomisi. Detaylı bilgi için tıklayın.",
+            "cta": "Token Ekonomisini Keşfet",
+            "total_supply": "Toplam Arz",
+            "ywt_token": "YWT",
+            "swap_to_earn": "Swap-to-Earn",
+            "tge_price": "TGE Fiyatı",
+            "token_start": "Token Başlangıç"
         }
     },
     "metadata": {
@@ -183,6 +193,10 @@
         "terms": {
             "title": "Your Wallet - Kullanım Koşulları",
             "description": "Your Wallet kullanım koşulları - Hizmetlerimizi kullanırken uymanız gereken kurallar ve şartlar."
+        },
+        "token_economics": {
+            "title": "Your Wallet - Token Ekonomisi",
+            "description": "YWT Token ekonomik yapısı, dağıtım planı ve kullanım senaryoları hakkında detaylı bilgi."
         }
     },
     "privacy": {
@@ -445,6 +459,20 @@
                 "description": "Detaylı kullanım rehberimizi inceleyin",
                 "cta": "Kılavuza Git"
             }
+        },
+        "token_economics": {
+            "title": "YWT Token Ekonomisi",
+            "description": "YWT Token'ın ekonomik yapısı, dağıtım planı ve kullanım senaryoları hakkında bilgi edinin",
+            "total_supply": "Toplam Arz",
+            "swap_to_earn": "Swap-to-Earn",
+            "buyback": "Buyback",
+            "blockchain": "Blockchain",
+            "distribution": "Dağıtım",
+            "revenue": "Gelir",
+            "view_more": "Token Ekonomisini Görüntüle",
+            "ywt_token": "YWT",
+            "network": "Ağ",
+            "solana": "Solana"
         },
         "general": [
             {
@@ -710,6 +738,243 @@
             "title": "Acil Durumlar",
             "contact": "7/24 Güvenlik Desteği",
             "report": "Şüpheli İşlem Bildirimi"
+        }
+    },
+    "token_economics": {
+        "title": "Token Ekonomisi",
+        "description": "YWT Token'ının ekonomik yapısı, dağıtım planı ve kullanım senaryoları",
+        "hero": {
+            "title": "YWT Token Ekonomisi",
+            "subtitle": "Gerçek değer, sürdürülebilir büyüme",
+            "description": "100 milyon toplam arz ile tasarlanmış, Swap-to-Earn mekanizması ve buyback programı ile desteklenen sağlam bir token ekonomisi."
+        },
+        "overview": {
+            "title": "Genel Bakış",
+            "total_supply": "Toplam Arz",
+            "blockchain": "Blockchain",
+            "symbol": "Sembol",
+            "tge_price": "TGE Fiyatı",
+            "contract_address": "Kontrat Adresi",
+            "contract_link": "Kontratı Görüntüle",
+            "verified": "Doğrulandı",
+            "network": "Solana Network",
+            "qr_code": "QR Kod",
+            "scan_to_add": "Cüzdana eklemek için tara",
+            "audited": "Hashlock Security tarafından denetlendi"
+        },
+        "distribution": {
+            "title": "Token Dağıtımı",
+            "subtitle": "100,000,000 YWT'nin şeffaf ve adil dağıtımı",
+            "summary": "Dağıtım Özeti",
+            "presale": {
+                "title": "Pre-sale",
+                "amount": "20,000,000 YWT",
+                "percentage": "20%",
+                "description": "Yatırımcılar ve erken destekçiler için",
+                "vesting": "30% TGE + 9 ay linear vesting"
+            },
+            "swap_to_earn": {
+                "title": "Swap-to-Earn",
+                "amount": "40,000,000 YWT",
+                "percentage": "40%",
+                "description": "Kullanıcılara swap işlemleri üzerinden dağıtılacak",
+                "period": "42 ay boyunca"
+            },
+            "team": {
+                "title": "Ekip",
+                "amount": "Toplam arzın bir kısmı",
+                "percentage": "Belirlenen yüzde",
+                "description": "Ekip üyeleri için",
+                "vesting": "36 ay linear vesting"
+            },
+            "advisors": {
+                "title": "Danışmanlar",
+                "amount": "Toplam arzın bir kısmı",
+                "percentage": "Belirlenen yüzde",
+                "description": "Danışmanlar için",
+                "vesting": "24 ay linear vesting"
+            },
+            "strategic": {
+                "title": "Stratejik Satış",
+                "amount": "Toplam arzın bir kısmı",
+                "percentage": "Belirlenen yüzde",
+                "description": "Stratejik ortaklar için",
+                "vesting": "24 ay linear vesting"
+            },
+            "airdrop": {
+                "title": "Airdrop",
+                "amount": "2,000,000 YWT",
+                "percentage": "2%",
+                "description": "Topluluk airdrop'ları için"
+            }
+        },
+        "swap_to_earn": {
+            "title": "Swap-to-Earn Mekanizması",
+            "subtitle": "Her swap işleminde otomatik YWT kazanın",
+            "description": "Swap-to-Earn, YWT ekosisteminin en yenilikçi özelliklerinden biridir. Her swap işleminden sonra otomatik olarak YWT token'ı kazanırsınız.",
+            "parameters": {
+                "title": "Genel Parametreler",
+                "min_transaction": "Minimum İşlem Tutarı",
+                "min_transaction_value": "$50",
+                "transaction_fee": "İşlem Ücreti",
+                "transaction_fee_value": "0.85%",
+                "reward_pool": "Toplam Ödül Havuzu",
+                "reward_pool_value": "40,000,000 YWT",
+                "distribution_period": "Dağıtım Süresi",
+                "distribution_period_value": "42 Ay"
+            },
+            "phases": {
+                "title": "Faz Yapısı",
+                "phase_structure_title": "Faz Yapısı",
+                "phase_1": {
+                    "title": "Faz 1",
+                    "total": "20,000,000 YWT",
+                    "reward_per_100": "3 YWT / $100",
+                    "tge": "10%",
+                    "duration": "16 Ay",
+                    "description": "Yüksek ödül oranları ile hızlı kullanıcı büyümesi"
+                },
+                "phase_2": {
+                    "title": "Faz 2",
+                    "total": "10,000,000 YWT",
+                    "reward_per_100": "2 YWT / $100",
+                    "tge": "10%",
+                    "duration": "14 Ay",
+                    "description": "Denge sağlayıcı ödül oranları"
+                },
+                "phase_3": {
+                    "title": "Faz 3",
+                    "total": "10,000,000 YWT",
+                    "reward_per_100": "1 YWT / $100",
+                    "tge": "10%",
+                    "duration": "12 Ay",
+                    "description": "Sürdürülebilir ödül modeli"
+                }
+            },
+            "table": {
+                "phase": "Faz",
+                "total_ywt": "Toplam YWT",
+                "reward_per_100": "Her $100 için Ödül",
+                "tge": "TGE",
+                "duration": "Dağıtım Süresi"
+            },
+            "labels": {
+                "total": "Toplam:",
+                "per_100": "Her $100 için:",
+                "tge": "TGE:",
+                "duration": "Süre:"
+            }
+        },
+        "buyback": {
+            "title": "Buyback Mekanizması",
+            "subtitle": "Ekosistem gelirinin token değerine yansıması",
+            "description": "Buyback mekanizması, YWT token ekonomisinin sürdürülebilirliğini sağlamak ve ekosistemin uzun vadeli değerini korumak için tasarlanmıştır.",
+            "benefits": {
+                "title": "Buyback'in Faydaları",
+                "revenue_reflection": {
+                    "title": "Gelir Yansıması",
+                    "description": "YourWallet büyüdükçe, gelirinin bir kısmı doğrudan token buyback'lerine ayrılır."
+                },
+                "market_stability": {
+                    "title": "Piyasa İstikrarı",
+                    "description": "Aşırı fiyat düşüşlerini önler ve volatiliteyi azaltır."
+                },
+                "supply_control": {
+                    "title": "Arz Kontrolü",
+                    "description": "Kontrollü buyback limitleri ile arz genişlemesini önler."
+                },
+                "long_term_value": {
+                    "title": "Uzun Vadeli Değer",
+                    "description": "Ekosistem büyüdükçe token değerinin güçlenmesini sağlar."
+                }
+            },
+            "rates": {
+                "title": "Yıllık Buyback Oranları ve Limitleri",
+                "year_2027": {
+                    "title": "2027",
+                    "rate": "20-25%",
+                    "max_limit": "20,000,000 YWT",
+                    "description": "Toplam gelirin %20-25'i buyback'e ayrılır",
+                    "of_revenue": "Gelirin",
+                    "max_limit_label": "Maksimum Limit"
+                },
+                "year_2028": {
+                    "title": "2028",
+                    "rate": "10-15%",
+                    "max_limit": "10,000,000 YWT",
+                    "description": "Toplam gelirin %10-15'i buyback'e ayrılır",
+                    "of_revenue": "Gelirin",
+                    "max_limit_label": "Maksimum Limit"
+                },
+                "year_2029": {
+                    "title": "2029",
+                    "rate": "1-5%",
+                    "max_limit": "5,000,000 YWT",
+                    "description": "Toplam gelirin %1-5'i buyback'e ayrılır",
+                    "of_revenue": "Gelirin",
+                    "max_limit_label": "Maksimum Limit"
+                }
+            }
+        },
+        "use_cases": {
+            "title": "Kullanım Senaryoları ve Değer",
+            "subtitle": "YWT sadece bir ödül token'ı değil, aynı zamanda ekosistem içinde bir utility token'dır",
+            "governance": {
+                "title": "Governance (DAO)",
+                "description": "YWT token sahipleri gelecekte governance kararlarında oy kullanabilecek (DAO modeli)",
+                "details": "DAO model ile governance kararlarında oy hakkı"
+            },
+            "fee_discounts": {
+                "title": "İşlem Ücreti İndirimleri",
+                "description": "Belirli miktarda YWT tutan kullanıcılar işlem ücretlerinde indirim kazanır",
+                "details": "YWT tutan kullanıcılar işlem ücretlerinde indirim kazanır"
+            },
+            "staking": {
+                "title": "Staking ve Kazanç",
+                "description": "YWT stake ederek ek gelir elde edin - 3/6/9/12 ay seçenekleri ile %10-40 APR",
+                "details": "3/6/9/12 ay seçenekleri ile %10-40 APR"
+            },
+            "cashback": {
+                "title": "Cashback Ödülleri",
+                "description": "YWT ile yapılan ödemelerde cashback kazanın - kart harcamaları ve QR ödemeleri için",
+                "details": "Kart harcamaları ve QR ödemeleri için cashback"
+            },
+            "vip_tiers": {
+                "title": "VIP Seviyeleri",
+                "description": "Yüksek YWT bakiyesi ile VIP statüsü kazanın ve özel avantajlardan yararlanın",
+                "details": "VIP statüsü ve özel avantajlar"
+            }
+        },
+        "economic_balance": {
+            "title": "Ekonomik Denge Mekanizması",
+            "subtitle": "Sürdürülebilir büyüme için tasarlanmış denge",
+            "decreasing_rewards": {
+                "title": "Azalan Ödül Oranları",
+                "description": "Kademeli olarak azalan ödül oranları (3 → 2 → 1 YWT) hacim arttıkça arz baskısını azaltır",
+                "details": "3 → 2 → 1 YWT azalan ödül oranları"
+            },
+            "buyback_lp": {
+                "title": "Buyback + LP Kilidi",
+                "description": "Buyback ve 24 aylık LP kilidi fiyat istikrarını sağlar",
+                "details": "24 aylık LP kilidi ile fiyat istikrarı"
+            },
+            "vesting": {
+                "title": "Vesting Disiplini",
+                "description": "Özellikle ekip ve stratejik satış için vesting disiplini arz şoklarını önler",
+                "details": "Ekip ve stratejik satış için vesting disiplini"
+            }
+        },
+        "whitepaper": {
+            "title": "Detaylı Bilgi",
+            "description": "YWT Token ve ekosistem hakkında daha fazla bilgi için",
+            "button": "Whitepaper'ı İndir",
+            "download_pdf": "PDF İndir",
+            "viewer_title": "Whitepaper'ı Oku"
+        },
+        "cta": {
+            "title": "YWT Ekosistemine Katılın",
+            "description": "Swap yapın, ödül kazanın ve token ekonomisinin bir parçası olun",
+            "button": "Uygulamayı İndir"
         }
     }
 }

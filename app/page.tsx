@@ -541,6 +541,69 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Token Economics Section */}
+        <section className="md:w-full w-screen -mx-5 md:max-w-[1200px] rounded-[20px] bg-gradient-to-br from-[#8B1DB8] via-purple-600 to-[#477DE9] px-5 !py-10 !pb-20 !pt-32 md:rounded-[30px] md:!px-10 md:!py-20 md:!pt-32 md:!pb-16 -mt-32 md:-mt-32 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+          </div>
+          <div className="mx-auto w-full max-w-[1000px] relative z-10">
+            <h2 className="default-transition text-white font-bold text-[2.375rem] leading-[3.25rem] md:text-[3.25rem] md:leading-[3.25rem] text-center mb-4">
+              {t("home.token_economics.title")}
+            </h2>
+            <p className="transition font-inter text-white/90 text-[1.125rem] leading-[1.125rem] md:text-[1.125rem] md:leading-[1.625rem] mx-auto mb-10 mt-4 max-w-[70ch] text-center md:mt-6 max:mb-14">
+              {t("home.token_economics.description")}
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+              <CardSpotlight className="p-6 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20">
+                <div className="text-center">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-white/20 flex items-center justify-center">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-3xl font-bold text-white mb-2">100M</h3>
+                  <p className="text-white/80 text-sm">{t("home.token_economics.total_supply")}</p>
+                  <p className="text-white/60 text-xs mt-1">{t("home.token_economics.ywt_token")}</p>
+                </div>
+              </CardSpotlight>
+
+              <CardSpotlight className="p-6 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20">
+                <div className="text-center">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-white/20 flex items-center justify-center">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-3xl font-bold text-white mb-2">40%</h3>
+                  <p className="text-white/80 text-sm">{t("home.token_economics.swap_to_earn")}</p>
+                  <p className="text-white/60 text-xs mt-1">40M {t("home.token_economics.ywt_token")}</p>
+                </div>
+              </CardSpotlight>
+
+              <CardSpotlight className="p-6 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20">
+                <div className="text-center">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-white/20 flex items-center justify-center">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-3xl font-bold text-white mb-2">$0.10</h3>
+                  <p className="text-white/80 text-sm">{t("home.token_economics.tge_price")}</p>
+                  <p className="text-white/60 text-xs mt-1">{t("home.token_economics.token_start")}</p>
+                </div>
+              </CardSpotlight>
+            </div>
+
+            <Link href="/token-economics">
+              <button className="text-white hover:before:bg-white relative w-fit rounded-full px-8 py-[1.125rem] md:py-3 md:px-10 mx-auto mt-10 flex overflow-hidden border border-white bg-transparent shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-white before:transition-all before:duration-500 hover:text-[#8B1DB8] hover:shadow-white hover:before:left-0 hover:before:w-full">
+                <span className="relative z-10 font-medium">{t("home.token_economics.cta")}</span>
+              </button>
+            </Link>
+          </div>
+        </section>
+
         <section className="grid w-full max-w-[1200px] gap-6 md:min-h-[450px] md:grid-cols-2">
           <div className="transition rounded-[20px] p-5 [transition-property:background-color,border-color] lg:rounded-[30px] lg:p-8 border border-blue-500 bg-white dark:border-white dark:bg-black flex flex-col gap-5 md:justify-center md:gap-7">
             <h3 className="transition text-black font-bold dark:text-white text-[1.625rem] leading-[2rem] md:text-[1.875rem] md:leading-[2.0625rem] max-w-[18ch]">

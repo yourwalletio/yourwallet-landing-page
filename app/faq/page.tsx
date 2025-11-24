@@ -1,6 +1,7 @@
 "use client"
 // import { Metadata } from "next";
-import { ChevronDown, Search, ArrowRight, MessageCircleQuestion, BookOpen, Wallet, Settings, Shield, CreditCard, Coins } from "lucide-react";
+import { ChevronDown, Search, ArrowRight, MessageCircleQuestion, BookOpen, Wallet, Settings, Shield, CreditCard, Coins, TrendingUp, Sparkles } from "lucide-react";
+import { motion } from "motion/react";
 import { useState } from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
@@ -172,6 +173,159 @@ const FAQPage = () => {
                 {t("support_section.user_guide.cta")} <ArrowRight className="w-4 h-4" />
               </span>
             </Link>
+          </div>
+
+          {/* YWT Token Economics Section */}
+          <div className="mt-16">
+            <div className="text-center mb-8">
+              <h2 className="text-white font-bold text-2xl md:text-3xl mb-3 drop-shadow-lg">
+                {t("token_economics.title")}
+              </h2>
+              <p className="text-white/90 text-lg max-w-2xl mx-auto drop-shadow">
+                {t("token_economics.description")}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                {
+                  icon: Coins,
+                  title: t("token_economics.total_supply"),
+                  value: "100M",
+                  sub: t("token_economics.ywt_token"),
+                  gradient: "from-[#8B1DB8] to-[#477DE9]",
+                  style: "gradient"
+                },
+                {
+                  icon: TrendingUp,
+                  title: t("token_economics.swap_to_earn"),
+                  value: "40%",
+                  sub: t("token_economics.distribution"),
+                  gradient: "from-green-400 to-green-600",
+                  style: "bordered"
+                },
+                {
+                  icon: Sparkles,
+                  title: t("token_economics.buyback"),
+                  value: "20-25%",
+                  sub: t("token_economics.revenue"),
+                  gradient: "from-orange-400 to-orange-600",
+                  style: "glass"
+                },
+                {
+                  icon: Wallet,
+                  title: t("token_economics.blockchain"),
+                  value: t("token_economics.solana"),
+                  sub: t("token_economics.network"),
+                  gradient: "from-blue-400 to-blue-600",
+                  style: "elevated"
+                }
+              ].map((item, index) => {
+                const Icon = item.icon;
+                
+                if (item.style === "gradient") {
+                  return (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: index * 0.1 }}
+                    >
+                      <Link 
+                        href="/token-economics"
+                        className={`block p-6 rounded-3xl bg-gradient-to-br ${item.gradient} text-white relative overflow-hidden h-full shadow-xl hover:shadow-2xl transition-all hover:scale-105`}
+                      >
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-3xl -mr-16 -mt-16" />
+                        <div className="relative z-10">
+                          <div className="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center mb-4">
+                            <Icon className="w-7 h-7 text-white" />
+                          </div>
+                          <h3 className="text-sm opacity-90 mb-2">{item.title}</h3>
+                          <p className="text-3xl font-bold mb-1">{item.value}</p>
+                          <p className="text-sm opacity-80">{item.sub}</p>
+                        </div>
+                      </Link>
+                    </motion.div>
+                  );
+                } else if (item.style === "bordered") {
+                  return (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: index * 0.1 }}
+                    >
+                      <Link
+                        href="/token-economics"
+                        className={`block p-6 rounded-3xl border-2 bg-white/10 backdrop-blur-xl border-white/30 h-full hover:border-white/50 transition-all hover:shadow-xl relative`}
+                      >
+                        <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${item.gradient} flex items-center justify-center mb-4`}>
+                          <Icon className="w-7 h-7 text-white" />
+                        </div>
+                        <h3 className="text-sm text-white/90 mb-2">{item.title}</h3>
+                        <p className="text-3xl font-bold text-white mb-1">{item.value}</p>
+                        <p className="text-sm text-white/70">{item.sub}</p>
+                      </Link>
+                    </motion.div>
+                  );
+                } else if (item.style === "glass") {
+                  return (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: index * 0.1 }}
+                    >
+                      <Link
+                        href="/token-economics"
+                        className="block p-6 rounded-3xl bg-white/10 dark:bg-white/5 backdrop-blur-2xl border border-white/20 h-full shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                      >
+                        <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${item.gradient} flex items-center justify-center mb-4 shadow-lg`}>
+                          <Icon className="w-7 h-7 text-white" />
+                        </div>
+                        <h3 className="text-sm text-white/90 mb-2 font-medium">{item.title}</h3>
+                        <p className="text-3xl font-bold text-white mb-1">{item.value}</p>
+                        <p className="text-sm text-white/70">{item.sub}</p>
+                      </Link>
+                    </motion.div>
+                  );
+                } else {
+                  return (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: index * 0.1 }}
+                    >
+                      <Link
+                        href="/token-economics"
+                        className="block p-6 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 h-full shadow-2xl hover:shadow-3xl transition-all hover:-translate-y-2"
+                      >
+                        <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${item.gradient} flex items-center justify-center mb-4 shadow-md`}>
+                          <Icon className="w-7 h-7 text-white" />
+                        </div>
+                        <h3 className="text-sm text-white/90 mb-2">{item.title}</h3>
+                        <p className="text-3xl font-bold text-white mb-1">{item.value}</p>
+                        <p className="text-sm text-white/70">{item.sub}</p>
+                      </Link>
+                    </motion.div>
+                  );
+                }
+              })}
+            </div>
+
+            <div className="mt-8 text-center">
+              <Link
+                href="/token-economics"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white/20 backdrop-blur-xl rounded-xl text-white font-semibold hover:bg-white/30 transition-all duration-300 group"
+              >
+                {t("token_economics.view_more")} <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

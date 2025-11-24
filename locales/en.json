@@ -148,6 +148,16 @@
             },
             "cta": "Start Staking",
             "link_text": "Visit Stake Your Wallet"
+        },
+        "token_economics": {
+            "title": "YWT Token Economics",
+            "description": "A robust token economy with 100 million total supply, supported by Swap-to-Earn mechanism and buyback program. Click to learn more.",
+            "cta": "Explore Token Economics",
+            "total_supply": "Total Supply",
+            "ywt_token": "YWT",
+            "swap_to_earn": "Swap-to-Earn",
+            "tge_price": "TGE Price",
+            "token_start": "Token Launch"
         }
     },
     "metadata": {
@@ -183,6 +193,10 @@
         "terms": {
             "title": "Your Wallet - Terms of Service",
             "description": "Your Wallet terms of service - Rules and conditions you need to follow when using our services."
+        },
+        "token_economics": {
+            "title": "Your Wallet - Token Economics",
+            "description": "Detailed information about YWT Token economic structure, distribution plan, and use cases."
         }
     },
     "privacy": {
@@ -458,6 +472,20 @@
                 "cta": "Go to Guide"
             }
         },
+        "token_economics": {
+            "title": "YWT Token Economics",
+            "description": "Learn about the economic structure, distribution plan, and use cases of the YWT Token",
+            "total_supply": "Total Supply",
+            "swap_to_earn": "Swap-to-Earn",
+            "buyback": "Buyback",
+            "blockchain": "Blockchain",
+            "distribution": "Distribution",
+            "revenue": "Revenue",
+            "view_more": "View Token Economics",
+            "ywt_token": "YWT",
+            "network": "Network",
+            "solana": "Solana"
+        },
         "general": [
             {
                 "question": "What is Your Wallet?",
@@ -720,6 +748,243 @@
             "title": "Emergencies",
             "contact": "24/7 Security Support",
             "report": "Report Suspicious Activity"
+        }
+    },
+    "token_economics": {
+        "title": "Token Economics",
+        "description": "The economic structure, distribution plan, and use cases of the YWT Token",
+        "hero": {
+            "title": "YWT Token Economics",
+            "subtitle": "Real value, sustainable growth",
+            "description": "A robust token economy designed with 100 million total supply, supported by Swap-to-Earn mechanism and buyback program."
+        },
+        "overview": {
+            "title": "Overview",
+            "total_supply": "Total Supply",
+            "blockchain": "Blockchain",
+            "symbol": "Symbol",
+            "tge_price": "TGE Price",
+            "contract_address": "Contract Address",
+            "contract_link": "View Contract",
+            "verified": "Verified",
+            "network": "Solana Network",
+            "qr_code": "QR Code",
+            "scan_to_add": "Scan to add to wallet",
+            "audited": "Audited by Hashlock Security"
+        },
+        "distribution": {
+            "title": "Token Distribution",
+            "subtitle": "Transparent and fair distribution of 100,000,000 YWT",
+            "summary": "Distribution Summary",
+            "presale": {
+                "title": "Pre-sale",
+                "amount": "20,000,000 YWT",
+                "percentage": "20%",
+                "description": "For investors and early supporters",
+                "vesting": "30% TGE + 9 months linear vesting"
+            },
+            "swap_to_earn": {
+                "title": "Swap-to-Earn",
+                "amount": "40,000,000 YWT",
+                "percentage": "40%",
+                "description": "Distributed to users through swap transactions",
+                "period": "Over 42 months"
+            },
+            "team": {
+                "title": "Team",
+                "amount": "Portion of total supply",
+                "percentage": "Designated percentage",
+                "description": "For team members",
+                "vesting": "36 months linear vesting"
+            },
+            "advisors": {
+                "title": "Advisors",
+                "amount": "Portion of total supply",
+                "percentage": "Designated percentage",
+                "description": "For advisors",
+                "vesting": "24 months linear vesting"
+            },
+            "strategic": {
+                "title": "Strategic Sale",
+                "amount": "Portion of total supply",
+                "percentage": "Designated percentage",
+                "description": "For strategic partners",
+                "vesting": "24 months linear vesting"
+            },
+            "airdrop": {
+                "title": "Airdrop",
+                "amount": "2,000,000 YWT",
+                "percentage": "2%",
+                "description": "For community airdrops"
+            }
+        },
+        "swap_to_earn": {
+            "title": "Swap-to-Earn Mechanism",
+            "subtitle": "Earn YWT automatically with every swap transaction",
+            "description": "Swap-to-Earn is one of the most innovative features of the YWT ecosystem. You automatically earn YWT tokens after each swap transaction.",
+            "parameters": {
+                "title": "General Parameters",
+                "min_transaction": "Minimum Transaction Amount",
+                "min_transaction_value": "$50",
+                "transaction_fee": "Transaction Fee",
+                "transaction_fee_value": "0.85%",
+                "reward_pool": "Total Reward Pool",
+                "reward_pool_value": "40,000,000 YWT",
+                "distribution_period": "Distribution Period",
+                "distribution_period_value": "42 Months"
+            },
+            "phases": {
+                "title": "Phase Structure",
+                "phase_structure_title": "Phase Structure",
+                "phase_1": {
+                    "title": "Phase 1",
+                    "total": "20,000,000 YWT",
+                    "reward_per_100": "3 YWT / $100",
+                    "tge": "10%",
+                    "duration": "16 Months",
+                    "description": "High reward rates for rapid user growth"
+                },
+                "phase_2": {
+                    "title": "Phase 2",
+                    "total": "10,000,000 YWT",
+                    "reward_per_100": "2 YWT / $100",
+                    "tge": "10%",
+                    "duration": "14 Months",
+                    "description": "Balanced reward rates"
+                },
+                "phase_3": {
+                    "title": "Phase 3",
+                    "total": "10,000,000 YWT",
+                    "reward_per_100": "1 YWT / $100",
+                    "tge": "10%",
+                    "duration": "12 Months",
+                    "description": "Sustainable reward model"
+                }
+            },
+            "table": {
+                "phase": "Phase",
+                "total_ywt": "Total YWT",
+                "reward_per_100": "Reward per $100",
+                "tge": "TGE",
+                "duration": "Distribution Duration"
+            },
+            "labels": {
+                "total": "Total:",
+                "per_100": "Per $100:",
+                "tge": "TGE:",
+                "duration": "Duration:"
+            }
+        },
+        "buyback": {
+            "title": "Buyback Mechanism",
+            "subtitle": "Reflecting ecosystem revenue into token value",
+            "description": "The buyback mechanism is designed to ensure the sustainability of the YWT token economy and preserve the long-term value of the ecosystem.",
+            "benefits": {
+                "title": "Benefits of Buyback",
+                "revenue_reflection": {
+                    "title": "Revenue Reflection",
+                    "description": "As YourWallet grows, a portion of its revenue is allocated directly to token buybacks."
+                },
+                "market_stability": {
+                    "title": "Market Stability",
+                    "description": "Prevents excessive price drops and reduces volatility."
+                },
+                "supply_control": {
+                    "title": "Supply Control",
+                    "description": "Prevents supply expansion with controlled buyback limits."
+                },
+                "long_term_value": {
+                    "title": "Long-term Value",
+                    "description": "Ensures token value strengthens as the ecosystem grows."
+                }
+            },
+            "rates": {
+                "title": "Annual Buyback Rates and Limits",
+                "year_2027": {
+                    "title": "2027",
+                    "rate": "20-25%",
+                    "max_limit": "20,000,000 YWT",
+                    "description": "20-25% of total revenue allocated to buyback",
+                    "of_revenue": "Of Revenue",
+                    "max_limit_label": "Maximum Limit"
+                },
+                "year_2028": {
+                    "title": "2028",
+                    "rate": "10-15%",
+                    "max_limit": "10,000,000 YWT",
+                    "description": "10-15% of total revenue allocated to buyback",
+                    "of_revenue": "Of Revenue",
+                    "max_limit_label": "Maximum Limit"
+                },
+                "year_2029": {
+                    "title": "2029",
+                    "rate": "1-5%",
+                    "max_limit": "5,000,000 YWT",
+                    "description": "1-5% of total revenue allocated to buyback",
+                    "of_revenue": "Of Revenue",
+                    "max_limit_label": "Maximum Limit"
+                }
+            }
+        },
+        "use_cases": {
+            "title": "Use Cases and Value",
+            "subtitle": "YWT is not merely a reward token, but also functions as a utility token within the ecosystem",
+            "governance": {
+                "title": "Governance (DAO)",
+                "description": "YWT token holders will be able to vote on governance decisions in the future (via DAO model)",
+                "details": "Voting rights in governance decisions via DAO model"
+            },
+            "fee_discounts": {
+                "title": "Transaction Fee Discounts",
+                "description": "Users holding a certain amount of YWT will benefit from transaction fee discounts",
+                "details": "Users holding YWT benefit from transaction fee discounts"
+            },
+            "staking": {
+                "title": "Staking & Earn",
+                "description": "Generate additional income through staking YWT - with 3/6/9/12 month options offering 10-40% APR",
+                "details": "3/6/9/12 month options with 10-40% APR"
+            },
+            "cashback": {
+                "title": "Cashback Rewards",
+                "description": "Earn cashback for payments made using YWT - for card spending and QR payments",
+                "details": "Cashback for card spending and QR payments"
+            },
+            "vip_tiers": {
+                "title": "VIP Tiers",
+                "description": "Achieve VIP status with high YWT balance and enjoy exclusive benefits",
+                "details": "VIP status and exclusive benefits"
+            }
+        },
+        "economic_balance": {
+            "title": "Economic Balance Mechanism",
+            "subtitle": "Balance designed for sustainable growth",
+            "decreasing_rewards": {
+                "title": "Decreasing Reward Rates",
+                "description": "Gradually decreasing reward rates (3 → 2 → 1 YWT) reduce supply pressure as volume increases",
+                "details": "Decreasing reward rates: 3 → 2 → 1 YWT"
+            },
+            "buyback_lp": {
+                "title": "Buyback + LP Lock",
+                "description": "Buyback and 24-month LP lock ensure price stability",
+                "details": "24-month LP lock for price stability"
+            },
+            "vesting": {
+                "title": "Vesting Discipline",
+                "description": "Vesting disciplines, especially for team and strategic sale, prevent supply shocks",
+                "details": "Vesting discipline for team and strategic sale"
+            }
+        },
+        "whitepaper": {
+            "title": "Detailed Information",
+            "description": "For more information about YWT Token and ecosystem",
+            "button": "Download Whitepaper",
+            "download_pdf": "Download PDF",
+            "viewer_title": "Read Whitepaper"
+        },
+        "cta": {
+            "title": "Join the YWT Ecosystem",
+            "description": "Swap, earn rewards, and become part of the token economy",
+            "button": "Download App"
         }
     }
 }
