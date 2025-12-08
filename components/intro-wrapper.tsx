@@ -8,32 +8,45 @@ interface IntroWrapperProps {
 }
 
 const IntroWrapper: React.FC<IntroWrapperProps> = ({ children }) => {
-  const [showIntro, setShowIntro] = useState(false);
-  const [isClient, setIsClient] = useState(false);
+  const [showIntro, setShowIntro] = useState(true); // Başlangıçta true, kontrol edilene kadar
+  const [isReady, setIsReady] = useState(false); // Intro kontrolü tamamlandı mı?
 
   useEffect(() => {
-    setIsClient(true);
     // SessionStorage'dan kontrol et
     const introShown = sessionStorage.getItem('introShown');
     console.log('IntroWrapper - introShown:', introShown);
-    setShowIntro(!introShown);
+    const shouldShowIntro = !introShown;
+    setShowIntro(shouldShowIntro);
+    setIsReady(true); // Kontrol tamamlandı
   }, []);
 
   const handleIntroComplete = () => {
     setShowIntro(false);
   };
 
-  // Server-side rendering sırasında children'ı göster
-  if (!isClient) {
-    return <>{children}</>;
-  }
+  // Kontrol tamamlanana kadar veya intro gösterilirken children'ı gizle
+  const shouldHideChildren = !isReady || showIntro;
 
-  // Client-side rendering
-  if (showIntro) {
-    return <IntroScreen onComplete={handleIntroComplete} />;
-  }
-
-  return <>{children}</>;
+  return (
+    <>
+      {/* Intro gösterilecekse ve kontrol tamamlandıysa intro'yu göster */}
+      {isReady && showIntro && (
+        <IntroScreen onComplete={handleIntroComplete} />
+      )}
+      
+      {/* Children'ı her zaman render et (SEO için) ama intro gösterilirken veya kontrol yapılırken gizle */}
+      <div 
+        style={{
+          visibility: shouldHideChildren ? 'hidden' : 'visible',
+          opacity: shouldHideChildren ? 0 : 1,
+          transition: 'opacity 0.3s ease-in-out',
+          pointerEvents: shouldHideChildren ? 'none' : 'auto',
+        }}
+      >
+        {children}
+      </div>
+    </>
+  );
 };
 
 export default IntroWrapper;
