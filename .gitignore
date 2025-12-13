@@ -38,4 +38,7 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.tspublic/downloads/*.apk
+next-env.d.ts
+
+# APK files
+public/downloads/*.apk
