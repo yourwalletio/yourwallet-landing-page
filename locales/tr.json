@@ -11,7 +11,8 @@
         "faq":"SSS",
         "security_tips":"Güvenlik İpuçları",
         "user_guide":"Kullanım Kılavuzu",
-        "stake": "Stake Yapın"
+        "stake": "Stake Yapın",
+        "token_economics": "Token Ekonomisi"
     },
     "theme": {
         "dark": "Koyu",

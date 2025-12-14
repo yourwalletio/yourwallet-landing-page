@@ -87,7 +87,7 @@ export default function TokenEconomicsPage() {
     },
     {
       name: t('distribution.advisors.title'),
-      value: 10,
+      value: 5,
       amount: t('distribution.advisors.amount'),
       color: '#3b82f6'
     },
@@ -109,18 +109,21 @@ export default function TokenEconomicsPage() {
     {
       phase: 'Phase 1',
       reward: 3,
+      months: '16 Months',
       total: t('swap_to_earn.phases.phase_1.total'),
       color: '#8B1DB8'
     },
     {
       phase: 'Phase 2',
       reward: 2,
+      months: '14 Months',
       total: t('swap_to_earn.phases.phase_2.total'),
       color: '#10b981'
     },
     {
       phase: 'Phase 3',
       reward: 1,
+      months: '12 Months',
       total: t('swap_to_earn.phases.phase_3.total'),
       color: '#3b82f6'
     }
@@ -129,20 +132,23 @@ export default function TokenEconomicsPage() {
   const buybackData = [
     {
       year: '2027',
-      rate: 22.5,
-      label: '20-25%',
+      rate: 20,
+      label: '20M',
+      amount: '20.000.000',
       color: '#8B1DB8'
     },
     {
       year: '2028',
-      rate: 12.5,
-      label: '10-15%',
+      rate: 10,
+      label: '10M',
+      amount: '10.000.000',
       color: '#10b981'
     },
     {
       year: '2029',
-      rate: 3,
-      label: '1-5%',
+      rate: 5,
+      label: '5M',
+      amount: '5.000.000',
       color: '#3b82f6'
     }
   ];
@@ -230,11 +236,10 @@ export default function TokenEconomicsPage() {
         <section className="w-full max-w-[1200px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
             { icon: Coins, label: t('overview.total_supply'), value: '100M', sub: 'YWT', gradient: 'from-[#8B1DB8] to-[#477DE9]' },
-            { icon: Zap, label: t('overview.blockchain'), value: 'Solana', sub: 'SOL Network', gradient: 'from-green-400 to-green-600' },
-            { icon: TrendingUp, label: t('overview.symbol'), value: 'YWT', sub: 'Token Symbol', gradient: 'from-blue-400 to-blue-600' },
+            { imageSrc: '/network/sol.webp', label: t('overview.blockchain'), value: 'Solana', sub: 'SOL Network', gradient: 'from-green-400 to-green-600' },
+            { imageSrc: '/logo-primary.webp', label: t('overview.symbol'), value: 'YWT', sub: 'Token Symbol', gradient: 'from-blue-400 to-blue-600' },
             { icon: DollarSign, label: t('overview.tge_price'), value: '$0.10', sub: 'USD per YWT', gradient: 'from-orange-400 to-orange-600' }
           ].map((item, index) => {
-            const Icon = item.icon;
             return (
               <motion.div
                 key={item.label}
@@ -244,7 +249,11 @@ export default function TokenEconomicsPage() {
               >
                 <div className={`p-6 rounded-3xl bg-gradient-to-br ${item.gradient} text-white h-full shadow-xl hover:shadow-2xl transition-all hover:scale-105`}>
                   <div className="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center mb-4">
-                    <Icon className="w-7 h-7 text-white" />
+                    {item.icon ? (
+                      <item.icon className="w-7 h-7 text-white" />
+                    ) : (
+                      <img src={item.imageSrc} alt={item.label} className="w-10 h-10 object-contain" />
+                    )}
                   </div>
                   <h3 className="text-sm opacity-90 mb-2">{item.label}</h3>
                   <p className="text-3xl font-bold mb-1">{item.value}</p>
@@ -503,6 +512,9 @@ export default function TokenEconomicsPage() {
                     />
                     <span className="font-semibold">{phase.phase}</span>
                   </div>
+                  <p className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                    {phase.months}
+                  </p>
                   <p className="text-2xl font-bold text-[#8B1DB8] dark:text-[#477DE9] mb-1">
                     {phase.reward} YWT / $100
                   </p>
@@ -592,7 +604,7 @@ export default function TokenEconomicsPage() {
                 >
                   <p className="text-3xl font-bold mb-2">{item.year}</p>
                   <p className="text-2xl font-bold text-[#8B1DB8] dark:text-[#477DE9] mb-1">
-                    {item.label}
+                    {item.amount} YWT
                   </p>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
                     {t(`buyback.rates.year_${item.year}.of_revenue`)}

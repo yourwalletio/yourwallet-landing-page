@@ -11,7 +11,8 @@
         "faq":"SSS",
         "security_tips":"Security Tips",
         "user_guide":"User Guide",
-        "stake": "Stake"
+        "stake": "Stake",
+        "token_economics": "Token Economics"
     },
     "theme": {
         "dark": "Dark",

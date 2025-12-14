@@ -34,4 +34,8 @@ export const navigationLinks: ILinks[] = [
         title_key: "security_tips",
         path: "/security-tips",
     },
+    {
+        title_key: "token_economics",
+        path: "/token-economics",
+    },
 ] 
