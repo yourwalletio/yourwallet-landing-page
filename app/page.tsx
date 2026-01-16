@@ -126,6 +126,14 @@ const partnershipsData = [
     height: 60,
     link: "https://theoctopuslabs.com?utm_source=yourwallet&utm_medium=referral"
   },
+  {
+    name: "الدوحة بزنس كونسلتنج",
+    logo: "/لوقو-دوحة-بيزنس.png",
+    alt: "Doha Business Consulting Logo",
+    width: 150,
+    height: 100,
+    link: "https://share.google/9E2TpVtqoAqlUs6PR"
+  },
 ];
 
 export async function generateMetadata(): Promise<Metadata> {
