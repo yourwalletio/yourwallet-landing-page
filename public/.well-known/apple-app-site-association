@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "KJ89RS857A.com.yourwallet.wallet",
+        "paths": ["/wc", "/wc/*"]
+      }
+    ]
+  }
+}
