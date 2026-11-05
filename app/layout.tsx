@@ -81,7 +81,8 @@ export default async function RootLayout({
                 {/* <Header /> */}
                 <FloatingNav key="floating-nav" navItems={navigationLinks.map(link => ({
                   name: link.title_key,
-                  link: link.path
+                  link: link.path,
+                  target: link.target,
                 }))} />
                 <div key="page-content" className="pt-20">
                   {children}
