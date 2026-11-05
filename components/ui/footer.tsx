@@ -43,7 +43,7 @@ export default function Footer() {
                         <img src="/icons/instagram.svg" alt="Instagram" className='w-6 h-6 ' />
                     </Link>
                     <Link
-                        href={"mailto:hello@yourwallet.tr"}
+                        href={"mailto:hello@yourwallet.io"}
                         rel="noopener noreferrer"
                         target="_blank"
                         className="transition flex items-center gap-3 font-inter text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.375rem] text-black hover:underline dark:text-white">
@@ -170,15 +170,18 @@ export default function Footer() {
                             {/* Şirket Bilgileri */}
                             <div className="mt-6 text-center lg:text-left">
                                 <div className="text-xs text-gray-600 dark:text-gray-400 space-y-1 text-wrap text-ellipsis max-w-fit ">
-                                    <p className="font-medium">Your Wallet is a technology company and does not provide financial services. <br /> in the United Kingdom, <br />Company Registration number 15064816. </p>
+                                    <p className="font-semibold text-sm text-black dark:text-white">YOUR WALLET LTD</p>
+                                    <p>Company number 15064816</p>
+                                    <p>United Kingdom</p>
+                                    <p>Your Wallet Ltd is a technology company and does not provide financial services.</p>
                                    
                                     <p>
                                         <span className="font-medium">Email: </span>
                                         <Link
-                                            href="mailto:hello@yourwallet.tr"
+                                            href="mailto:hello@yourwallet.io"
                                             className="hover:underline text-[#7421F7] dark:text-[#477DE9]"
                                         >
-                                            hello@yourwallet.tr
+                                            hello@yourwallet.io
                                         </Link>
                                     </p>
                                 </div>

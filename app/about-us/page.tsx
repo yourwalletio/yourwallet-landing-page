@@ -279,6 +279,17 @@ export default function Page() {
         </div>
       </section>}
 
+      <section className="w-full max-w-[1200px] rounded-[28px] border border-black/10 bg-white px-6 py-10 dark:border-white/10 dark:bg-black md:px-12">
+        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8B1DB8] dark:text-[#7aa2ff]">{t("home.company.title")}</p>
+        <h2 className="mt-3 text-3xl font-bold text-black dark:text-white">{t("home.company.name")}</h2>
+        <p className="mt-4 max-w-[60ch] text-black/70 dark:text-white/70">{t("home.company.note")}</p>
+        <div className="mt-6 grid gap-3 text-sm md:grid-cols-3">
+          <p className="rounded-2xl bg-[#f6f6f8] px-4 py-3 dark:bg-white/5">{t("home.company.number")}</p>
+          <p className="rounded-2xl bg-[#f6f6f8] px-4 py-3 dark:bg-white/5">{t("home.company.country")}</p>
+          <a href="mailto:hello@yourwallet.io" className="rounded-2xl bg-[#f6f6f8] px-4 py-3 font-medium text-[#8B1DB8] dark:bg-white/5 dark:text-[#9db7ff]">{t("home.company.email")}</a>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section className="m-auto w-full flex-col-reverse justify-between rounded-[20px] bg-[#477DE9] px-5 py-10 md:flex-row md:items-center lg:rounded-[30px] lg:p-16 lg:px-[100px] flex max-w-[1200px] gap-9 [&>div>p]:!max-w-[60ch]">
         <div>
