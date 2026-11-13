@@ -12,6 +12,7 @@
         "security_tips":"Security Tips",
         "user_guide":"User Guide",
         "stake": "Stake",
+        "vault": "Vault",
         "token_economics": "Token Economics"
     },
     "theme": {
@@ -120,7 +121,88 @@
         },
         "partnerships": {
             "title": "Partnerships",
-            "description": "We work with leading institutions in the industry to shape your financial future."
+            "description": "Your Wallet connects you to the networks, swaps, cards, and apps you already use.",
+            "partners": {
+                "wirex": "Crypto cards and everyday payments",
+                "solana": "Fast, low-cost network",
+                "jupiter": "Best-price swaps on Solana",
+                "walletconnect": "Connect securely to any DApp"
+            }
+        },
+        "showcase": {
+            "title": "The app, on every screen",
+            "description": "Create a wallet, deposit crypto, and swap assets from the same interface you use on your phone.",
+            "welcome": {
+                "title": "Open your wallet",
+                "description": "Create or import an account in a few taps."
+            },
+            "deposit": {
+                "title": "Deposit in seconds",
+                "description": "Move crypto in and see the amount before you continue."
+            },
+            "swap": {
+                "title": "Swap with the rate in view",
+                "description": "Exchange assets without leaving Your Wallet."
+            }
+        },
+        "company": {
+            "title": "Company",
+            "name": "YOUR WALLET LTD",
+            "number": "Company number 15064816",
+            "country": "United Kingdom",
+            "note": "Your Wallet Ltd is a technology company and does not provide financial services.",
+            "email": "hello@yourwallet.io"
+        },
+        "vault": {
+            "eyebrow": "Vault",
+            "title": "A vault that keeps your crypto in your hands",
+            "description": "Move SOL, USDC, or ETH into Your Wallet Vault. Funds stay in a self-custody account on Solana, separate from everyday spending, and only you can move them out.",
+            "how_title": "How the Vault works",
+            "how_description": "Four steps inside the app. No separate exchange account.",
+            "steps": {
+                "choose": {
+                    "title": "Choose a vault",
+                    "description": "Open the app and pick SOL, USDC, or ETH. Each vault is kept separate from your spending balance."
+                },
+                "deposit": {
+                    "title": "Deposit from your wallet",
+                    "description": "Confirm the amount once. The deposit moves into your vault. Your Wallet never holds the keys."
+                },
+                "earn": {
+                    "title": "Assets stay in the vault",
+                    "description": "Your balance stays visible in the app. Nothing moves unless you confirm it."
+                },
+                "withdraw": {
+                    "title": "Withdraw when you are ready",
+                    "description": "Send funds back to your main balance whenever you want them available to spend or swap."
+                }
+            },
+            "highlights": {
+                "custody": {
+                    "title": "Self-custody",
+                    "description": "Only you can move funds out. Private keys stay on your device."
+                },
+                "solana": {
+                    "title": "Built on Solana",
+                    "description": "Deposits and withdrawals confirm in seconds, with low network fees."
+                },
+                "clear": {
+                    "title": "Clear before you confirm",
+                    "description": "See the asset and amount on one screen before the deposit is sent."
+                }
+            },
+            "preview": {
+                "title": "Vault",
+                "balance_label": "Vault balance",
+                "flexible": "Flexible",
+                "locked": "12 months",
+                "variable": "Variable",
+                "apr": "10–40% APR",
+                "deposit": "Deposit",
+                "withdraw": "Withdraw"
+            },
+            "cta": "Download the app",
+            "secondary_cta": "Download the app"
         },
         "stake": {
             "title": "Stake on Solana Network",
@@ -246,7 +328,7 @@
         "contact": {
             "title": "Contact us",
             "content": "We're here to help with your privacy questions or concerns.",
-            "email": "Email: hello@yourwallet.tr"
+            "email": "Email: hello@yourwallet.io"
         }
     },
     "terms": {
@@ -306,7 +388,7 @@
         },
         "contact": {
             "title": "11. Contact",
-            "content": "For any questions or concerns, you can contact us at hello@yourwallet.tr. Our 24/7 support line is available for emergencies."
+            "content": "For any questions or concerns, you can contact us at hello@yourwallet.io. Our 24/7 support line is available for emergencies."
         }
     },
     "support": {
@@ -506,7 +588,7 @@
             },
             {
                 "question": "How can I get technical support?",
-                "answer": "You can reach our technical support team 24/7 via the in-app support section or at hello@yourwallet.tr."
+                "answer": "You can reach our technical support team 24/7 via the in-app support section or at hello@yourwallet.io."
             }
         ],
         "security": [
@@ -528,7 +610,7 @@
             },
             {
                 "question": "How do I report fraud attempts?",
-                "answer": "You can report suspicious activities or fraud attempts to hello@yourwallet.tr or through the in-app security report section."
+                "answer": "You can report suspicious activities or fraud attempts to hello@yourwallet.io or through the in-app security report section."
             }
         ],
         "payment": [
@@ -686,7 +768,7 @@
         },
         "security_notice": {
             "title": "Important Security Notice",
-            "content": "Your Wallet team will never ask for your private keys, recovery phrase or PIN code. You can report suspicious situations to hello@yourwallet.tr for your security."
+            "content": "Your Wallet team will never ask for your private keys, recovery phrase or PIN code. You can report suspicious situations to hello@yourwallet.io for your security."
         },
         "cta": {
             "go_to": "Go to Checklist",

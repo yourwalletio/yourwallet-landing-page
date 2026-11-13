@@ -12,6 +12,7 @@
         "security_tips":"Güvenlik İpuçları",
         "user_guide":"Kullanım Kılavuzu",
         "stake": "Stake Yapın",
+        "vault": "Kasa",
         "token_economics": "Token Ekonomisi"
     },
     "theme": {
@@ -120,7 +121,88 @@
         },
         "partnerships": {
             "title": "Ortaklarımız",
-            "description": "Finansal geleceğinizi şekillendirmek için sektörün önde gelen kurumlarıyla çalışıyoruz."
+            "description": "Your Wallet sizi kullandığınız ağlara, takaslara, kartlara ve uygulamalara bağlar.",
+            "partners": {
+                "wirex": "Kripto kartlar ve günlük ödemeler",
+                "solana": "Hızlı ve düşük maliyetli ağ",
+                "jupiter": "Solana'da en iyi fiyatlı takaslar",
+                "walletconnect": "Herhangi bir DApp'e güvenli bağlantı"
+            }
+        },
+        "showcase": {
+            "title": "Uygulama, her ekranda",
+            "description": "Cüzdan oluşturun, kripto yatırın ve varlıklarınızı telefonda kullandığınız arayüzden takas edin.",
+            "welcome": {
+                "title": "Cüzdanınızı açın",
+                "description": "Birkaç dokunuşla hesap oluşturun veya içe aktarın."
+            },
+            "deposit": {
+                "title": "Saniyeler içinde yatırın",
+                "description": "Kriptoyu aktarın ve devam etmeden önce tutarı görün."
+            },
+            "swap": {
+                "title": "Kuru görünürken takas edin",
+                "description": "Your Wallet'tan çıkmadan varlık değiştirin."
+            }
+        },
+        "company": {
+            "title": "Şirket",
+            "name": "YOUR WALLET LTD",
+            "number": "Şirket numarası 15064816",
+            "country": "Birleşik Krallık",
+            "note": "Your Wallet Ltd bir teknoloji şirketidir ve finansal hizmet sunmaz.",
+            "email": "hello@yourwallet.io"
+        },
+        "vault": {
+            "eyebrow": "Kasa",
+            "title": "Kriptonuzu sizin elinizde tutan kasa",
+            "description": "SOL, USDC veya ETH'yi Your Wallet Kasası'na taşıyın. Fonlar Solana üzerinde size ait bir hesapta, günlük harcamadan ayrı durur ve yalnızca siz çıkarabilirsiniz.",
+            "how_title": "Kasa nasıl çalışır",
+            "how_description": "Uygulama içinde dört adım. Ayrı bir borsa hesabı gerekmez.",
+            "steps": {
+                "choose": {
+                    "title": "Bir kasa seçin",
+                    "description": "Uygulamayı açın ve SOL, USDC veya ETH seçin. Her kasa harcama bakiyenizden ayrı tutulur."
+                },
+                "deposit": {
+                    "title": "Cüzdanınızdan yatırın",
+                    "description": "Tutarı bir kez onaylayın. Yatırım kasanıza geçer. Anahtarlar Your Wallet'ta tutulmaz."
+                },
+                "earn": {
+                    "title": "Varlıklar kasada kalır",
+                    "description": "Bakiyeniz uygulamada görünür. Siz onaylamadan hiçbir şey hareket etmez."
+                },
+                "withdraw": {
+                    "title": "Hazır olduğunuzda çekin",
+                    "description": "Harcamak veya takas etmek istediğinizde fonları ana bakiyenize geri alın."
+                }
+            },
+            "highlights": {
+                "custody": {
+                    "title": "Kendi saklamanız",
+                    "description": "Fonları yalnızca siz çıkarabilirsiniz. Özel anahtarlar cihazınızda kalır."
+                },
+                "solana": {
+                    "title": "Solana üzerinde",
+                    "description": "Yatırma ve çekme işlemleri saniyeler içinde, düşük ağ ücretiyle onaylanır."
+                },
+                "clear": {
+                    "title": "Onaydan önce net",
+                    "description": "Yatırım gönderilmeden önce varlık ve tutarı tek ekranda görürsünüz."
+                }
+            },
+            "preview": {
+                "title": "Kasa",
+                "balance_label": "Kasa bakiyesi",
+                "flexible": "Esnek",
+                "locked": "12 ay",
+                "variable": "Değişken",
+                "apr": "%10–40 APR",
+                "deposit": "Yatır",
+                "withdraw": "Çek"
+            },
+            "cta": "Uygulamayı indir",
+            "secondary_cta": "Uygulamayı indir"
         },
         "stake": {
             "title": "Solana Ağında Stake Yapın",
@@ -246,7 +328,7 @@
         "contact": {
             "title": "Bize ulaşın",
             "content": "Gizlilik sorularınız veya endişeleriniz için size yardımcı olmaktan memnuniyet duyarız.",
-            "email": "E-posta: hello@yourwallet.tr"
+            "email": "E-posta: hello@yourwallet.io"
         }
     },
     "terms": {
@@ -294,7 +376,7 @@
         },
         "contact": {
             "title": "11. İletişim",
-            "content": "Herhangi bir soru veya endişeniz için hello@yourwallet.tr adresinden bizimle iletişime geçebilirsiniz. Acil durumlar için 7/24 destek hattımız mevcuttur."
+            "content": "Herhangi bir soru veya endişeniz için hello@yourwallet.io adresinden bizimle iletişime geçebilirsiniz. Acil durumlar için 7/24 destek hattımız mevcuttur."
         }
     },
     "support": {
@@ -494,7 +576,7 @@
             },
             {
                 "question": "Teknik destek nasıl alabilirim?",
-                "answer": "Uygulama içi destek bölümünden veya hello@yourwallet.tr adresinden 7/24 teknik destek ekibimize ulaşabilirsiniz."
+                "answer": "Uygulama içi destek bölümünden veya hello@yourwallet.io adresinden 7/24 teknik destek ekibimize ulaşabilirsiniz."
             }
         ],
         "security": [
@@ -516,7 +598,7 @@
             },
             {
                 "question": "Dolandırıcılık girişimlerini nasıl bildiririm?",
-                "answer": "Şüpheli işlemleri veya dolandırıcılık girişimlerini hello@yourwallet.tr adresine veya uygulama içi güvenlik bildirimi bölümünden raporlayabilirsiniz."
+                "answer": "Şüpheli işlemleri veya dolandırıcılık girişimlerini hello@yourwallet.io adresine veya uygulama içi güvenlik bildirimi bölümünden raporlayabilirsiniz."
             }
         ],
         "payment": [
@@ -676,7 +758,7 @@
         },
         "security_notice": {
             "title": "Önemli Güvenlik Bildirimi",
-            "content": "Your Wallet ekibi hiçbir zaman sizden özel anahtarlarınızı, kurtarma kelimelerinizi veya PIN kodunuzu istemez. Güvenliğiniz için şüpheli durumları hello@yourwallet.tr adresine bildirebilirsiniz."
+            "content": "Your Wallet ekibi hiçbir zaman sizden özel anahtarlarınızı, kurtarma kelimelerinizi veya PIN kodunuzu istemez. Güvenliğiniz için şüpheli durumları hello@yourwallet.io adresine bildirebilirsiniz."
         },
         "cta": {
             "go_to": "Listeye Git",
