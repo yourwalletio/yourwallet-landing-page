@@ -18,9 +18,8 @@ export const navigationLinks: ILinks[] = [
         path: "/swap",
     },
     {
-        title_key: "stake",
-        path: "https://stake.yourwallet.io",
-        target: "_blank",
+        title_key: "vault",
+        path: "/#vault",
     },
     {
         title_key: "user_guide",
@@ -33,9 +32,5 @@ export const navigationLinks: ILinks[] = [
     {
         title_key: "security_tips",
         path: "/security-tips",
-    },
-    {
-        title_key: "token_economics",
-        path: "/token-economics",
     },
 ] 

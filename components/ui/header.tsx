@@ -67,7 +67,7 @@ export default function Header() {
                 </Link>
                 <div className='flex items-center'>
                     {links.map((item, index) => (
-                        <Link href={item.path} key={index} className='transition text-[#1b1b1c] font-inter dark:text-white  text-xs md:text-sm cursor-pointer px-5 py-[0.625rem] font-[500] !opacity-100'>
+                        <Link href={item.path} key={index} className='transition text-[#1b1b1c] font-inter dark:text-white  text-xs md:text-sm cursor-pointer px-3 py-[0.625rem] font-[500] !opacity-100'>
                             {t(`navigation.${item.title_key}`)}
                         </Link>
                     ))}

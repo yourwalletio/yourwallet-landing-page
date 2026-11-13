@@ -111,30 +111,36 @@ const blockchainData = [
 
 const partnershipsData = [
   {
-    name: "Hashlock",
-    logo: "/partnerships/hashlock_greenandwhite_blackbackground.png",
-    alt: "Hashlock Logo",
-    width: 150,
-    height: 100,
-    link: "https://hashlock.com/audits/your-wallet"
+    name: "Wirex",
+    logo: "/partnerships/wirex.svg",
+    alt: "Wirex",
+    link: "https://wirexapp.com",
+    taglineKey: "home.partnerships.partners.wirex",
   },
   {
-    name: "The Octopus Labs",
-    logo: "/partnerships/theoctopuslabs-logo.png",
-    alt: "The Octopus Labs Logo",
-    width: 80,
-    height: 60,
-    link: "https://theoctopuslabs.com?utm_source=yourwallet&utm_medium=referral"
+    name: "Solana",
+    logo: "/network/sol.webp",
+    alt: "Solana",
+    link: "https://solana.com",
+    taglineKey: "home.partnerships.partners.solana",
   },
   {
-    name: "الدوحة بزنس كونسلتنج",
-    logo: "/لوقو-دوحة-بيزنس.png",
-    alt: "Doha Business Consulting Logo",
-    width: 150,
-    height: 100,
-    link: "https://share.google/9E2TpVtqoAqlUs6PR"
+    name: "Jupiter",
+    logo: "/partnerships/jupiter.svg",
+    alt: "Jupiter",
+    link: "https://jup.ag",
+    taglineKey: "home.partnerships.partners.jupiter",
+  },
+  {
+    name: "WalletConnect",
+    logo: "/partnerships/walletconnect.svg",
+    alt: "WalletConnect",
+    link: "https://walletconnect.com",
+    taglineKey: "home.partnerships.partners.walletconnect",
   },
 ];
+
+const vaultSteps = ["choose", "deposit", "earn", "withdraw"] as const;
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('metadata')
@@ -235,69 +241,31 @@ export default function Home() {
             </div>
           </h4>
         </div>}
-        {/* Token Economics Section */}
-        <section className="md:w-full w-screen -mx-5 md:max-w-[1200px] rounded-[20px] bg-gradient-to-br from-[#8B1DB8] via-purple-600 to-[#477DE9] px-5 !py-10 !pb-20 !pt-32 md:rounded-[30px] md:!px-10 md:!py-20 md:!pt-32 md:!pb-16  md:mt-32 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+                <section className="w-full max-w-[1200px]">
+          <div className="mx-auto max-w-[720px] text-center">
+            <h2 className="text-3xl font-bold text-black dark:text-white md:text-5xl">{t("home.showcase.title")}</h2>
+            <p className="mx-auto mt-4 max-w-[58ch] text-base leading-7 text-black/70 dark:text-white/70">{t("home.showcase.description")}</p>
           </div>
-          <div className="mx-auto w-full max-w-[1000px] relative z-10">
-            <h2 className="default-transition text-white font-bold text-[2.375rem] leading-[3.25rem] md:text-[3.25rem] md:leading-[3.25rem] text-center mb-4">
-              {t("home.token_economics.title")}
-            </h2>
-            <p className="transition font-inter text-white/90 text-[1.125rem] leading-[1.125rem] md:text-[1.125rem] md:leading-[1.625rem] mx-auto mb-10 mt-4 max-w-[70ch] text-center md:mt-6 max:mb-14">
-              {t("home.token_economics.description")}
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-              <div className="p-6 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 hover:shadow-2xl  delay-100 transition-all">
-                <div className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-white/20 flex items-center justify-center">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-3xl font-bold text-white mb-2">100M</h3>
-                  <p className="text-white/80 text-sm">{t("home.token_economics.total_supply")}</p>
-                  <p className="text-white/60 text-xs mt-1">{t("home.token_economics.ywt_token")}</p>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {[
+              { src: "/onboarding-screen.png", alt: "Your Wallet welcome screen", key: "welcome" },
+              { src: "/deposit-screen.png", alt: "Deposit screen in Your Wallet", key: "deposit" },
+              { src: "/buy-screen.png", alt: "Swap screen in Your Wallet", key: "swap" },
+            ].map((item) => (
+              <article key={item.key} className="overflow-hidden rounded-[28px] border border-black/10 bg-white shadow-sm dark:border-white/10 dark:bg-[#141416]">
+                <div className="bg-[#120818] px-8 pt-8">
+                  <Image src={item.src} alt={item.alt} width={640} height={900} className="mx-auto h-[340px] w-auto rounded-t-[28px] object-cover object-top shadow-2xl" />
                 </div>
-              </div>
-
-              <div className="p-6 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 hover:shadow-2xl  delay-100 transition-all">
-                <div className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-white/20 flex items-center justify-center">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-3xl font-bold text-white mb-2">40%</h3>
-                  <p className="text-white/80 text-sm">{t("home.token_economics.swap_to_earn")}</p>
-                  <p className="text-white/60 text-xs mt-1">40M {t("home.token_economics.ywt_token")}</p>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-black dark:text-white">{t(`home.showcase.${item.key}.title`)}</h3>
+                  <p className="mt-2 text-sm leading-6 text-black/65 dark:text-white/70">{t(`home.showcase.${item.key}.description`)}</p>
                 </div>
-              </div>
-
-              <div className="p-6 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 hover:shadow-2xl  delay-100 transition-all">
-                <div className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-white/20 flex items-center justify-center">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-3xl font-bold text-white mb-2">$0.10</h3>
-                  <p className="text-white/80 text-sm">{t("home.token_economics.tge_price")}</p>
-                  <p className="text-white/60 text-xs mt-1">{t("home.token_economics.token_start")}</p>
-                </div>
-              </div>
-            </div>
-
-            <Link href="/token-economics">
-              <button className="text-white hover:before:bg-white relative w-fit rounded-full px-8 py-[1.125rem] md:py-3 md:px-10 mx-auto mt-10 flex overflow-hidden border border-white bg-transparent shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-white before:transition-all before:duration-500 hover:text-[#8B1DB8] hover:shadow-white hover:before:left-0 hover:before:w-full">
-                <span className="relative z-10 font-medium">{t("home.token_economics.cta")}</span>
-              </button>
-            </Link>
+              </article>
+            ))}
           </div>
         </section>
-        <section className="md:w-full w-screen -mx-5 md:max-w-[1200px]  bg-gradient-to-t from-green-300 to-green-600 px-5 !py-10 !pb-20 !pt-32 rounded-[10px] md:rounded-[20px] md:!px-10 md:!py-20 md:!pt-32 md:!pb-16 z-20">
+
+<section className="md:w-full w-screen -mx-5 md:max-w-[1200px]  bg-gradient-to-t from-green-300 to-green-600 px-5 !py-10 !pb-20 !pt-32 rounded-[10px] md:rounded-[20px] md:!px-10 md:!py-20 md:!pt-32 md:!pb-16 z-20">
           <div className="mx-auto w-full max-w-[1000px]">
             <h2 className="default-transition text-white font-bold dark:text-white text-[2.375rem] leading-[3.25rem] md:text-[3.25rem] md:leading-[3.25rem] 
             text-center  
@@ -490,128 +458,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Stake Section */}
-        <section className="md:w-full w-screen -mx-5 md:max-w-[1200px] rounded-[20px] bg-gradient-to-t from-[#9945FF] to-[#14F195] px-5 !py-10 !pb-20 !pt-32 md:rounded-[30px] md:!px-10 md:!py-20 md:!pt-32 md:!pb-16 -mt-32 md:-mt-32">
-          <div className="mx-auto w-full max-w-[1000px]">
-            <h2 className="default-transition text-white font-bold text-[2.375rem] leading-[3.25rem] md:text-[3.25rem] md:leading-[3.25rem] text-center">
-              {t("home.stake.title")}
-            </h2>
-            <p className="transition font-inter text-white text-[1.125rem] leading-[1.125rem] md:text-[1.125rem] md:leading-[1.625rem] mx-auto mb-10 mt-4 max-w-[70ch] text-center md:mt-6 max:mb-14">
-              {t("home.stake.description")}
-            </p>
-
-            <div className="mx-auto mt-6 max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch justify-items-center">
-              {/* Üst 2 kart */}
-              <CardSpotlight className="h-auto w-full rounded-3xl md:rounded-[30px] flex-col items-center justify-between">
-                <h4 className="transition font-bold text-white text-[1.375rem] leading-[1.875rem] md:text-[1.5625rem] md:leading-[1.6875rem] relative z-20 text-center">
-                  {t("home.stake.features.multiple_pools.title")}
-                </h4>
-                <div className="relative z-20 mt-10 flex items-center justify-center">
-                  <div className="relative">
-                    <div className="absolute -inset-4 blur-2xl bg-white/20 rounded-full"></div>
-                    <div className="w-[120px] h-[120px] rounded-full bg-white/10 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center">
-                      <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <p className="mt-10 transition font-inter text-center text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.625rem] text-white relative z-20">
-                  {t("home.stake.features.multiple_pools.description")}
-                </p>
-              </CardSpotlight>
-
-              <CardSpotlight className="h-auto w-full rounded-3xl md:rounded-[30px] flex-col items-center justify-between">
-                <h4 className="relative z-20 transition font-bold text-white text-[1.375rem] leading-[1.875rem] md:text-[1.5625rem] md:leading-[1.6875rem] text-center">
-                  {t("home.stake.features.advanced_module.title")}
-                </h4>
-                <div className="relative z-20 mt-10 flex items-center justify-center">
-                  <div className="relative">
-                    <div className="absolute -inset-4 blur-2xl bg-white/20 rounded-full"></div>
-                    <div className="w-[120px] h-[120px] rounded-full bg-white/10 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center">
-                      <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <p className="relative z-20 mt-10 transition font-inter text-center text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.625rem] text-white">
-                  {t("home.stake.features.advanced_module.description")}
-                </p>
-              </CardSpotlight>
-
-              {/* Ortada 1 kart - tam ortada, 2 satır kaplayacak */}
-              <CardSpotlight className="h-auto w-full rounded-3xl md:rounded-[30px] flex-col items-center justify-between md:col-span-2">
-                <h4 className="relative z-20 transition font-bold text-white text-[1.375rem] leading-[1.875rem] md:text-[1.5625rem] md:leading-[1.6875rem] text-center">
-                  {t("home.stake.features.high_returns.title")}
-                </h4>
-                <div className="relative z-20 mt-10 flex items-center justify-center">
-                  <div className="relative">
-                    <div className="absolute -inset-4 blur-2xl bg-white/20 rounded-full"></div>
-                    <div className="w-[120px] h-[120px] rounded-full bg-white/10 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center">
-                      <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <p className="relative z-20 mt-10 transition font-inter text-center text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.625rem] text-white">
-                  {t("home.stake.features.high_returns.description")}
-                </p>
-              </CardSpotlight>
-
-              {/* Alt 2 kart */}
-              <CardSpotlight className="h-auto w-full rounded-3xl md:rounded-[30px] flex-col items-center justify-between ">
-                <h4 className="relative z-20 transition font-bold text-white text-[1.375rem] leading-[1.875rem] md:text-[1.5625rem] md:leading-[1.6875rem] text-center">
-                  {t("home.stake.features.flexible_access.title")}
-                </h4>
-                <div className="relative z-20 mt-10 flex items-center justify-center">
-                  <div className="relative">
-                    <div className="absolute -inset-4 blur-2xl bg-white/20 rounded-full"></div>
-                    <div className="w-[120px] h-[120px] rounded-full bg-white/10 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center">
-                      <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <p className="relative z-20 mt-10 transition font-inter text-center text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.625rem] text-white">
-                  {t("home.stake.features.flexible_access.description")}
-                </p>
-              </CardSpotlight>
-
-              <CardSpotlight className="h-auto w-full rounded-3xl md:rounded-[30px] flex-col items-center justify-center ">
-                <h4 className="relative z-20 transition font-bold text-white text-[1.375rem] leading-[1.875rem] md:text-[1.5625rem] md:leading-[1.6875rem] text-center">
-                  {t("home.stake.features.powered_by_solana.title")}
-                </h4>
-                <div className="relative z-20 mt-10 flex items-center justify-center">
-                  <div className="relative">
-                    <div className="absolute -inset-4 blur-2xl bg-white/20 rounded-full"></div>
-                    <Image
-                      src="/network/sol.webp"
-                      alt="Solana"
-                      width={120}
-                      height={120}
-                      className="relative rounded-full"
-                    />
-                  </div>
-                </div>
-                <p className="relative z-20 mt-10 transition font-inter text-center text-[1rem] leading-[1.125rem] md:text-[.9375rem] md:leading-[1.625rem] text-white">
-                  {t("home.stake.features.powered_by_solana.description")}
-                </p>
-              </CardSpotlight>
-            </div>
-
-            <Link href="https://stake.yourwallet.io" target="_blank" rel="noopener noreferrer">
-              <button className="text-white hover:before:bg-white relative w-fit rounded-full px-8 py-[1.125rem] md:py-3 md:px-10 mx-auto mt-10 flex overflow-hidden border border-white bg-transparent shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-white before:transition-all before:duration-500 hover:text-[#9945FF] hover:shadow-white hover:before:left-0 hover:before:w-full">
-                <span className="relative z-10 font-medium">{t("home.stake.cta")}</span>
-              </button>
-            </Link>
-          </div>
-        </section>
-
-
-
         <section className="grid w-full max-w-[1200px] gap-6 md:min-h-[450px] md:grid-cols-2">
           <div className="transition rounded-[20px] p-5 [transition-property:background-color,border-color] lg:rounded-[30px] lg:p-8 border border-blue-500 bg-white dark:border-white dark:bg-black flex flex-col gap-5 md:justify-center md:gap-7">
             <h3 className="transition text-black font-bold dark:text-white text-[1.625rem] leading-[2rem] md:text-[1.875rem] md:leading-[2.0625rem] max-w-[18ch]">
@@ -658,27 +504,148 @@ export default function Home() {
           </span>
         </section>
 
-        {/* Partnerships Section */}
-        <section className="w-full max-w-[1200px] py-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <section id="vault" className="scroll-mt-28 w-full max-w-[1200px] overflow-hidden rounded-[28px] border border-black/10 bg-white dark:border-white/10 dark:bg-[#121214]">
+          <div className="grid lg:grid-cols-[1.05fr_0.95fr]">
+            <div className="flex flex-col justify-center px-6 py-10 md:px-12 md:py-14">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8B1DB8] dark:text-[#7aa2ff]">
+                {t("home.vault.eyebrow")}
+              </p>
+              <h2 className="mt-3 max-w-[16ch] text-3xl font-bold leading-tight text-black dark:text-white md:text-5xl">
+                {t("home.vault.title")}
+              </h2>
+              <p className="mt-5 max-w-[52ch] text-base leading-7 text-black/70 dark:text-white/75">
+                {t("home.vault.description")}
+              </p>
+              <ul className="mt-8 grid gap-4">
+                {(["custody", "solana", "clear"] as const).map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#8B1DB8]/10 text-[#8B1DB8] dark:bg-[#477DE9]/20 dark:text-[#9db7ff]">
+                      <CircleCheck className="h-4 w-4" />
+                    </span>
+                    <span>
+                      <span className="block font-semibold text-black dark:text-white">{t(`home.vault.highlights.${item}.title`)}</span>
+                      <span className="mt-1 block text-sm leading-6 text-black/65 dark:text-white/70">{t(`home.vault.highlights.${item}.description`)}</span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Link href="/download" className="rounded-full bg-[#8B1DB8] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#6d1590] dark:bg-[#477DE9] dark:hover:bg-[#3568c9]">
+                  {t("home.vault.cta")}
+                </Link>
+              </div>
+            </div>
+
+            <div className="relative flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#2a0a40] via-[#6b21a8] to-[#1d4ed8] px-6 py-12">
+              <div className="absolute -left-10 top-8 h-40 w-40 rounded-full bg-white/20 blur-3xl" />
+              <div className="absolute bottom-0 right-0 h-48 w-48 rounded-full bg-[#14F195]/30 blur-3xl" />
+              <div className="relative w-full max-w-[320px] rounded-[32px] border border-white/20 bg-black/40 p-4 shadow-2xl backdrop-blur-md">
+                <div className="mb-4 flex items-center justify-between text-white">
+                  <span className="text-sm font-medium">{t("home.vault.preview.title")}</span>
+                  <span className="rounded-full bg-white/15 px-3 py-1 text-xs">{t("home.vault.preview.flexible")}</span>
+                </div>
+                <div className="rounded-2xl bg-white/10 p-4 text-white">
+                  <p className="text-xs text-white/70">{t("home.vault.preview.balance_label")}</p>
+                  <p className="mt-1 text-3xl font-semibold tracking-tight">$2,480.00</p>
+                </div>
+                <div className="mt-3 grid gap-2">
+                  <div className="flex items-center justify-between rounded-2xl bg-white px-3 py-3 text-black">
+                    <div className="flex items-center gap-3">
+                      <Image src="/network/sol.webp" alt="Solana" width={36} height={36} className="h-9 w-9 rounded-full" />
+                      <div>
+                        <p className="text-sm font-semibold">SOL</p>
+                        <p className="text-xs text-black/55">{t("home.vault.preview.flexible")}</p>
+                      </div>
+                    </div>
+                    <p className="text-sm font-semibold">{t("home.vault.preview.variable")}</p>
+                  </div>
+                  <div className="flex items-center justify-between rounded-2xl bg-white px-3 py-3 text-black">
+                    <div className="flex items-center gap-3">
+                      <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#2775CA] text-xs font-bold text-white">$</span>
+                      <div>
+                        <p className="text-sm font-semibold">USDC</p>
+                        <p className="text-xs text-black/55">{t("home.vault.preview.flexible")}</p>
+                      </div>
+                    </div>
+                    <p className="text-sm font-semibold">{t("home.vault.preview.variable")}</p>
+                  </div>
+                  <div className="flex items-center justify-between rounded-2xl bg-white px-3 py-3 text-black">
+                    <div className="flex items-center gap-3">
+                      <Image src="/network/eth.webp" alt="Ethereum" width={36} height={36} className="h-9 w-9 rounded-full" />
+                      <div>
+                        <p className="text-sm font-semibold">ETH</p>
+                        <p className="text-xs text-black/55">{t("home.vault.preview.flexible")}</p>
+                      </div>
+                    </div>
+                    <p className="text-sm font-semibold">{t("home.vault.preview.variable")}</p>
+                  </div>
+                </div>
+                <div className="mt-4 grid grid-cols-2 gap-2">
+                  <span className="rounded-full bg-white py-2.5 text-center text-sm font-medium text-[#5b178f]">{t("home.vault.preview.deposit")}</span>
+                  <span className="rounded-full border border-white/40 py-2.5 text-center text-sm font-medium text-white">{t("home.vault.preview.withdraw")}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="px-6 pb-10 pt-4 md:px-12 md:pb-14">
+            <div className="max-w-[640px]">
+              <h3 className="text-2xl font-bold text-black dark:text-white md:text-3xl">{t("home.vault.how_title")}</h3>
+              <p className="mt-3 text-black/65 dark:text-white/70">{t("home.vault.how_description")}</p>
+            </div>
+            <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+              {vaultSteps.map((step, index) => (
+                <article key={step} className="rounded-[24px] border border-black/10 bg-[#f7f7f8] p-5 dark:border-white/10 dark:bg-[#1b1b1e]">
+                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#8B1DB8] to-[#477DE9] text-lg font-semibold text-white">
+                    0{index + 1}
+                  </div>
+                  <h4 className="text-lg font-semibold text-black dark:text-white">{t(`home.vault.steps.${step}.title`)}</h4>
+                  <p className="mt-2 text-sm leading-6 text-black/65 dark:text-white/70">{t(`home.vault.steps.${step}.description`)}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full max-w-[1200px] rounded-[28px] border border-black/10 bg-white px-6 py-10 dark:border-white/10 dark:bg-[#121214] md:px-12">
+          <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr] md:items-center">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8B1DB8] dark:text-[#7aa2ff]">{t("home.company.title")}</p>
+              <h2 className="mt-3 text-3xl font-bold text-black dark:text-white md:text-4xl">{t("home.company.name")}</h2>
+              <p className="mt-4 max-w-[52ch] text-base leading-7 text-black/70 dark:text-white/70">{t("home.company.note")}</p>
+            </div>
+            <div className="grid gap-3 text-sm text-black dark:text-white">
+              <p className="rounded-2xl bg-[#f6f6f8] px-4 py-3 dark:bg-white/5">{t("home.company.number")}</p>
+              <p className="rounded-2xl bg-[#f6f6f8] px-4 py-3 dark:bg-white/5">{t("home.company.country")}</p>
+              <a href="mailto:hello@yourwallet.io" className="rounded-2xl bg-[#f6f6f8] px-4 py-3 font-medium text-[#8B1DB8] dark:bg-white/5 dark:text-[#9db7ff]">{t("home.company.email")}</a>
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full max-w-[1200px] py-4">
+          <div className="mb-10 text-center">
+            <h2 className="text-3xl font-bold text-black dark:text-white md:text-4xl">
               {t("home.partnerships.title")}
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            <p className="mx-auto mt-4 max-w-2xl text-black/60 dark:text-white/65">
               {t("home.partnerships.description")}
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-5 lg:grid-cols-4  items-center justify-items-center">
-            {partnershipsData.map((partner, index) => (
-              <Link href={partner.link} target="_blank" key={index} className="w-full max-w-[200px] p-4 flex items-center justify-center">
-                <Image
-                  src={partner.logo}
-                  alt={partner.alt}
-                  width={partner.width}
-                  height={partner.height}
-                  className="object-contain rounded-lg"
-                />
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {partnershipsData.map((partner) => (
+              <Link
+                href={partner.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={partner.name}
+                className="group flex flex-col rounded-[24px] border border-black/10 bg-white p-5 transition hover:-translate-y-1 hover:border-[#8B1DB8]/40 hover:shadow-xl dark:border-white/10 dark:bg-[#161618] dark:hover:border-[#477DE9]/50"
+              >
+                <div className="flex h-24 items-center justify-center rounded-2xl bg-[#0e0e10]">
+                  <img src={partner.logo} alt={partner.alt} className="h-14 w-14 object-contain" />
+                </div>
+                <span className="mt-4 text-lg font-semibold text-black dark:text-white">{partner.name}</span>
+                <span className="mt-1 text-sm leading-6 text-black/60 dark:text-white/65">{t(partner.taglineKey)}</span>
               </Link>
             ))}
           </div>
